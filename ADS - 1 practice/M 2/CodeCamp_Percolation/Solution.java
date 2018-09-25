@@ -36,16 +36,16 @@ class Percolation {
         }
 
         if (row == size - 1) {
-            wqu.union((size * size) + 1, component(row, col));
+            wqu.union(((size * size) + 1), component(row, col));
         }
 
-        if (row > 0) {
+        if (row > 0 && row <= size - 1) {
             if (gridarr[row + 1][col] == 1) {
                 wqu.union(component(row,col), component(row + 1, col));
             }
         }
 
-        if (row < size - 1) {
+        if (row <= size - 1) {
             if (gridarr[row - 1][col] == 1) {
                 wqu.union(component(row,col), component(row - 1, col));
             }
@@ -57,7 +57,7 @@ class Percolation {
             }
         }
 
-        if (col < size - 1) {
+        if (col <= size - 1) {
             if (gridarr[row][col + 1] == 1) {
                 wqu.union(component(row,col), component(row, col - 1));
             }
