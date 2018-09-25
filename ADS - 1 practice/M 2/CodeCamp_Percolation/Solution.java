@@ -32,9 +32,10 @@ import java.util.Scanner;
     }
 
     /**
-     * @param i integer variable.
-     * @param j integer variable.
-     * open method for percolation class.
+     * Open a particular box.
+     *
+     * @param      row   The row
+     * @param      col   The col
      */
     public void open(final int row, final int col) {
         grid[row][col] = 1;
@@ -78,7 +79,7 @@ import java.util.Scanner;
      * @return returns true if the given block is full.
      */
     public boolean isFull(final int i, final int j) {
-         return grid[i][j] == 0;   
+         return grid[i][j] == 0;
     }
 
     /**
