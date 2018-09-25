@@ -62,7 +62,7 @@ class Percolation {
                 wqu.union(component(row,col), component(row, col - 1));
             }
         }
-        isOpen(rowgiven, colgiven);
+        //isOpen(rowgiven, colgiven);
     }
 
     public int component(int row, int col) {
@@ -70,10 +70,6 @@ class Percolation {
     }
     public boolean isOpen(int row, int col) {
         return gridarr[row - 1][col - 1] == 1;
-        // if (gridarr[row][col] == 1) {
-        //     return true;
-        // } 
-        // return false;
     }
 
     public boolean isFull(int row, int col) {
