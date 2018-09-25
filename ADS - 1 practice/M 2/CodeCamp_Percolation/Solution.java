@@ -6,7 +6,7 @@ import java.util.Scanner;
 /**
  * grid matrix.
  */
-    private int[][] grid;
+    private boolean[][] grid;
     /**
      * top variable.
      */
@@ -32,7 +32,7 @@ import java.util.Scanner;
         size = n;
         bottom = size * size + 1;
         qf = new WeightedQuickUnionUF(size * size + 2);
-        grid = new int[size][size];
+        grid = new boolean[size][size];
     }
 
     /**
@@ -41,7 +41,7 @@ import java.util.Scanner;
      * open method for percolation class.
      */
     public void open(final int i, final int j) {
-        grid[i - 1][j - 1] = 0;
+        grid[i - 1][j - 1] = true;
         if (i == 1) {
             qf.union(component(i, j), top);
         }
@@ -70,7 +70,7 @@ import java.util.Scanner;
      * @return returns true if the given block is open.
      */
     public boolean isOpen(final int i, final int j) {
-        return grid[i - 1][j - 1] == 1;
+        return grid[i - 1][j - 1];
     }
 
     /**
