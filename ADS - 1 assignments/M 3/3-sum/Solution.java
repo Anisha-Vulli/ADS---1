@@ -33,8 +33,9 @@ class threeSum {
         }
         System.out.println(count);
     }
-    public int binarysearch(final int[] arr, final int start, final int end, final int number) {
-        if (end >= start) { 
+    public int binarysearch(final int[] arr,
+        final int start, final int end, final int number) {
+        if (end >= start) {
             int mid = start + (end - start) / 2;
             if (arr[mid] == number) {
                return mid;
