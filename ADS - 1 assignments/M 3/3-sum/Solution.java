@@ -25,7 +25,7 @@ class threeSum {
         for (int i = 0; i < array.length; i++) {
             for (int j = i + 1; j < array.length; j++) {
                 int a = -1 * (array[i] + array[j]);
-                int z = Binarysearch(array, j + 1, array.length - 1, a);
+                int z = binarysearch(array, j + 1, array.length - 1, a);
                 if (z != -1) {
                     count++;
                 }
@@ -33,16 +33,17 @@ class threeSum {
         }
         System.out.println(count);
     }
-    public int Binarysearch(int[] arr, int start, int end, int number) {
-        if (end >= start) 
-        { 
-            int mid = start + (end - start)/2; 
-            if (arr[mid] == number) 
-               return mid; 
-            if (arr[mid] > number) 
-               return Binarysearch(arr, start, mid-1, number); 
-            return Binarysearch(arr, mid+1, end, number); 
-        } 
-        return -1; 
+    public int binarysearch(final int[] arr, final int start, final int end, final int number) {
+        if (end >= start) { 
+            int mid = start + (end - start) / 2;
+            if (arr[mid] == number) {
+               return mid;
+            }
+            if (arr[mid] > number) {
+               return binarysearch(arr, start, mid - 1, number);
+            }
+            return binarysearch(arr, mid + 1, end, number);
+        }
+        return -1;
     }
 }
