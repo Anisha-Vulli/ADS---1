@@ -19,14 +19,13 @@ class Solution {
      * @param      n2    The n 2
      * @param      arr3  The arr 3
      */
-    public static void mergearrays(int[] arr1, int[] arr2, int n1,
-                                int n2, int[] arr3)
+    public static void mergearrays(final int[] arr1, final int[] arr2,
+        final int n1, final int n2, final int[] arr3)
     { 
         int i = 0, j = 0, k = 0;
       
         // Traverse both array
-        while (i<n1 && j <n2)
-        { 
+        while (i < n1 && j < n2) {
             // Check if current element of first
             // array is smaller than current element
             // of second array. If yes, store first
@@ -42,7 +41,6 @@ class Solution {
         while (i < n1) {
             arr3[k++] = arr1[i++];
         }
-      
         // Store remaining elements of second array
         while (j < n2) {
             arr3[k++] = arr2[j++];
