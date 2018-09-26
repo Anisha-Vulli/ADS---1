@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-class Solution {
+final class Solution {
     /**
      * Constructs the object.
      */
@@ -20,7 +20,7 @@ class Solution {
      * @param      arr3  The arr 3
      */
     public static void mergearrays(final int[] arr1, final int[] arr2,
-        final int n1, final int n2, final int[] arr3) { 
+        final int n1, final int n2, final int[] arr3) {
         int i = 0, j = 0, k = 0;
 
         // Traverse both array
