@@ -16,7 +16,13 @@ class Solution {
 }
 
 class threeSum {
+    /**
+     * Count variable.
+     */
     private int count;
+    /**
+     * Constructs the object.
+     */
     threeSum() {
         count = 0;
     }
