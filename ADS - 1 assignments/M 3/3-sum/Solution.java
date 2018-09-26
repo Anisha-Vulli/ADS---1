@@ -39,9 +39,9 @@ class threeSum {
             if (arraysent[temp] == number) {
                 return arraysent[temp];
             } if (arraysent[temp] > number) {
-                return Binarysearch(arraysent, start, temp - 1, number);
+                return Binarysearch(arraysent, number, start, temp - 1);
             }
-            return Binarysearch(arraysent, temp + 1, end, number);
+            return Binarysearch(arraysent, number, temp + 1, end);
         }
         return -1;
     }
