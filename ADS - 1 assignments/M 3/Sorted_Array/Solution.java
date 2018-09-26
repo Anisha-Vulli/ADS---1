@@ -52,7 +52,7 @@ class Solution {
         int[] arr3 = new int[m+n];
         mergeArrays(intarr1, intarr2, m, n, arr3);
 
-        for (int i=0; i < m + n; i++) 
+        for (int i=0; i < (m + n)- 1; i++) 
             System.out.print(arr3[i] + ","); 
 
     }
