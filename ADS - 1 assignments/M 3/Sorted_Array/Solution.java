@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import java.util.Arrays;
+//import java.util.Arrays;
 /**
  * Class for solution.
  */
@@ -7,7 +7,7 @@ class Solution {
     /**
      * Constructs the object.
      */
-    Solution() {
+    private Solution() {
 
     }
     /**
@@ -20,10 +20,9 @@ class Solution {
      * @param      arr3  The arr 3
      */
     public static void mergearrays(final int[] arr1, final int[] arr2,
-        final int n1, final int n2, final int[] arr3)
-    { 
+        final int n1, final int n2, final int[] arr3) { 
         int i = 0, j = 0, k = 0;
-      
+
         // Traverse both array
         while (i < n1 && j < n2) {
             // Check if current element of first
