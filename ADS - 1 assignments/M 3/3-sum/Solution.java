@@ -1,6 +1,20 @@
+/**
+ * Scanner import.
+ */
 import java.util.Scanner;
+/**
+ * Arrays import.
+ */
 import java.util.Arrays;
+/**
+ * Class for solution.
+ */
 class Solution {
+    /**
+     * Main function.
+     *
+     * @param      args  The arguments
+     */
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         Threesum t = new Threesum();
@@ -14,7 +28,9 @@ class Solution {
         // System.out.println(Arrays.toString(arr));
     }
 }
-
+/**
+ * Class for threesum.
+ */
 class Threesum {
     /**
      * Count variable.
