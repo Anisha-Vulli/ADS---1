@@ -3,19 +3,19 @@ import java.util.Arrays;
 class Solution {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        threeSum t = new threeSum();
+        threesum t = new threesum();
         int n = s.nextInt();
         int[] arr = new int[n];
         for (int i = 0; i < n; i++) {
             arr[i] = s.nextInt();
         }
-        t.threeSumpairs(arr);
+        t.threesumpairs(arr);
         //System.out.println(t.Binarysearch(arr, 686904));
         // System.out.println(Arrays.toString(arr));
     }
 }
 
-class threeSum {
+class threesum {
     /**
      * Count variable.
      */
@@ -23,7 +23,7 @@ class threeSum {
     /**
      * Constructs the object.
      */
-    threeSum() {
+    threesum() {
         count = 0;
     }
     /**
@@ -31,7 +31,7 @@ class threeSum {
      *
      * @param      array  The array
      */
-    public void threeSumpairs(final int[] array) {
+    public void threesumpairs(final int[] array) {
         Arrays.sort(array);
         for (int i = 0; i < array.length; i++) {
             for (int j = i + 1; j < array.length; j++) {
