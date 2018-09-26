@@ -22,7 +22,6 @@ class threeSum {
     }
     public void threeSumpairs(int[] array) {
         Arrays.sort(array);
-        int count = 0;
         for (int i = 0; i < array.length; i++) {
             for (int j = i + 1; j < array.length; j++) {
                 int a = -1 * (array[i] + array[j]);
@@ -36,7 +35,7 @@ class threeSum {
     }
     public int Binarysearch(int[] arraysent, int number, int start, int end) {
         if (end >= start) {
-            int temp = start + (end - start) / 2;
+            int temp = (start + (end - start)) / 2;
             if (arraysent[temp] == number) {
                 return arraysent[temp];
             } if (arraysent[temp] > number) {
