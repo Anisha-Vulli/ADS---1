@@ -16,11 +16,16 @@ class Solution {
 }
 
 class threeSum {
-    int count;
+    private int count;
     threeSum() {
         count = 0;
     }
-    public void threeSumpairs(int[] array) {
+    /**
+     * Three sum.
+     *
+     * @param      array  The array
+     */
+    public void threeSumpairs(final int[] array) {
         Arrays.sort(array);
         for (int i = 0; i < array.length; i++) {
             for (int j = i + 1; j < array.length; j++) {
@@ -33,6 +38,16 @@ class threeSum {
         }
         System.out.println(count);
     }
+    /**
+     * Binary search.
+     *
+     * @param      arr     The arr
+     * @param      start   The start
+     * @param      end     The end
+     * @param      number  The number
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int binarysearch(final int[] arr,
         final int start, final int end, final int number) {
         if (end >= start) {
