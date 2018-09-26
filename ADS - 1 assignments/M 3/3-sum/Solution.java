@@ -3,7 +3,7 @@ import java.util.Arrays;
 class Solution {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        threesum t = new threesum();
+        Threesum t = new Threesum();
         int n = s.nextInt();
         int[] arr = new int[n];
         for (int i = 0; i < n; i++) {
@@ -15,7 +15,7 @@ class Solution {
     }
 }
 
-class threesum {
+class Threesum {
     /**
      * Count variable.
      */
@@ -23,7 +23,7 @@ class threesum {
     /**
      * Constructs the object.
      */
-    threesum() {
+    Threesum() {
         count = 0;
     }
     /**
