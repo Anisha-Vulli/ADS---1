@@ -31,7 +31,7 @@ class Linkedlist {
     /**
      * Pushing an element into list.
      *
-     * @param      ch    { given String }
+     * @param      value  The value
      */
     void push(final int value) {
         Node val = start;
@@ -42,7 +42,7 @@ class Linkedlist {
     /**
      * Popping element from list.
      *
-     * @return     { String value }
+     * @return     { int value }
      */
     int pop() {
         int c = start.data;
@@ -60,7 +60,7 @@ class Linkedlist {
 }
 
 class Solution {
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Linkedlist ll = new Linkedlist();
         int popelement1 = 0;
         int popelement2 = 0;
