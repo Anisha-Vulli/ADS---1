@@ -16,6 +16,11 @@ public final class Solution {
     private Solution() {
         //Empty constructor.
     }
+    /**
+     * Main function.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Linkedlist ll = new Linkedlist();
         int popelement1 = 0;
