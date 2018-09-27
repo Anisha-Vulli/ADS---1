@@ -5,48 +5,54 @@ import java.util.Scanner;
  * Class for node.
  */
 class Node {
-	String data;
-	Node next;
+    /**
+     * Data in string.
+     */
+    String data;
+    /**
+     * Next node.
+     */
+    Node next;
 }
 
 /**
  * Class for linkedlist.
  */
 class Linkedlist {
-	/**
-	 * An empty node.
-	 */
-	private Node start = null;
-	/**
-	 * Pushing an element into list.
-	 *
-	 * @param      ch    { given String }
-	 */
-	void push(final String ch) {
-		Node val = start;
-		start = new Node();
-		start.data = ch;
-		start.next = val;
-	}
-	/**
-	 * Popping element from list.
-	 *
-	 * @return     { String value }
-	 */
-	String pop() {
-		if (start == null) {
+    /**
+     * An empty node.
+     */
+    private Node start = null;
+    /**
+     * Pushing an element into list.
+     *
+     * @param      ch    { given String }
+     */
+    void push(final String ch) {
+        Node val = start;
+        start = new Node();
+        start.data = ch;
+        start.next = val;
+    }
+    /**
+     * Popping element from list.
+     *
+     * @return     { String value }
+     */
+    String pop() {
+        if (start == null) {
             return "e";
         }
         String r = start.data;
         start = start.next;
         return r;
-	}
-	/**
-	 * First value.
-	 *
-	 * @return     { value }
-	 */
-	public Node gethead() {
+    }
+    /**
+     * First value.
+     *
+     * @return     { value }
+     */
+    public Node gethead() {
         return start;
     }
 }
@@ -54,9 +60,9 @@ class Linkedlist {
  * Class for balanced.
  */
 class Balanced {
-	/**
-	 * Constructs the object.
-	 */
+    /**
+     * Constructs the object.
+     */
     Balanced() {
 
     }
@@ -97,7 +103,7 @@ class Balanced {
                 if (Matchingpair(ll.pop(), array[i])) {
                     continue;
                 } else {
-                	return false;
+                    return false;
                 }
             }
         }
@@ -108,12 +114,12 @@ class Balanced {
  * Class for using ll.
  */
 class UsingLL {
-	/**
-	 * Main method.
-	 *
-	 * @param      args  The arguments
-	 */
-	public static void main(final String[] args) {
+    /**
+     * Main method.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = Integer.parseInt(sc.nextLine());
         while (n != 0) {
