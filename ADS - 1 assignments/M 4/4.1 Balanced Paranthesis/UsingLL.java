@@ -9,7 +9,7 @@ final class UsingLL {
     /**
      * Constructs the object.
      */
-    UsingLL() {
+    private UsingLL() {
         //Empty constructor.
     }
     /**
