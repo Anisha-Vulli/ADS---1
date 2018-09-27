@@ -116,7 +116,7 @@ class UsingLL {
 	public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = Integer.parseInt(sc.nextLine());
-        while(n != 0) {
+        while (n != 0) {
             String[] input = sc.nextLine().split("");
             Balanced b = new Balanced();
             if (b.balancing(input)) {
