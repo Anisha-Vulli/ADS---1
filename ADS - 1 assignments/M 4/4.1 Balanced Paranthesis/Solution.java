@@ -4,8 +4,8 @@ import java.util.Arrays;
 class Stackprob {
     private String[] stackarr;
     private int size;
-    Stackprob() {
-        stackarr = new String[10];
+    Stackprob(int length) {
+        stackarr = new String[length];
         size = size;
     }
 
@@ -14,11 +14,7 @@ class Stackprob {
     }
 
     void push (String item) {
-        try {
-            stackarr[size++] = item;
-        } catch (Exception e) {
-            resize();
-        }
+        stackarr[size++] = item;
     }
 
     void resize() {
@@ -58,7 +54,7 @@ class Balanced {
     }
 
     boolean balancing(final String[] array) {
-        Stackprob stk = new Stackprob();
+        Stackprob stk = new Stackprob(array.length);
         for (int i = 0; i < array.length; i++) {
             if (array[i].equals("(") || array[i].equals("[") || array[i].equals("{")) {
                 stk.push(array[i]);
