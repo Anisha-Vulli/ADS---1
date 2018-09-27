@@ -65,7 +65,7 @@ class Solution {
         int popelement1 = 0;
         int popelement2 = 0;
         Scanner sc = new Scanner(System.in);
-        String[] input = sc.nextLine().split(",");
+        String[] input = sc.nextLine().split(" ");
         for (int i = 0; i < input.length; i++) {
            if (!(Arrays.asList("+", "-", "*", "/").contains(input[i]))) {
                 ll.push(Integer.parseInt(input[i]));
