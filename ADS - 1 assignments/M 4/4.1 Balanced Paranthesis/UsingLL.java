@@ -5,7 +5,13 @@ import java.util.Scanner;
 /**
  * Class for using ll.
  */
-public final class UsingLL {
+final class UsingLL {
+    /**
+     * Constructs the object.
+     */
+    UsingLL() {
+        //Empty constructor.
+    }
     /**
      * Main method.
      *
@@ -26,3 +32,5 @@ public final class UsingLL {
         }
     }
 }
+
+
