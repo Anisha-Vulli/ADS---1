@@ -9,7 +9,13 @@ import java.util.Arrays;
 /**
  * Class for solution.
  */
-class Solution {
+public final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        //Empty constructor.
+    }
     public static void main(final String[] args) {
         Linkedlist ll = new Linkedlist();
         int popelement1 = 0;
