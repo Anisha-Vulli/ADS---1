@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * Class for using ll.
  */
-class UsingLL {
+public final class UsingLL {
     /**
      * Main method.
      *
