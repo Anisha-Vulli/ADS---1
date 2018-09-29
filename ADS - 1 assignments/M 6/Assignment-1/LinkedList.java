@@ -200,12 +200,12 @@ class AddLargeNumbers {
         LinkedList resultlist = new LinkedList();
         String strng1 = "";
         for (int i = 0; i < list1.size(); i++) {
-            strng1 = strng1 + list1.pop();
+            strng1 = list1.pop() + strng1;
         }
 
         String strng2 = "";
         for (int i = 0; i < list2.size(); i++) {
-            strng2 = strng2 + list2.pop();
+            strng2 = list2.pop() + strng2;
         }
 
         String[] array1 = strng1.split("");
@@ -231,8 +231,9 @@ class AddLargeNumbers {
         
         val1 = Integer.parseInt(strng1);
         val2 = Integer.parseInt(strng2);
-        //System.out.println();
-        resultlist.push(String.valueOf(val1 + val2));
+        //System.out.println(val1);
+        result = val1 + val2;
+        resultlist.push(String.valueOf(result));
 
         // while (!(list1.isEmpty() && list2.isEmpty())) {
         //     val1 = Integer.parseInt(strng1);
