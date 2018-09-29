@@ -139,6 +139,10 @@ class LinkedList {
         return size;
     }
 
+    public boolean isEmpty() {
+        return size == 0;
+    }
+
     public String toString() {
         //Node temp = new Node();
         String str = "";
@@ -172,7 +176,7 @@ class AddLargeNumbers {
             input.push(number[i]);
             strng = strng + input.pop();
         }
-        System.out.println(strng);
+        //System.out.println(strng);
         //System.out.println(Arrays.toString(number));
         return input;
 
@@ -189,8 +193,16 @@ class AddLargeNumbers {
     }
 
     public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
+        int val1 = 0;
+        int val2 = 0;
+        int result = 0;
+        while (!(list1.isEmpty() && list2.isEmpty())) {
+            val1 = Integer.parseInt(list1.pop());
+            val2 = Integer.parseInt(list2.pop());
+            result = val1 + val2;
+            System.out.println(result);
+        }
         return input1;
-
     }
 }
 
