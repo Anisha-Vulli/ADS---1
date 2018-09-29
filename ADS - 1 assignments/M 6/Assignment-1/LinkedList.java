@@ -211,21 +211,21 @@ class AddLargeNumbers {
         String[] array1 = strng1.split("");
         String[] array2 = strng2.split("");
         //System.out.println(Arrays.toString(array1));
-        int digit = 0;
-        int poppedval = 0;
-        for (int i = 0; i < array1.length; i++) {
-            //System.out.println(array1[i]);
-            result = Integer.parseInt(array1[i]) + Integer.parseInt(array2[i]);
-            if (result < 9 && result > 0) {
-                resultlist.push(String.valueOf(result));
-            } else {
-                digit = result % 10;
-                result = result / 10;
-                resultlist.push(String.valueOf(digit));
-                resultlist.push(String.valueOf(result));
-                //poppedval = Integer.parseInt(resultlist.pop()); 
-            }
-        }
+        // int digit = 0;
+        // int poppedval = 0;
+        // for (int i = 0; i < array1.length; i++) {
+        //     //System.out.println(array1[i]);
+        //     result = Integer.parseInt(array1[i]) + Integer.parseInt(array2[i]);
+        //     if (result < 9 && result > 0) {
+        //         resultlist.push(String.valueOf(result));
+        //     } else {
+        //         digit = result % 10;
+        //         result = result / 10;
+        //         resultlist.push(String.valueOf(digit));
+        //         resultlist.push(String.valueOf(result));
+        //         //poppedval = Integer.parseInt(resultlist.pop()); 
+        //     }
+        // }
         //System.out.println(result);
         //System.out.println(resultlist.toString());
         
