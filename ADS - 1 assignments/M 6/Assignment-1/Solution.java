@@ -123,7 +123,7 @@ class LinkedList {
         }
         String r = start.data;
         start = start.next;
-        //size--;
+        size--;
         return r;
     }
     /**
@@ -185,10 +185,10 @@ class AddLargeNumbers {
     public static String digitsToNumber(LinkedList list) {
         
         String strng = "";
-        // for (int i = 0; i < list.size(); i++) {
-        //     //strng = strng + list.pop();
-        // }
-        strng = list.toString();
+        for (int i = 0; i < list.size(); i++) {
+            strng = strng + list.pop();
+        }
+        //strng = list.toString();
         return strng;
     }
 
