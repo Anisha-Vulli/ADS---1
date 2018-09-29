@@ -123,7 +123,7 @@ class LinkedList {
         }
         String r = start.data;
         start = start.next;
-        size--;
+        //size--;
         return r;
     }
     /**
@@ -133,6 +133,10 @@ class LinkedList {
      */
     public Node gethead() {
         return start;
+    }
+
+    public int size() {
+        return size;
     }
 
     public String toString() {
@@ -166,7 +170,7 @@ class AddLargeNumbers {
         String strng = "";
         for (int i = 0; i < number.length; i++) {
             input.push(number[i]);
-            strng = strng + input.pop();
+            //strng = strng + input.pop();
         }
         //System.out.println(strng);
         //System.out.println(Arrays.toString(number));
@@ -175,8 +179,12 @@ class AddLargeNumbers {
     }
 
     public static String digitsToNumber(LinkedList list) {
-        
-
+        //System.out.println(list.toString());
+        String strng = "";
+        for (int i = 0; i < list.size(); i++) {
+            strng = strng + list.pop();
+        }
+        return strng;
     }
 
     public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
