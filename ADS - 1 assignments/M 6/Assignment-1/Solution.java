@@ -168,14 +168,14 @@ class AddLargeNumbers {
             input.push(number[i]);
             strng = strng + input.pop();
         }
-        System.out.println(strng);
+        //System.out.println(strng);
         //System.out.println(Arrays.toString(number));
         return input;
 
     }
 
     public static String digitsToNumber(LinkedList list) {
-        return "";
+        
 
     }
 
