@@ -228,7 +228,7 @@ class AddLargeNumbers {
             }
         }
         //System.out.println(result);
-        System.out.println(resultlist.toString());
+        //System.out.println(resultlist.toString());
         
         // val1 = Integer.parseInt(strng1);
         // val2 = Integer.parseInt(strng2);
