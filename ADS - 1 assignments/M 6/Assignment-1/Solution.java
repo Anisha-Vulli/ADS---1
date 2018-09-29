@@ -241,7 +241,7 @@ class AddLargeNumbers {
         //     result = val1 + val2;
         //     System.out.println(result);
         // }
-        return input1;
+        return resultlist;
     }
 }
 
