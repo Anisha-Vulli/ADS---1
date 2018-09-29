@@ -194,15 +194,53 @@ class AddLargeNumbers {
     }
 
     public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
+        //System.out.println(list1.toString());
         int val1 = 0;
         int val2 = 0;
         int result = 0;
-        while (!(list1.isEmpty() && list2.isEmpty())) {
-            val1 = Integer.parseInt(list1.pop());
-            val2 = Integer.parseInt(list2.pop());
-            result = val1 + val2;
-            //System.out.println(result);
+        LinkedList resultlist = new LinkedList();
+        String strng1 = "";
+        for (int i = 0; i < list1.size(); i++) {
+            strng1 = strng1 + list1.pop();
         }
+
+        String strng2 = "";
+        for (int i = 0; i < list2.size(); i++) {
+            strng2 = strng2 + list2.pop();
+        }
+
+        String[] array1 = strng1.split("");
+        String[] array2 = strng2.split("");
+        //System.out.println(Arrays.toString(array1));
+        int digit = 0;
+        int poppedval = 0;
+        for (int i = 0; i < array1.length; i++) {
+            //System.out.println(array1[i]);
+            result = Integer.parseInt(array1[i]) + Integer.parseInt(array2[i]);
+            if (result < 9 && result > 0) {
+                resultlist.push(String.valueOf(result));
+            } else {
+                digit = result % 10;
+                result = result / 10;
+                resultlist.push(String.valueOf(digit));
+                resultlist.push(String.valueOf(result));
+                //poppedval = Integer.parseInt(resultlist.pop()); 
+            }
+        }
+        //System.out.println(result);
+        System.out.println(resultlist.toString());
+        
+        // val1 = Integer.parseInt(strng1);
+        // val2 = Integer.parseInt(strng2);
+        // System.out.println(val1 + val2);
+
+        // while (!(list1.isEmpty() && list2.isEmpty())) {
+        //     val1 = Integer.parseInt(strng1);
+        //     System.out.println(val1);
+        //     val2 = Integer.parseInt(strng2);
+        //     result = val1 + val2;
+        //     System.out.println(result);
+        // }
         return input1;
     }
 }
