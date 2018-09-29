@@ -6,6 +6,9 @@ import java.util.Scanner;
  * Class for solution.
  */
 public class Solution {
+    private Solution() {
+        //Empty constructor.
+    }
     /**
      * Main function.
      *
@@ -16,7 +19,7 @@ public class Solution {
         String input = sc.nextLine();
         String p = sc.nextLine();
         String q = sc.nextLine();
-        switch(input){
+        switch (input){
             case "numberToDigits":
                 LinkedList pDigits = AddLargeNumbers.numberToDigits(p);
                 LinkedList qDigits = AddLargeNumbers.numberToDigits(q);
