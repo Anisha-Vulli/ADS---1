@@ -170,9 +170,9 @@ class AddLargeNumbers {
         String strng = "";
         for (int i = 0; i < number.length; i++) {
             input.push(number[i]);
-            //strng = strng + input.pop();
+            strng = strng + input.pop();
         }
-        //System.out.println(strng);
+        System.out.println(strng);
         //System.out.println(Arrays.toString(number));
         return input;
 
@@ -182,7 +182,7 @@ class AddLargeNumbers {
         //System.out.println(list.toString());
         String strng = "";
         for (int i = 0; i < list.size(); i++) {
-            strng = strng + list.pop();
+            //strng = strng + list.pop();
         }
         return strng;
     }
