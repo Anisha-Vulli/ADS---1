@@ -201,7 +201,7 @@ class AddLargeNumbers {
             val1 = Integer.parseInt(list1.pop());
             val2 = Integer.parseInt(list2.pop());
             result = val1 + val2;
-            System.out.println(result);
+            //System.out.println(result);
         }
         return input1;
     }
