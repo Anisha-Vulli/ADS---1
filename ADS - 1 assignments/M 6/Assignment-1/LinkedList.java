@@ -229,9 +229,10 @@ class AddLargeNumbers {
         //System.out.println(result);
         //System.out.println(resultlist.toString());
         
-        // val1 = Integer.parseInt(strng1);
-        // val2 = Integer.parseInt(strng2);
-        // System.out.println(val1 + val2);
+        val1 = Integer.parseInt(strng1);
+        val2 = Integer.parseInt(strng2);
+        //System.out.println();
+        resultlist.push(String.valueOf(val1 + val2));
 
         // while (!(list1.isEmpty() && list2.isEmpty())) {
         //     val1 = Integer.parseInt(strng1);
