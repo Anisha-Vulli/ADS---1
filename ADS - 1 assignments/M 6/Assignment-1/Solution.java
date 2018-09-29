@@ -1,8 +1,17 @@
+/**
+ * Scanner import.
+ */
 import java.util.Scanner;
-
-
+/**
+ * Class for solution.
+ */
 public class Solution {
-    public static void main(String[] args) {
+    /**
+     * Main function.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
         String p = sc.nextLine();
@@ -21,7 +30,11 @@ public class Solution {
                 LinkedList result = AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
                 System.out.println(AddLargeNumbers.digitsToNumber(result));
                 break;
+                default:
+                break;
         }
     }
-    
 }
+
+
+
