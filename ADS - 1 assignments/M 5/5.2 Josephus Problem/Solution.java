@@ -26,7 +26,7 @@ class Queue {
 
 	void enqueue (int item) {
 		Node obj = new Node(item);
-		if (head == null) {
+		if (size == 0) {
 			head = obj;
 			tail = obj;
 			size++;
