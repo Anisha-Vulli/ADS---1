@@ -1,15 +1,25 @@
+/**
+ * Scanner import.
+ */
 import java.util.Scanner;
-import java.util.Arrays;
-
-
+//import java.util.Arrays;
+/**
+ * Class for solution.
+ */
 class Solution {
-    public static void main(String[] args) {
+    /**
+     * Constructs the object.
+     */
+    Solution() {
+        //Empty constructor.
+    }
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         Queue qu = new Queue();
         int n = Integer.parseInt(sc.nextLine());
         while (sc.hasNext()) {
             String[] input = sc.nextLine().split(" ");
-            switch(input[0]) {
+            switch (input[0]) {
                 case "pushLeft":
                 qu.addfront(Integer.parseInt(input[1]));
                 System.out.println(qu.print());
