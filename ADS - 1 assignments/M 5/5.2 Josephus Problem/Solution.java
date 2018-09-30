@@ -5,6 +5,9 @@ import java.util.Scanner;
  * Class for Solution.
  */
 final public class Solution {
+    /**
+     * Constructs the object.
+     */
     private Solution() {
         //Empty constructor.
     }
