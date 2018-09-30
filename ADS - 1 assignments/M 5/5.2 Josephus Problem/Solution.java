@@ -1,8 +1,11 @@
 import java.util.Scanner;
 //import java.util.Arrays;
 
+/**
+ * Class for Solution.
+ */
 final public class Solution {
-    Solution() {
+    private Solution() {
         //Empty constructor.
     }
     /**
