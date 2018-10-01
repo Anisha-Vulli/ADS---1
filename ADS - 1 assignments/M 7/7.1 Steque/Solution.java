@@ -9,6 +9,11 @@ final class Solution {
     Solution() {
         //Empty constructor.
     }
+    /**
+     * Main function.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = Integer.parseInt(sc.nextLine());
