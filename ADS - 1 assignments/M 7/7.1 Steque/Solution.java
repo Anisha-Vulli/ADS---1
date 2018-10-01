@@ -51,7 +51,7 @@ class Steque {
             //tail = new Node();
             tail.data = item;
             tail.next = null;
-            System.out.println(tail.data);
+            //System.out.println(tail.data);
             head = tail;
         } else {
            Node oldTail = tail;
@@ -59,7 +59,7 @@ class Steque {
            tail.data = item;
            tail.next = null;
            oldTail.next = tail;
-           System.out.println(tail.data);
+           //System.out.println(tail.data);
         }
         size++;
     }
