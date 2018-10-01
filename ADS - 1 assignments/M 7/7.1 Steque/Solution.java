@@ -1,0 +1,120 @@
+import java.util.Scanner;
+
+class Node {
+    int data;
+    Node next;
+
+    Node() {
+
+    }
+
+    Node(int data1) {
+        this.data = data1;
+    }
+}
+
+class Steque {
+    private Node head;
+    private Node tail;
+    private int size;
+    Steque() {
+        head = new Node();
+        tail = new Node();
+        size = 0;
+    }
+
+    void push(int item) {
+        if (size == 0) {
+            Node val = head;
+            head = new Node();
+            head.data = item;
+            head.next = null;
+            tail = head;
+        }
+        Node val = head;
+        head = new Node();
+        head.data = item;
+        head.next = val;
+        size++;
+    }
+
+    void pop() {
+        size--;
+        head = head.next;
+        //System.out.println(size);
+    }
+
+    void enque(int item) {
+        System.out.println(size);
+        if (size == 0) {
+            //Node oldtail = tail;
+            //tail = new Node();
+            tail.data = item;
+            tail.next = null;
+            System.out.println(tail.data);
+            head = tail;
+        } else {
+           Node oldTail = tail;
+           tail = new Node();
+           tail.data = item;
+           tail.next = null;
+           oldTail.next = tail;
+           System.out.println(tail.data);
+        }
+        size++;
+    }
+    boolean isEmpty() {
+       if (size == 0) {
+           return true;
+       }
+       return false;
+    }
+
+    public String toString() {
+        //System.out.println("Size" + size);
+        if (size != 0) {
+            String str = "";
+            Node temp = head;
+            while (temp != null) {
+                str += temp.data + ", ";
+                // System.out.println(str);
+                temp = temp.next;
+            }
+            //return str;
+            return str.substring(0, str.length() - 2);
+        }
+        return "[]";
+    }
+        
+}
+
+class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = Integer.parseInt(sc.nextLine());
+        Steque sq = new Steque();
+        while (sc.hasNext()) {
+            String[] input = sc.nextLine().split(" ");
+            switch (input[0]) {
+                case "push":
+                sq.push(Integer.parseInt(input[1]));
+                System.out.println(sq);
+                break;
+                case "pop":
+                if (!sq.isEmpty()) {
+                    sq.pop();
+                    if (!sq.isEmpty()) {
+                        System.out.println(sq);    
+                    } else {
+                        System.out.println("Steque is empty.");
+                    }  
+                } 
+                break;
+                case "enqueue":
+                sq.enque(Integer.parseInt(input[1]));
+                System.out.println(sq);
+                break;
+            }
+        }
+    }
+}
