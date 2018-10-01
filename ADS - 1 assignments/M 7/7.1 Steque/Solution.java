@@ -24,17 +24,22 @@ class Steque {
     }
 
     void push(int item) {
+        //Node val = new Node(item);
         if (size == 0) {
-            Node val = head;
-            head = new Node();
+            //Node val = head;
+            //head = new Node();
             head.data = item;
             head.next = null;
             tail = head;
+            size++;
+            return;
+            //System.out.println(head.next);
+            //System.out.println(tail.next);
         }
-        Node val = head;
-        head = new Node();
-        head.data = item;
-        head.next = val;
+        Node val = new Node();
+        val.data = item;
+        val.next = head;
+        head = val;
         size++;
     }
 
@@ -45,7 +50,7 @@ class Steque {
     }
 
     void enque(int item) {
-        System.out.println(size);
+        //System.out.println(size);
         if (size == 0) {
             //Node oldtail = tail;
             //tail = new Node();
@@ -53,12 +58,14 @@ class Steque {
             tail.next = null;
             //System.out.println(tail.data);
             head = tail;
+            size++;
+            return;
         } else {
-           Node oldTail = tail;
-           tail = new Node();
-           tail.data = item;
-           tail.next = null;
-           oldTail.next = tail;
+           Node oldTail = new Node();
+           oldTail.data = item;
+           oldTail.next = null;
+           tail.next = oldTail;
+           tail = oldTail;
            //System.out.println(tail.data);
         }
         size++;
