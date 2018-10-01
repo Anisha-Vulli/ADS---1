@@ -101,7 +101,12 @@ class Solution {
         int n = Integer.parseInt(sc.nextLine());
         Steque sq = new Steque();
         while (sc.hasNext()) {
-            String[] input = sc.nextLine().split(" ");
+            String data = sc.nextLine();
+            if (data.equals("") || data.equals(null)) {
+                sq = new Steque();
+                System.out.println("");
+            } else {
+                String[] input = data.split(" ");
             switch (input[0]) {
                 case "push":
                 sq.push(Integer.parseInt(input[1]));
@@ -124,6 +129,7 @@ class Solution {
                 sq.enque(Integer.parseInt(input[1]));
                 System.out.println(sq);
                 break;
+            }
             }
         }
     }
