@@ -110,12 +110,15 @@ class Solution {
                 case "pop":
                 if (!sq.isEmpty()) {
                     sq.pop();
-                    if (!sq.isEmpty()) {
-                        System.out.println(sq);    
-                    } else {
-                        System.out.println("Steque is empty.");
-                    }  
-                } 
+                    System.out.println(sq);
+                    // if (!sq.isEmpty()) {
+                    //     System.out.println(sq);    
+                    // } else {
+                    //     System.out.println("Steque is empty.");
+                    // }  
+                } else {
+                    System.out.println("Steque is empty.");
+                }
                 break;
                 case "enqueue":
                 sq.enque(Integer.parseInt(input[1]));
