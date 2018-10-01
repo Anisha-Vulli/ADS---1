@@ -30,10 +30,10 @@ final class Solution {
                     sq.pop();
                     //System.out.println(sq);
                     if (!sq.isEmpty()) {
-                        System.out.println(sq);    
+                        System.out.println(sq);
                     } else {
                         System.out.println("Steque is empty.");
-                    }  
+                    }
                 } else {
                     System.out.println("Steque is empty.");
                 }
@@ -41,6 +41,8 @@ final class Solution {
                 case "enqueue":
                 sq.enque(Integer.parseInt(input[1]));
                 System.out.println(sq);
+                break;
+                default:
                 break;
             }
             }
