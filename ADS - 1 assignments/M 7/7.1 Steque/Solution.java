@@ -1,9 +1,15 @@
 import java.util.Scanner;
-
-
-
-class Solution {
-    public static void main(String[] args) {
+/**
+ * Class for solution.
+ */
+final class Solution {
+    /**
+     * Constructs the object.
+     */
+    Solution() {
+        //Empty constructor.
+    }
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = Integer.parseInt(sc.nextLine());
         Steque sq = new Steque();
