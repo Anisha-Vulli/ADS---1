@@ -20,8 +20,6 @@ class Sort{
 		teamarray = Arrays.copyOf(teamarray, 2 * teamcount);
 	}
 
-	
-
 	void exchange(Team[] teams, int i, int j) {
 		Team t = teams[j];
 		teams[j] = teams[i];
@@ -29,18 +27,10 @@ class Sort{
 	}
 
 	public String toString() {
-		//System.out.println("str");
 		String str = "";
-		//System.out.println(teamcount);
-		//System.out.println(teamarray[0]);
 		for (int i = 0; i< teamcount; i++) {
 			str += teamarray[i].name + ",";
 		}
-		// for (Team t : teamarray) {
-		// 	if (t != null) {
-		// 	    str += t + ", ";	
-		// 	}
-		// }
 		return str.substring(0, str.length() - 1);
 	}
 	void Selectionsort() {
