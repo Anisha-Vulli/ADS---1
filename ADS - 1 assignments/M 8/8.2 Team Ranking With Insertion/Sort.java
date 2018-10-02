@@ -79,7 +79,7 @@ class Sort{
 		
 		for (int i = 0; i < teamcount-1; i++) {
 			//int min = i;
-			for (int j = i + 1; j < teamcount; j++) {
+			for (int j = i + 1; j > 0; j--) {
 				if (less(teamarray, j - 1, j)) {
 				    exchange(teamarray, j - 1, j);		
 				}
