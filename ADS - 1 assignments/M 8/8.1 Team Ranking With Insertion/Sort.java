@@ -41,15 +41,14 @@ class Sort{
 		// 	    str += t + ", ";	
 		// 	}
 		// }
-		return str;
+		return str.substring(0, str.length() - 1);
 	}
 	void Selectionsort() {
 		
 		for (int i = 0; i < teamcount-1; i++) {
 			int min = i;
 			for (int j = i + 1; j < teamcount; j++) {
-				if(less(teamarray,j,min)){
-				//if (teamarray[j].compareTo(teamarray[min]) < 0){
+				if (less(teamarray, j, min)) {
 					min = j;
 				}
 			}
