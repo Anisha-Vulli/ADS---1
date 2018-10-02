@@ -67,12 +67,14 @@ class Sort{
 	}
 
 	/**
-	 * Selection sort.
+	 * Insertion sort.
 	 * 
 	 * The time complexity of this technique is N^2.
-	 * For each and every iteration the value is taken
-	 * The object is compared to the adjecent one checking if the value is 
-	 * lesser or not if less the exchange is happening.
+	 * The exchanges and comparisons are having N^2 complexity.
+	 * For each and every comparision there is an exchange based on the position
+	 * of value.
+	 * The worst case caluculation is when the array is reverse sorted type.
+	 * In this case the last value should take N iterations all the way to the beginning.
 	 * 
 	 */
 	void insertionSort() {
@@ -99,6 +101,6 @@ class Sort{
 	 */
 	boolean less(Team[] arr, int i , int j){
 
-		return arr[i].compareTo(arr[j]) < 0;
+		return arr[i].compareTo(arr[j]) > 0;
 	}
 }
