@@ -1,0 +1,10 @@
+Activity - 8:
+
+When all the keys in an array are identical then insertion sort is the best technique. In insertion sort number of comparison and number of exchanges are same. It first compares and then if the values are not assigned in ascending order it then checks for the smaller and bigger values in them and then exchanges them.
+So, in insertion sort the elements are checked and if the numbers are checked and if equal then no exchange takes place and the complexity of the sorting technique are changed to 1.
+Thus when all the elements are equal insertion sort is the best technique. 
+
+
+Activity - 9:
+
+When the elements are in reverse order it is better to use selection sort rather than insertion sort because, In every iteration of selection sort there is a part of the array which is sorted to the left side. We need not to see it in every iteration. But in insertion sort if the smaller element is at the end of the array. Then for every comparisons iteration it swaps with the element in the array into the spot until it is at the particular place where it should fit. Thus it will increase the complexity and number of iterations it should take place. 
