@@ -7,13 +7,13 @@ class Sort{
 	}
 
 	void addTeam(Team teamgiven) {
-		// try {
-		// 	teamarray[teamcount++] = teamgiven;
-		// 	return;
-		// } catch (Exception e) {
-		// 	resize();
-		// }
-		teamarray[teamcount++] = teamgiven;
+		try {
+			teamarray[teamcount++] = teamgiven;
+			return;
+		} catch (Exception e) {
+			resize();
+		}
+		//teamarray[teamcount++] = teamgiven;
 	}
 
 	void resize() {
