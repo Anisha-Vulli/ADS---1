@@ -13,7 +13,7 @@ class Sort{
 		} catch (Exception e) {
 			resize();
 		}
-		//teamarray[teamcount++] = teamgiven;
+		teamarray[teamcount++] = teamgiven;
 	}
 
 	void resize() {
