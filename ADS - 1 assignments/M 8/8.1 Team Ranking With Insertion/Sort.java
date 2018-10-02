@@ -31,10 +31,10 @@ class Sort{
 	public String toString() {
 		//System.out.println("str");
 		String str = "";
-		System.out.println(teamcount);
+		//System.out.println(teamcount);
 		//System.out.println(teamarray[0]);
 		for (int i = 0; i< teamcount; i++) {
-			System.out.println(teamarray[i]);
+			str += teamarray[i].name + ",";
 		}
 		// for (Team t : teamarray) {
 		// 	if (t != null) {
