@@ -43,7 +43,10 @@ class Linkedlist {
         return first;
     }
 
-    void reverse() {
+    void reverse() throws Exception{
+        if (size == 0) {
+            throw new Exception("No elements to reverse.");
+        }
         reverse(null, head);
     }
 
@@ -93,7 +96,7 @@ class Solution {
                     ll.reverse();
                     System.out.println(ll);
                 } catch (Exception e) {
-                    System.out.println("No elements to reverse.");
+                    System.out.println(e.getMessage());
                 }
                 break;
                 default:
