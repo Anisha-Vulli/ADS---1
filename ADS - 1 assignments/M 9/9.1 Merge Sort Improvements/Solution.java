@@ -1,67 +1,80 @@
 import java.util.Scanner;
-import java.util.Arrays;
 
-class Sort {
-	private int cutoff = 7;
-	int[] aux;
-	int[] array;
-	Sort() {
+class Merge {
+	int cutoff = 7;
+	Merge() {
 
 	}
 
 	void sort(int[] array) {
-		this.array = array;
-		aux = new int[array.length];
-		sort(array, 0, array.length - 1);
+		int[] aux = array.clone();
+		sort(aux, array, 0, array.length - 1);
 	}
 
-	void sort(int[] array, int low, int high) {
-		if (high <= low) {
+	void sort(int[] aux, int[] array, int low, int high) {
+		if (high < low + cutoff) {
+			insertionsort(aux, low, high);
+			System.out.println("Insertion sort method invoked...");
 			return;
 		}
 
 		int mid = low + (high - low) / 2;
-		sort(array, low, mid);
-		sort(array, mid + 1, high);
-		mergeSort(array, low, mid, high);
-	}
+		sort(aux, array, low, mid);
+		sort(aux, array, mid + 1, high);
+		if (!less(array[mid + 1], array[mid])) {
+			for (int i = low; i <= high; i++) {
+				aux[i] = array[i];
+			}
 
-	void mergeSort(int[] array, int low, int mid, int high) {
-		int i = low;
-		int j = mid + 1;
-		for (int k = 0; k <= high; k++) {
-			aux[k] = array[k];
+			System.out.println("Array is already sorted. So, skipped the call to merge...");
+			return;
 		}
 
+		merge(aux, array, low, mid, high);
+	}
+	
+	void merge(int[] aux, int[] array, int low, int mid, int high) {
+		int i = low;
+		int j = mid + 1;
 		for (int k = low; k <= high; k++) {
-			if (i > mid) {
-				array[k] = aux[j++];
-			}
+            if (i > mid) {
+                array[k] = aux[j++];
+            }
 
-			else if (j > high) {
-				array[k] = aux[i++];
-			}
+            else if (j > high) {
+                array[k] = aux[i++];
+            }
 
-			else if (less(aux[j], aux[i])) {
-				array[k] = aux[j++];
-			}
+            else if (less(aux[j], aux[i])) {
+                array[k] = aux[j++];
+            }
 
-			else {
-				array[k] = aux[i++];
+            else {
+                array[k] = aux[i++];
+            }
+        }
+	}
+
+	void insertionsort(int[] array, int low, int high) {
+		for (int i = low; i <= high; i++) {
+			for (int j = i; j > 0 && less(array[j], array[j - 1]); j++) {
+				exchange(array, j, j - 1);
 			}
 		}
 	}
 
 	public  boolean less(int i, int j) {
-		return j > i;
-	}
+        return j > i;
+    }
 
-	public String toString() {
-		System.out.println(Arrays.toString(array));
-		return "";
-	}
-
+    void exchange(int[] array, int i, int j) {
+    	int temp = array[i];
+    	array[i] = array[j];
+    	array[j] = temp; 
+    }
 }
+
+
 class Solution {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
