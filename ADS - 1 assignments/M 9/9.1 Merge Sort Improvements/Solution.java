@@ -33,7 +33,8 @@
 // 				aux[i] = array[i];
 // 			}
 
-// 			System.out.println("Array is already sorted. So, skipped the call to merge...");
+// 			System.out.println("Array is already sorted.
+// 			So, skipped the call to merge...");
 // 			return aux;
 // 		}
 
@@ -65,7 +66,8 @@
 
 // 	int[] insertionsort(int[] array, int low, int high) {
 // 		for (int i = low; i <= high; i++) {
-// 			for (int j = i; j > 0 && less(array[j], array[j - 1]); j--) {
+// 			for (int j = i; j > 0 && less(array[j],
+// 			array[j - 1]); j--) {
 // 				exchange(array, j, j - 1);
 // 			}
 // 		}
