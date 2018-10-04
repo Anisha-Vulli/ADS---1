@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 class Merge {
+	int[] array;
 	int cutoff = 7;
 	Merge() {
 
@@ -71,6 +72,16 @@ class Merge {
     	int temp = array[i];
     	array[i] = array[j];
     	array[j] = temp; 
+    }
+
+    public String toString() {
+        String str = "[";
+        int i;
+        for (i = 0; i < array.length - 1; i++) {
+            str += array[i] + ", ";
+        }
+        str += array[i] + "]";
+        return str;
     }
 }
 
