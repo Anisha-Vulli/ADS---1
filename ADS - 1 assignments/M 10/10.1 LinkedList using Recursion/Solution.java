@@ -1,7 +1,14 @@
 import java.util.Scanner;
-
+/**
+ * Class for solution.
+ */
 class Solution {
-    public static void main(String[] args) {
+    /**
+     * Main function.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
          Linkedlist ll = new Linkedlist();
         while (sc.hasNext()) {
@@ -29,3 +36,6 @@ class Solution {
         }
     }
 }
+
+
+

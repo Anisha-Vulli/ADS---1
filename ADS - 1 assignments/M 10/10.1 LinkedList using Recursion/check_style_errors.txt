@@ -1,8 +1,4 @@
 Starting audit...
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 10\10.1 LinkedList using Recursion\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 10\10.1 LinkedList using Recursion\Solution.java:3: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 10\10.1 LinkedList using Recursion\Solution.java:3:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 10\10.1 LinkedList using Recursion\Solution.java:4:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 10\10.1 LinkedList using Recursion\Solution.java:4:29: Parameter args should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 10\10.1 LinkedList using Recursion\Solution.java:5:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 1 errors.
