@@ -23,20 +23,23 @@ class Linkedlist {
     }
 
     void insertAt(int pos, String data) throws Exception{
+        //System.out.println("Pakodi");
         Node newNode = new Node(data);
+        //System.out.println(newNode.data);
         if (pos < 0 || pos > size) {
             throw new Exception("Can't insert at this position.");
         }
-        head = insertAt(pos, head, newNode, 0);   
+        head = insertAt(pos, head, newNode, 0);
+            //System.out.println(head.data);
     }
 
     Node insertAt(int pos, Node first, Node obj, int count) {
         if (pos == count) {
             obj.next = first;
+            size++;
             return obj;
         }
-
-        first.next = insertAt(pos, first.next, obj, count++);
+        first.next = insertAt(pos, first.next, obj, ++count);
         return first;
     }
 
@@ -54,10 +57,10 @@ class Linkedlist {
     }
 
     public String toString() {
+        //System.out.println(size);
         if (size != 0) {
             String str = "";
             Node temp = head;
-
             while (temp != null) {
                 str += temp.data + ", ";
                 // System.out.println(str);
@@ -73,14 +76,14 @@ class Linkedlist {
 class Solution {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+         Linkedlist ll = new Linkedlist();
         while (sc.hasNext()) {
             String[] input = sc.nextLine().split(" ");
-            Linkedlist ll = new Linkedlist();
             switch (input[0]) {
                 case "insertAt":
                 try {
                     ll.insertAt(Integer.parseInt(input[1]), input[2]);
-                    System.out.println(ll);;
+                    System.out.println(ll);
                 } catch (Exception e) {
                     System.out.println(e.getMessage());
                 }
