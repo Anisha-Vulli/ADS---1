@@ -8,6 +8,7 @@ Your Output:
 []
 []
 Can't insert at this position.
+[]
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -28,6 +29,7 @@ Your Output:
 []
 []
 Can't insert at this position.
+[]
 Can't insert at this position.
 Can't insert at this position.
 Can't insert at this position.
@@ -36,10 +38,11 @@ Can't insert at this position.
 []
 Can't insert at this position.
 Can't insert at this position.
+[]
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
 No elements to reverse.
 Your Output: 
-
+[]
 ----------------------------------------

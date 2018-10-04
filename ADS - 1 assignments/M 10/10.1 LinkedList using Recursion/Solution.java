@@ -23,35 +23,6 @@ class Linkedlist {
     }
 
     void insertAt(int pos, String data) throws Exception{
-        
-        // if (pos == 0) {
-        //     //newNode.data = data;
-        //     newNode.next = head;
-        //     head = newNode;
-        //     size++;
-        //     return;
-        // }
-        // 
-        // if (size++ == 0) {
-        //     head.data = data;
-        //     return;
-        // }
-
-        // Node previous = null;
-        // Node temp = head;
-        // int count = 0;
-        // while (temp != null) {
-        //     if (count == pos) {
-        //         previous.next = newNode;
-        //         newNode.next = temp;
-        //         size++;
-        //         return;
-        //     }
-        //     previous = temp;
-        //     temp = temp.next;
-        //     count++;
-        // }
-        
         Node newNode = new Node(data);
         if (pos < 0 || pos > size) {
             throw new Exception("Can't insert at this position.");
@@ -115,7 +86,12 @@ class Solution {
                 }
                 break;
                 case "reverse":
-                ll.reverse();
+                try {
+                    ll.reverse();
+                    System.out.println(ll);
+                } catch (Exception e) {
+                    System.out.println("No elements to reverse.");
+                }
                 break;
                 default:
                 break;
