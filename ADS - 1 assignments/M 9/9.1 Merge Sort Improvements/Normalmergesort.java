@@ -75,7 +75,7 @@ class Normalmergesort {
             //System.out.println(Arrays.toString(intarr));
             Sort s = new Sort();
             s.sort(srcarr);
-            System.out.println(s);
+            //System.out.println(s);
         }
     }
 }
