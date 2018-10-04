@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+import java.util.Arrays;
 class Merge {
 	int[] array;
 	int cutoff = 7;
@@ -7,31 +7,38 @@ class Merge {
 
 	}
 
-	void sort(int[] array) {
-		int[] aux = array.clone();
-		sort(aux, array, 0, array.length - 1);
+	public void sort(int[] array1) {
+		//System.out.println("WAHHH");
+		int[] aux = array1.clone();
+		array = array1;
+		//System.out.println(Arrays.toString(aux));
+		array = sort(aux, array, 0, array.length - 1);
+		//System.out.println(";;;");
+		//return;
 	}
 
-	void sort(int[] aux, int[] array, int low, int high) {
+	private int[] sort(int[] aux, int[] array, int low, int high) {
+		//System.out.println("WAHHH");
 		if (high < low + cutoff) {
-			insertionsort(aux, low, high);
+			array = insertionsort(aux, low, high);
 			System.out.println("Insertion sort method invoked...");
-			return;
+			return array;
 		}
 
 		int mid = low + (high - low) / 2;
-		sort(aux, array, low, mid);
-		sort(aux, array, mid + 1, high);
+		array = sort(aux, array, low, mid);
+		array = sort(aux, array, mid + 1, high);
 		if (!less(array[mid + 1], array[mid])) {
 			for (int i = low; i <= high; i++) {
 				aux[i] = array[i];
 			}
 
 			System.out.println("Array is already sorted. So, skipped the call to merge...");
-			return;
+			return aux;
 		}
 
 		merge(aux, array, low, mid, high);
+		return array;
 	}
 	
 	void merge(int[] aux, int[] array, int low, int mid, int high) {
@@ -56,12 +63,13 @@ class Merge {
         }
 	}
 
-	void insertionsort(int[] array, int low, int high) {
+	int[] insertionsort(int[] array, int low, int high) {
 		for (int i = low; i <= high; i++) {
-			for (int j = i; j > 0 && less(array[j], array[j - 1]); j++) {
+			for (int j = i; j > 0 && less(array[j], array[j - 1]); j--) {
 				exchange(array, j, j - 1);
 			}
 		}
+		return array;
 	}
 
 	public  boolean less(int i, int j) {
@@ -76,8 +84,12 @@ class Merge {
 
     public String toString() {
         String str = "[";
+        //System.out.println(Arrays.toString(array));
         int i;
+        //System.out.println(array.length);
+        //int i =
         for (i = 0; i < array.length - 1; i++) {
+        	//System.out.println(array[i]);
             str += array[i] + ", ";
         }
         str += array[i] + "]";
@@ -89,8 +101,9 @@ class Merge {
 class Solution {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		Sort s = new Sort();
+		//Merge s = new Merge();
 		while (sc.hasNext()) {
+			Merge s = new Merge();
 			String[] inputarr = sc.nextLine().split(",");
 			
 			int[] srcarr = new int[inputarr.length];
