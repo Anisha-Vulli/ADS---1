@@ -1,11 +1,2 @@
 Starting audit...
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 9\9.1 Merge Sort Improvements\Solution.java:4:4: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 9\9.1 Merge Sort Improvements\Solution.java:44: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 9\9.1 Merge Sort Improvements\Solution.java:84: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 9\9.1 Merge Sort Improvements\Solution.java:110: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 9\9.1 Merge Sort Improvements\Solution.java:116: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 9\9.1 Merge Sort Improvements\Solution.java:122: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 9\9.1 Merge Sort Improvements\Solution.java:123: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 9\9.1 Merge Sort Improvements\Solution.java:124: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 8 errors.
