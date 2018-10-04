@@ -49,6 +49,7 @@ Starting audit...
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 9\9.1 Merge Sort Improvements\Solution.java:89:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 9\9.1 Merge Sort Improvements\Solution.java:90:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 9\9.1 Merge Sort Improvements\Solution.java:90:33: Parameter args should be final. [FinalParameters]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 9\9.1 Merge Sort Improvements\Solution.java:94: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 9\9.1 Merge Sort Improvements\Solution.java:95: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 9\9.1 Merge Sort Improvements\Solution.java:101: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 51 errors.
+Checkstyle ends with 52 errors.

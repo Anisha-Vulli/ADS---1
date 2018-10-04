@@ -89,6 +89,7 @@ class Merge {
 class Solution {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+		Sort s = new Sort();
 		while (sc.hasNext()) {
 			String[] inputarr = sc.nextLine().split(",");
 			
@@ -97,7 +98,7 @@ class Solution {
 				srcarr[i] = Integer.parseInt(inputarr[i]);
 			}
 			//System.out.println(Arrays.toString(intarr));
-			Sort s = new Sort();
+			
 			s.sort(srcarr);
 			System.out.println(s);
 		}
