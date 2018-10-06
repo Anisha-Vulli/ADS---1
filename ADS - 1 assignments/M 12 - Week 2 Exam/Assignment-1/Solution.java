@@ -1,7 +1,28 @@
+/**
+ * Scanner import.
+ */
 import java.util.Scanner;
+/**
+ * Arrays import.
+ */
 import java.util.Arrays;
+/**
+ * Class for solution.
+ */
 class Solution {
-    
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        //Empty constructor.
+    }
+    /**
+     * Creates a stu.
+     *
+     * @param      studentdet  The studentdet
+     *
+     * @return     { New student object }
+     */
     public static Student createStu(final String[] studentdet) {
         String name = studentdet[0];
         String dob = studentdet[1];
@@ -13,7 +34,11 @@ class Solution {
         return new Student(name, dob, marks1, marks2, marks3, total, cate);
     }
     
-
+    /**
+     * Main function.
+     *
+     * @param      args  The arguments
+     */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Sort s = new Sort();
