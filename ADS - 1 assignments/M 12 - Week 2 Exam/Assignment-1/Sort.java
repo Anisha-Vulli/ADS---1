@@ -104,7 +104,7 @@ class Sort {
             }
         }
 
-        System.out.println(vacant);
+        //System.out.println(vacant);
         for (int i = 0; i < stucount && vacant > 0; i++) {
             if (stuarray[i].cat.equals("Open") && open > 0) {
                 addseats(stuarray[i]);
