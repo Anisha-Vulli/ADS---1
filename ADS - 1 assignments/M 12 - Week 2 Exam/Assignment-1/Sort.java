@@ -1,53 +1,60 @@
 import java.util.Arrays;
 
 class Sort {
-	public Student[] stuarray = new Student[10];
-	int stucount;
+    public Student[] stuarray = new Student[30];
+    int stucount;
 
-	Sort() {
-		stucount = 0;
-	}
+    Sort() {
+        stucount = 0;
+    }
 
-	void addStudent(Student stugiven) {
-		try {
-			stuarray[stucount++] = stugiven;
-			return;
-		} catch (Exception e) {
-			resize();
-		}
-		stuarray[stucount++] = stugiven;
-	}
+    void addStudent(Student stugiven) {
 
-	void resize() {
-		stuarray = Arrays.copyOf(stuarray, 2 * stucount);
-	}
+        // if (stucount == 10) {
+        //  resize();
+        // }
+        // stuarray[stucount] = stugiven;
+        // stucount++;
+        try {
+            stuarray[stucount++] = stugiven;
+            return;
+        } catch (Exception e) {
+            resize();
+            //stuarray[stucount++] = stugiven;
+        }
+        stuarray[stucount++] = stugiven;
+    }
 
-	void selectionSort() {
-		for (int i = 0; i < stucount; i++) {
-			int min = i;
-			for (int j = i + 1; j < stucount; j++) {
-				if (less(stuarray, j, min)) {
-					min = j;
-				}
-			}
-			exchange(stuarray, i, min);
-		}
-	}
+    void resize() {
+        stuarray = Arrays.copyOf(stuarray, 2 * stucount);
+    }
 
-	void exchange(Student[] array, int i, int j) {
-		Student stu = array[j];
-		array[j] = array[i];
-		array[i] = stu;
-	}
+    void selectionSort() {
+        for (int i = 0; i < stucount; i++) {
+            int min = i;
+            for (int j = i + 1; j < stucount; j++) {
+                if (less(stuarray, j, min)) {
+                    min = j;
+                }
+            }
+            exchange(stuarray, i, min);
+        }
+    }
 
-	boolean less(Student[] array, int i, int j) {
-		return array[i].compareTo(array[j]) > 0;
-	}
+    void exchange(Student[] array, int i, int j) {
+        Student stu = array[j];
+        array[j] = array[i];
+        array[i] = stu;
+    }
 
-	public String toString() {
-		for (int i = 0; i < stucount; i++) {
-			System.out.println(stuarray[i]);
-		}
-		return "";
-	}
+    boolean less(Student[] array, int i, int j) {
+        return array[i].compareTo(array[j]) > 0;
+    }
+
+    public String toString() {
+        for (int i = 0; i < stucount; i++) {
+            System.out.println(stuarray[i]);
+        }
+        return "";
+    }
 }
