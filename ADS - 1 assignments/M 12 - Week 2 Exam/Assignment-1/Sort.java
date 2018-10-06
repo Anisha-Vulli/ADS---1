@@ -89,29 +89,27 @@ class Sort {
                 vacant--;
             }
 
-            else if (stuarray[j].cat.equals("SC") && sc > 0) {
-                addseats(stuarray[j]);
-                allcount++;
-                sc--;
-                vacant--;
-            }
-
-            else if (stuarray[j].cat.equals("ST") && st > 0) {
+            if (stuarray[j].cat.equals("ST") && st > 0) {
                 addseats(stuarray[j]);
                 allcount++;
                 st--;
+                vacant--;
+            }
+            
+            if (stuarray[j].cat.equals("SC") && sc > 0) {
+                addseats(stuarray[j]);
+                allcount++;
+                sc--;
                 vacant--;
             }
         }
 
         //System.out.println(vacant);
         for (int i = 0; i < stucount && open > 0 && vacant > 0; i++) {
-            if (stuarray[i].cat.equals("Open") && open > 0) {
-                addseats(stuarray[i]);
-                open--;
-                allcount++;
-                vacant--;   
-            }
+            addseats(stuarray[i]);
+            open--;
+            allcount++;
+            vacant--;   
         }
         //System.out.println("SWALLA");
         // int allcount = 0;
