@@ -69,9 +69,9 @@ class Sort {
     }
 
     public String toString() {
-        // for (int i = 0; i < stucount; i++) {
-        //     System.out.println(stuarray[i]);
-        // }
+        for (int i = 0; i < stucount; i++) {
+            System.out.println(stuarray[i]);
+        }
         System.out.println();
         for (int j = 0; j < seatscount; j++) {
             System.out.println(seatsarray[j]);
@@ -79,62 +79,38 @@ class Sort {
         return "";
     }
 
-    public void seats(int vacant, int unrev, int bcvac, int scvac, int stvac) {
+    public void seats(int vacant, int open, int bc, int sc, int st) {
         //System.out.println("SWALLA");
-        int reserve = bcvac + scvac + stvac;
+        //int reserve = bcvac + scvac + stvac;
         //System.out.println(reserve);
-        int recount = 0;
         int allcount = 0;
-        int ucount = 0;
-        int bcount = 0;
-        int sccount = 0;
-        int stcount = 0;
-        for (int i = 0; i < stucount; i++) {
-            if (allcount == vacant) {
-                break;
+        for (int i = 0; i < stucount && open > 0 && vacant >0; i++) {
+            addseats(stuarray[i]);
+            open--;
+            allcount++;
+            vacant--;
+        }
+
+        for (int j = 0; j < stucount && vacant > 0; j++) {
+            if (stuarray[j].cat.equals("BC") && bc > 0) {
+                addseats(stuarray[j]);
+                allcount++;
+                bc--;
+                vacant--;
             }
 
-            if (reserve <= allcount && recount != reserve) {
-                if (stuarray[i].cat.equals("ST") || stuarray[i].cat.equals("SC") || stuarray[i].cat.equals("BC") || stuarray[i].cat.equals("Open")) {
-                    addseats(stuarray[i]);
-                    recount++;
-                }
+            if (stuarray[j].cat.equals("SC") && sc > 0) {
+                addseats(stuarray[j]);
                 allcount++;
+                sc--;
+                vacant--;
             }
-            // if (stcount != stvac) {
-            //     //System.out.println("ST");
-            //     if (stuarray[i].cat.equals("ST")) {
-            //         addseats(stuarray[i]);
-            //         stcount++;
-            //     }
-            //     allcount++;
-            // }
 
-            // if (sccount != scvac) {
-            //     System.out.println("SC");
-            //     if (stuarray[i].cat.equals("SC")) {
-            //         addseats(stuarray[i]);
-            //         sccount++;
-            //     }
-            //     allcount++;
-            // }
-
-            // if (bcount != bcvac) {
-            //     System.out.println("BC");
-            //     if (stuarray[i].cat.equals("BC")) {
-            //         addseats(stuarray[i]);
-            //         bcount++;
-            //     }
-            //     allcount++;
-            // }
-
-            if (ucount != unrev) {
-                //System.out.println("Open");
-                if (stuarray[i].cat.equals("Open")) {
-                    addseats(stuarray[i]);
-                    ucount++;
-                }
+            if (stuarray[j].cat.equals("ST") && st > 0) {
+                addseats(stuarray[j]);
                 allcount++;
+                st--;
+                vacant--;
             }
         }
     }
