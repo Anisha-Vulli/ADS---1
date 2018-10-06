@@ -98,7 +98,7 @@ class Sort {
                 }
             }
 
-            if (sccount != scvac) {
+            else if (sccount != scvac) {
                 if (stuarray[i].cat.equals("SC")) {
                     addseats(stuarray[i]);
                     sccount++;
@@ -106,7 +106,7 @@ class Sort {
                 }
             }
 
-            if (bcount != bcvac) {
+            else if (bcount != bcvac) {
                 if (stuarray[i].cat.equals("BC")) {
                     addseats(stuarray[i]);
                     bcount++;
@@ -114,7 +114,7 @@ class Sort {
                 }
             }
 
-            if (ucount != unrev) {
+            else if (ucount != unrev) {
                 if (stuarray[i].cat.equals("Open")) {
                     addseats(stuarray[i]);
                     ucount++;
