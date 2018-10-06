@@ -30,6 +30,7 @@ class Solution {
         }
 
         s.selectionSort();
+        s.seats(vacant, unrev, bcvac, scvac, stvac);
         System.out.println(s);
     }
 }
