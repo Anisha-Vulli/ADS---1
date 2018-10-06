@@ -90,18 +90,10 @@ class Sort {
             if (allcount == vacant) {
                 break;
             }
-            if (ucount++ != unrev) {
-                if (stuarray[i].cat.equals("Open")) {
+            if (stcount++ != stvac) {
+                if (stuarray[i].cat.equals("ST")) {
                     addseats(stuarray[i]);
-                    //ucount++;
-                    allcount++;
-                }
-            }
-
-            if (bcount++ != bcvac) {
-                if (stuarray[i].cat.equals("BC")) {
-                    addseats(stuarray[i]);
-                    //bcount++;
+                    //stcount++;
                     allcount++;
                 }
             }
@@ -114,10 +106,18 @@ class Sort {
                 }
             }
 
-            if (stcount++ != stvac) {
-                if (stuarray[i].cat.equals("ST")) {
+            if (bcount++ != bcvac) {
+                if (stuarray[i].cat.equals("BC")) {
                     addseats(stuarray[i]);
-                    //stcount++;
+                    //bcount++;
+                    allcount++;
+                }
+            }
+            
+            if (ucount++ != unrev) {
+                if (stuarray[i].cat.equals("Open")) {
+                    addseats(stuarray[i]);
+                    //ucount++;
                     allcount++;
                 }
             }
