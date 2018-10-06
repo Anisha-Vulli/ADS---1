@@ -79,52 +79,85 @@ class Sort {
         return "";
     }
 
-    public void seats(int vacant, int unrev, int bcvac, int scvac, int stvac) {
-        //System.out.println("SWALLA");
+    public void seats(int vacant, int open, int bc, int sc, int st) {
         int allcount = 0;
-        int ucount = 0;
-        int bcount = 0;
-        int sccount = 0;
-        int stcount = 0;
-        for (int i = 0; i < stucount; i++) {
-            if (allcount == vacant) {
-                break;
-            }
-            if (stcount != stvac) {
-                //System.out.println("ST");
-                if (stuarray[i].cat.equals("ST")) {
-                    addseats(stuarray[i]);
-                    allcount++;
-                    stcount++;
-                }
+        for (int j = 0; j < stucount && vacant > 0; j++) {
+            if (stuarray[j].cat.equals("BC") || bc > 0) {
+                addseats(stuarray[j]);
+                allcount++;
+                bc--;
+                vacant--;
             }
 
-            if (sccount != scvac) {
-                //System.out.println("SC");
-                if (stuarray[i].cat.equals("SC")) {
-                    addseats(stuarray[i]);
-                    allcount++;
-                    sccount++;
-                }
+            else if (stuarray[j].cat.equals("SC") || sc > 0) {
+                addseats(stuarray[j]);
+                allcount++;
+                sc--;
+                vacant--;
             }
 
-            if (bcount != bcvac) {
-                //System.out.println("BC");
-                if (stuarray[i].cat.equals("BC")) {
-                    addseats(stuarray[i]);
-                    allcount++;
-                    bcount++;
-                }
-            }
-
-            if (ucount != unrev) {
-                //System.out.println("Open");
-                if (stuarray[i].cat.equals("Open")) {
-                    addseats(stuarray[i]);
-                    allcount++;
-                    ucount++;
-                }
+            else if (stuarray[j].cat.equals("ST") || st > 0) {
+                addseats(stuarray[j]);
+                allcount++;
+                st--;
+                vacant--;
             }
         }
+
+        System.out.println(vacant);
+        for (int i = 0; i < stucount && vacant > 0; i++) {
+            if (stuarray[i].cat.equals("Open") && open > 0) {
+                addseats(stuarray[i]);
+                open--;
+                allcount++;
+                vacant--;   
+            }
+        }
+        //System.out.println("SWALLA");
+        // int allcount = 0;
+        // int ucount = 0;
+        // int bcount = 0;
+        // int sccount = 0;
+        // int stcount = 0;
+        // for (int i = 0; i < stucount; i++) {
+        //     if (allcount == vacant) {
+        //         break;
+        //     }
+        //     if (stcount != stvac) {
+        //         //System.out.println("ST");
+        //         if (stuarray[i].cat.equals("ST")) {
+        //             addseats(stuarray[i]);
+        //             allcount++;
+        //             stcount++;
+        //         }
+        //     }
+
+        //     if (sccount != scvac) {
+        //         //System.out.println("SC");
+        //         if (stuarray[i].cat.equals("SC")) {
+        //             addseats(stuarray[i]);
+        //             allcount++;
+        //             sccount++;
+        //         }
+        //     }
+
+        //     if (bcount != bcvac) {
+        //         //System.out.println("BC");
+        //         if (stuarray[i].cat.equals("BC")) {
+        //             addseats(stuarray[i]);
+        //             allcount++;
+        //             bcount++;
+        //         }
+        //     }
+
+        //     if (ucount != unrev) {
+        //         //System.out.println("Open");
+        //         if (stuarray[i].cat.equals("Open")) {
+        //             addseats(stuarray[i]);
+        //             allcount++;
+        //             ucount++;
+        //         }
+        //     }
+        // }
     }
 }
