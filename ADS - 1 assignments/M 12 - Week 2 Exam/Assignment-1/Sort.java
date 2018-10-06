@@ -69,9 +69,9 @@ class Sort {
     }
 
     public String toString() {
-        // for (int i = 0; i < stucount; i++) {
-        //     System.out.println(stuarray[i]);
-        // }
+        for (int i = 0; i < stucount; i++) {
+            System.out.println(stuarray[i]);
+        }
         System.out.println();
         for (int j = 0; j < seatscount; j++) {
             System.out.println(seatsarray[j]);
@@ -91,7 +91,7 @@ class Sort {
                 break;
             }
             if (stcount != stvac) {
-                System.out.println("ST");
+                //System.out.println("ST");
                 if (stuarray[i].cat.equals("ST")) {
                     addseats(stuarray[i]);
                     allcount++;
@@ -100,7 +100,7 @@ class Sort {
             }
 
             if (sccount != scvac) {
-                System.out.println("SC");
+                //System.out.println("SC");
                 if (stuarray[i].cat.equals("SC")) {
                     addseats(stuarray[i]);
                     allcount++;
@@ -109,7 +109,7 @@ class Sort {
             }
 
             if (bcount != bcvac) {
-                System.out.println("BC");
+                //System.out.println("BC");
                 if (stuarray[i].cat.equals("BC")) {
                     addseats(stuarray[i]);
                     allcount++;
@@ -118,7 +118,7 @@ class Sort {
             }
 
             if (ucount != unrev) {
-                System.out.println("Open");
+                //System.out.println("Open");
                 if (stuarray[i].cat.equals("Open")) {
                     addseats(stuarray[i]);
                     allcount++;
