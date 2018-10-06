@@ -90,34 +90,34 @@ class Sort {
             if (allcount == vacant) {
                 break;
             }
-            if (stcount++ != stvac) {
+            if (stcount != stvac) {
                 if (stuarray[i].cat.equals("ST")) {
                     addseats(stuarray[i]);
-                    //stcount++;
+                    stcount++;
                     allcount++;
                 }
             }
 
-            if (sccount++ != scvac) {
+            if (sccount != scvac) {
                 if (stuarray[i].cat.equals("SC")) {
                     addseats(stuarray[i]);
-                    //sccount++;
+                    sccount++;
                     allcount++;
                 }
             }
 
-            if (bcount++ != bcvac) {
+            if (bcount != bcvac) {
                 if (stuarray[i].cat.equals("BC")) {
                     addseats(stuarray[i]);
-                    //bcount++;
+                    bcount++;
                     allcount++;
                 }
             }
-            
-            if (ucount++ != unrev) {
+
+            if (ucount != unrev) {
                 if (stuarray[i].cat.equals("Open")) {
                     addseats(stuarray[i]);
-                    //ucount++;
+                    ucount++;
                     allcount++;
                 }
             }
