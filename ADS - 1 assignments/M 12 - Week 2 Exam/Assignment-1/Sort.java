@@ -82,7 +82,7 @@ class Sort {
     public void seats(int vacant, int open, int bc, int sc, int st) {
         int allcount = 0;
         for (int j = 0; j < stucount && vacant >= 0; j++) {
-            if (stuarray[j].cat.equals("BC") || bc > 0) {
+            if (stuarray[j].cat.equals("BC") && bc > 0) {
                 addseats(stuarray[j]);
                 allcount++;
                 bc--;
@@ -105,7 +105,7 @@ class Sort {
         }
 
         //System.out.println(vacant);
-        for (int i = 0; i < stucount && vacant >= 0; i++) {
+        for (int i = 0; i < stucount && vacant > 0; i++) {
             if (stuarray[i].cat.equals("Open") && open > 0) {
                 addseats(stuarray[i]);
                 open--;
