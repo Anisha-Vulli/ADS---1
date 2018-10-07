@@ -21,7 +21,8 @@ class Sort {
 	 *
 	 * @return     { value. }
 	 */
-	public int partition(Comparable[] array, int low, int high) {
+	public int partition(final Comparable[] array,
+		final int low, final int high) {
 		int i = low;
 		int j = high + 1;
 		while (true) {
@@ -60,7 +61,8 @@ class Sort {
 	 * @param      cutoff  The cutoff
 	 */
 
-	public void quickSort(Comparable[] array, int low, int high, int cutoff) {
+	public void quickSort(final Comparable[] array,
+		final int low, final int high, final int cutoff) {
 		if (high <= low + cutoff - 1) {
 			insertionSort(array, low, high);
 			System.out.println("insertionSort called");
@@ -80,7 +82,8 @@ class Sort {
 	 * @param      array   The array
 	 * @param      cutoff  The cutoff
 	 */
-	public void quickSort(Comparable[] array, int cutoff) {
+	public void quickSort(final Comparable[] array,
+		final int cutoff) {
 		quickSort(array, 0, array.length - 1, cutoff);
 	}
 
@@ -93,9 +96,11 @@ class Sort {
 	 * @param      low    The low
 	 * @param      high   The high
 	 */
-	public void insertionSort(Comparable[] array, int low, int high) {
+	public void insertionSort(final Comparable[] array,
+		final int low, final int high) {
 		for (int i = low; i <= high; i++) {
-			for (int j = i; j > low && less(array[j], array[j - 1]); j--) {
+			for (int j = i; j > low
+				&& less(array[j], array[j - 1]); j--) {
 				exchange(array, j, j - 1);
 			}
 		}
@@ -111,7 +116,8 @@ class Sort {
 	 * @param      i      { parameter_description }
 	 * @param      j      { parameter_description }
 	 */
-	public void exchange(Comparable[] array, int i, int j) {
+	public void exchange(final Comparable[] array,
+		final int i, final int j) {
 		Comparable swap = array[i];
 		array[i] = array[j];
 		array[j] = swap;
@@ -125,7 +131,7 @@ class Sort {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public boolean less(Comparable a, Comparable b) {
+	public boolean less(final Comparable a, final Comparable b) {
 		return a.compareTo(b) < 0;
 	}
 
@@ -136,7 +142,7 @@ class Sort {
 	 *
 	 * @return     String representation of the object.
 	 */
-	public Object toString(Object[] a) {
+	public Object toString(final Object[] a) {
 		String s = "[";
 		int i;
 		for (i = 0; i < a.length - 1; i++) {
