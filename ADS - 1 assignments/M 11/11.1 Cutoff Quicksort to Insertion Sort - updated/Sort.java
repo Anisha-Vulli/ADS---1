@@ -49,7 +49,7 @@ class Sort {
 
 	public void insertionSort(Comparable[] array, int low, int high) {
 		for (int i = 0; i < array.length; i++) {
-			for (int j = i; j > low && less(array[j], array[j + 1]); j--) {
+			for (int j = i; j > low && less(array[j], array[j - 1]); j--) {
 				exchange(array, j, j - 1);
 			}
 		}
