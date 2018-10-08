@@ -30,7 +30,7 @@ class Minpq<Key extends Comparable<Key>> {
      *
      * @param      array  The array
      */
-    Minpq(Comparable[] array) {
+    Minpq(final Comparable[] array) {
         this.pq = (Key[]) array;
         this.n = array.length;
     }
