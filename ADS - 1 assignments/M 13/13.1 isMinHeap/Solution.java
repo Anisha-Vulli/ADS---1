@@ -1,38 +1,81 @@
+/**
+ * Scanner import.
+ */
 import java.util.Scanner;
+/**
+ * Arrays import.
+ */
 import java.util.Arrays;
+/**
+ * Class for minpq.
+ *
+ * @param      <Key>  The key
+ */
 class Minpq<Key extends Comparable<Key>> {
     private Key[] pq;
     private int n;
-
+    /**
+     * Constructs the object.
+     */
     public Minpq() {
         
     }
-
+    /**
+     * Constructs the object.
+     *
+     * @param      array  The array
+     */
     public Minpq(Comparable[] array) {
         this.pq = (Key[]) array;
         this.n = array.length;
     }
-    
+    /**
+     * Constructs the object.
+     *
+     * @param      capacity  The capacity
+     */
     public Minpq(int capacity) {
         pq = (Key[]) new Comparable[capacity + 1];
         this.n = capacity;
     }
-
+    /**
+     * Determines if empty.
+     *
+     * @return     True if empty, False otherwise.
+     */
     public boolean isEmpty() {
         return n == 0;
     }
-
+    /**
+     * Inserting a value into the array.
+     *
+     * @param      x     { No return }
+     */
     public void insert(Key x) {
         pq[++n] = x;
         //swim(n);
     }
 
+    /**
+     * Less function compares the two values.
+     *
+     * @param      i     { i value }
+     * @param      j     { j value }
+     *
+     * @return     { int value }
+     */
     public boolean less(Key i, Key j) {
 
         return i.compareTo(j) >= 0;
     }
 
-
+    /**
+     * Checks if the array is min array or not.
+     * The complexity of loop is N/2.
+     * Each child is compared the parent.
+     *
+     * @return     { boolean value.}
+     */
     public boolean check() {
         int k = n - 1;
         //System.out.println(k);
@@ -49,10 +92,22 @@ class Minpq<Key extends Comparable<Key>> {
 
     // public int compareTo()
 }
+
+/**
+ * Solution class.
+ */
 final class Solution {
+    /**
+     * Constructs the object.
+     */
     Solution() {
         //Empty constructor.
     }
+    /**
+     * String array convertion and sending to check.
+     *
+     * @param      sc    The screen
+     */
     public static void stringArray(final Scanner sc) {
         Minpq<String> s = new Minpq<String>();
         int noOflines = Integer.parseInt(sc.nextLine());
@@ -64,6 +119,11 @@ final class Solution {
         }
 
     }
+    /**
+     * Integer array convertion and checking if it is min array.
+     *
+     * @param      sc    The screen
+     */
     public static void integerArray(final Scanner sc) {
         Minpq<Integer> s = new Minpq<>();
         int noOflines = Integer.parseInt(sc.nextLine());
@@ -78,7 +138,14 @@ final class Solution {
             s = new Minpq(input);
             System.out.println(s.check());
         }
-     }
+    }
+
+    /**
+     * Double array is converted into double and checks if it 
+     * is the min array or not.
+     *
+     * @param      sc    The screen
+     */
     public static void doubleArray(final Scanner sc) {
         Minpq<Double> s = new Minpq<>();
         int noOflines = Integer.parseInt(sc.nextLine());
@@ -94,12 +161,17 @@ final class Solution {
             System.out.println(s.check());
         }
     }
+
+    /**
+     * Float array is converted into double and checks if it 
+     * is the min array or not.
+     *
+     * @param      sc    The screen
+     */
     public static void floatArray(final Scanner sc) {
         Minpq<Float> s = new Minpq<>();
         int noOflines = Integer.parseInt(sc.nextLine());
-        // outerloop:
         while (sc.hasNextLine()) {
-            // System.out.println("entered");
             String line = sc.nextLine();
             String[] tokens = line.split(",");
             if (tokens[0].equals("")) {
@@ -110,14 +182,17 @@ final class Solution {
                 for (int i = 0; i < tokens.length; i++) {
                     input[i] = Float.parseFloat(tokens[i]);
                 }
-                //System.out.println(Arrays.toString(input));
                 s = new Minpq(input);
                 System.out.println(s.check());
             }
         }
-        // System.out.println("entered");
     }
-    public static void main(String[] args) {
+    /**
+     * Main function
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         String type = sc.nextLine();
         switch (type) {
