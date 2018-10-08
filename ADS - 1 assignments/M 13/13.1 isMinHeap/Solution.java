@@ -59,20 +59,24 @@ final class Solution {
         }
 
     }
-    // public static void integerArray(final Scanner sc) {
-    //     Minpq<Integer> s = new Minpq<>();
-    //     while (sc.hasNext()) {
-    //         int noOflines = Integer.parseInt(sc.nextLine());
-    //         for (int i = 0; i < noOflines; i++) {
-    //             String line = sc.nextLine();
-    //             String[] tokens = line.split(",");
-    //         }
-    //     }
+    public static void integerArray(final Scanner sc) {
+        Minpq<Integer> s = new Minpq<>();
+        int noOflines = Integer.parseInt(sc.nextLine());
+        while (sc.hasNext()) {
+            String line = sc.nextLine();
+            String[] tokens = line.split(",");
+            Integer[] input = new Integer[tokens.length];
+            for (int i = 0; i < tokens.length; i++) {
+                input[i] = Integer.parseInt(tokens[i]);
+            }
+            s = new Minpq(tokens);
+            System.out.println(s.check());
+        }
 
     //     for (int i = 0; i < tokens.length; i++) {
     //         s.insert(Integer.parseInt(tokens[i]));
     //     }
-    // }
+     }
     // public static void doubleArray(final Scanner sc) {
     //     Minpq<Double> s = new Minpq<>();
     //     while (sc.hasNext()) {
@@ -108,9 +112,9 @@ final class Solution {
             case "String":
             stringArray(sc);
             break;
-            // case "Integer":
-            // integerArray(sc);
-            // break;
+            case "Integer":
+            integerArray(sc);
+            break;
             // case "Double":
             // doubleArray(sc);
             // break;

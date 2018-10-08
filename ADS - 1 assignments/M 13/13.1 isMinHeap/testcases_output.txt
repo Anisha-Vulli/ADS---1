@@ -37,7 +37,14 @@ false
 true
 false
 Your Output: 
-
+true
+false
+false
+false
+true
+false
+false
+false
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
