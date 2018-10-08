@@ -1,5 +1,6 @@
 Starting audit...
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:3: Missing a Javadoc comment. [JavadocType]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:4:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:5:5: Missing a Javadoc comment. [JavadocVariable]
@@ -20,12 +21,12 @@ Starting audit...
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:30:25: Parameter i should be final. [FinalParameters]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:30:32: Parameter j should be final. [FinalParameters]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:34:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:47: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:47:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:48:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:51:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:62:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:108:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:108:29: Parameter args should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:48: Missing a Javadoc comment. [JavadocType]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:48:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:49:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:52:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:63:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:106:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:106:29: Parameter args should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 28 errors.
+Checkstyle ends with 29 errors.

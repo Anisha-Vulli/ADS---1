@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+import java.util.Arrays;
 class Minpq<Key extends Comparable<Key>> {
     private Key[] pq;
     private int n;
@@ -34,6 +34,7 @@ class Minpq<Key extends Comparable<Key>> {
     public boolean check() {
         int k = n - 1;
         while (k > 0) {
+            //System.out.println(k + "," + (k - 1) / 2);
             if (!less(k, (k - 1) / 2)) {
                 return false;
             }
@@ -69,13 +70,10 @@ final class Solution {
             for (int i = 0; i < tokens.length; i++) {
                 input[i] = Integer.parseInt(tokens[i]);
             }
-            s = new Minpq(tokens);
+            //System.out.println(Arrays.toString(input));
+            s = new Minpq(input);
             System.out.println(s.check());
         }
-
-    //     for (int i = 0; i < tokens.length; i++) {
-    //         s.insert(Integer.parseInt(tokens[i]));
-    //     }
      }
     // public static void doubleArray(final Scanner sc) {
     //     Minpq<Double> s = new Minpq<>();
