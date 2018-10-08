@@ -94,20 +94,29 @@ final class Solution {
             System.out.println(s.check());
         }
     }
-    // public static void floatArray(final Scanner sc) {
-    //     Minpq<Float> s;
-    //     while (sc.hasNext()) {
-    //         int noOflines = Integer.parseInt(sc.nextLine());
-    //         for (int i = 0; i < noOflines; i++) {
-    //             String line = sc.nextLine();
-    //             String[] tokens = line.split(",");
-    //         }
-    //     }
-
-    //     for (int i = 0; i < tokens.length; i++) {
-    //         s.insert(Float.parseFLoat(tokens[i]));
-    //     }
-    // }
+    public static void floatArray(final Scanner sc) {
+        Minpq<Float> s = new Minpq<>();
+        int noOflines = Integer.parseInt(sc.nextLine());
+        // outerloop:
+        while (sc.hasNextLine()) {
+            // System.out.println("entered");
+            String line = sc.nextLine();
+            String[] tokens = line.split(",");
+            if (tokens[0].equals("")) {
+                System.out.println("false");
+                break;
+            } else {
+                Float[] input = new Float[tokens.length];
+                for (int i = 0; i < tokens.length; i++) {
+                    input[i] = Float.parseFloat(tokens[i]);
+                }
+                //System.out.println(Arrays.toString(input));
+                s = new Minpq(input);
+                System.out.println(s.check());
+            }
+        }
+        // System.out.println("entered");
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String type = sc.nextLine();
@@ -121,9 +130,9 @@ final class Solution {
             case "Double":
             doubleArray(sc);
             break;
-            // case "Float":
-            // floatArray(sc);
-            // break;
+            case "Float":
+            floatArray(sc);
+            break;
             default:
             break;
     }

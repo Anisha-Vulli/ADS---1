@@ -27,7 +27,8 @@ Starting audit...
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:56:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:67:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:82:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:111:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:111:29: Parameter args should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:97:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:120:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:120:29: Parameter args should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 30 errors.
+Checkstyle ends with 31 errors.
