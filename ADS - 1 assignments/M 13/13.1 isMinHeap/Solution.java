@@ -28,7 +28,8 @@ class Minpq<Key extends Comparable<Key>> {
     }
 
     public boolean less(Key i, Key j) {
-        return i.compareTo(j) > 0;
+
+        return i.compareTo(j) >= 0;
     }
 
 
