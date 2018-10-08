@@ -27,28 +27,21 @@ class Minpq<Key extends Comparable<Key>> {
         //swim(n);
     }
 
-    public boolean less(int i, int j) {
-        return pq[i].compareTo(pq[j]) > 0;
+    public boolean less(Key i, Key j) {
+        return i.compareTo(j) > 0;
     }
 
-    public int compareTo(Double a, Double b) {
-        if (a > b) {
-           return 1; 
-        } 
-        else if (b > a) {
-            return -1;
-        }
-        return 0;
-    }
 
     public boolean check() {
         int k = n - 1;
+        //System.out.println(k);
         while (k > 0) {
+            //System.out.println(pq[k]);
             //System.out.println(k + "," + (k - 1) / 2);
-            if (!less(k, (k - 1) / 2)) {
+            if (!less(pq[k], pq[(k - 1) / 2])) {
                 return false;
             }
-            k--;
+            k = (k - 1) / 2;
         }
         return true;
     }
@@ -124,9 +117,9 @@ final class Solution {
             case "Integer":
             integerArray(sc);
             break;
-            // case "Double":
-            // doubleArray(sc);
-            // break;
+            case "Double":
+            doubleArray(sc);
+            break;
             // case "Float":
             // floatArray(sc);
             // break;
