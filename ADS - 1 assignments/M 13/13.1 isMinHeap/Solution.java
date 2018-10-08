@@ -39,7 +39,7 @@ class Minpq<Key extends Comparable<Key>> {
      *
      * @param      capacity  The capacity
      */
-    Minpq(int capacity) {
+    Minpq(final int capacity) {
         pq = (Key[]) new Comparable[capacity + 1];
         this.n = capacity;
     }
@@ -56,7 +56,7 @@ class Minpq<Key extends Comparable<Key>> {
      *
      * @param      x     { No return }
      */
-    public void insert(Key x) {
+    public void insert(final Key x) {
         pq[++n] = x;
         //swim(n);
     }
@@ -69,7 +69,7 @@ class Minpq<Key extends Comparable<Key>> {
      *
      * @return     { int value }
      */
-    public boolean less(Key i, Key j) {
+    public boolean less(final Key i, final Key j) {
 
         return i.compareTo(j) >= 0;
     }
@@ -105,7 +105,7 @@ final class Solution {
     /**
      * Constructs the object.
      */
-    Solution() {
+    private Solution() {
         //Empty constructor.
     }
     /**
