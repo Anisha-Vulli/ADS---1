@@ -1,16 +1,12 @@
 Starting audit...
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:26:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:27: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:34:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:34:18: Parameter array should be final. [FinalParameters]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:43:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:43:18: Parameter capacity should be final. [FinalParameters]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:60:24: Parameter x should be final. [FinalParameters]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:73:25: Parameter i should be final. [FinalParameters]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:73:32: Parameter j should be final. [FinalParameters]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:105:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:150: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:172: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:196: First sentence should end with a period. [JavadocStyle]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:33:11: Parameter array should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:42:11: Parameter capacity should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:59:24: Parameter x should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:72:25: Parameter i should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:72:32: Parameter j should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:104:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:149: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:171: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 13\13.1 isMinHeap\Solution.java:195: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 13 errors.
+Checkstyle ends with 9 errors.

@@ -23,15 +23,14 @@ class Minpq<Key extends Comparable<Key>> {
     /**
      * Constructs the object.
      */
-    public Minpq() {
-        
+    Minpq() {
     }
     /**
      * Constructs the object.
      *
      * @param      array  The array
      */
-    public Minpq(Comparable[] array) {
+    Minpq(Comparable[] array) {
         this.pq = (Key[]) array;
         this.n = array.length;
     }
@@ -40,7 +39,7 @@ class Minpq<Key extends Comparable<Key>> {
      *
      * @param      capacity  The capacity
      */
-    public Minpq(int capacity) {
+    Minpq(int capacity) {
         pq = (Key[]) new Comparable[capacity + 1];
         this.n = capacity;
     }
