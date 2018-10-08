@@ -12,7 +12,13 @@ import java.util.Arrays;
  * @param      <Key>  The key
  */
 class Minpq<Key extends Comparable<Key>> {
+    /**
+     * Key array pq.
+     */
     private Key[] pq;
+    /**
+     * integer n.
+     */
     private int n;
     /**
      * Constructs the object.
