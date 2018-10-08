@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * Arrays import.
  */
-import java.util.Arrays;
+//import java.util.Arrays;
 /**
  * Class for minpq.
  *
@@ -219,3 +219,5 @@ final class Solution {
     }
 }
 }
+
+
