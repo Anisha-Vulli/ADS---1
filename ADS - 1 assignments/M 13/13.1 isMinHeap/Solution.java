@@ -146,7 +146,7 @@ final class Solution {
     }
 
     /**
-     * Double array is converted into double and checks if it 
+     * Double array is converted into double and checks if it
      * is the min array or not.
      *
      * @param      sc    The screen
@@ -168,7 +168,7 @@ final class Solution {
     }
 
     /**
-     * Float array is converted into double and checks if it 
+     * Float array is converted into double and checks if it
      * is the min array or not.
      *
      * @param      sc    The screen
@@ -193,7 +193,7 @@ final class Solution {
         }
     }
     /**
-     * Main function
+     * Main function.
      *
      * @param      args  The arguments
      */
