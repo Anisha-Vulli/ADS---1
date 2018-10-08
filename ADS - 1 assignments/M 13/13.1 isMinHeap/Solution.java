@@ -31,6 +31,16 @@ class Minpq<Key extends Comparable<Key>> {
         return pq[i].compareTo(pq[j]) > 0;
     }
 
+    public int compareTo(Double a, Double b) {
+        if (a > b) {
+           return 1; 
+        } 
+        else if (b > a) {
+            return -1;
+        }
+        return 0;
+    }
+
     public boolean check() {
         int k = n - 1;
         while (k > 0) {
@@ -75,20 +85,21 @@ final class Solution {
             System.out.println(s.check());
         }
      }
-    // public static void doubleArray(final Scanner sc) {
-    //     Minpq<Double> s = new Minpq<>();
-    //     while (sc.hasNext()) {
-    //         int noOflines = Integer.parseInt(sc.nextLine());
-    //         for (int i = 0; i < noOflines; i++) {
-    //             String line = sc.nextLine();
-    //             String[] tokens = line.split(",");
-    //         }
-    //     }
-
-    //     for (int i = 0; i < tokens.length; i++) {
-    //         s.insert(Double.parseDouble(tokens[i]));
-    //     }
-    // }
+    public static void doubleArray(final Scanner sc) {
+        Minpq<Double> s = new Minpq<>();
+        int noOflines = Integer.parseInt(sc.nextLine());
+        while (sc.hasNext()) {
+            String line = sc.nextLine();
+            String[] tokens = line.split(",");
+            Double[] input = new Double[tokens.length];
+            for (int i = 0; i < tokens.length; i++) {
+                input[i] = Double.parseDouble(tokens[i]);
+            }
+            //System.out.println(Arrays.toString(input));
+            s = new Minpq(input);
+            System.out.println(s.check());
+        }
+    }
     // public static void floatArray(final Scanner sc) {
     //     Minpq<Float> s;
     //     while (sc.hasNext()) {
