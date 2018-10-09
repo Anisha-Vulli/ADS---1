@@ -77,7 +77,7 @@ class Sorting {
 
 	public void vacancyprint(int n) {
 		for (int i = 0; i < n; i++) {
-			System.out.println(stdarray[i].name + "," + stdarray[i].total + "," + stdarray[i].cat);
+			System.out.println(stdarray[i].getname() + "," + stdarray[i].gettotal() + "," + stdarray[i].getcat());
 		}
 	}
 
@@ -86,17 +86,17 @@ class Sorting {
 		int i = 0;
 		int n = open;
 		for (int k = n; k < size; k++) {
-			if (stdarray[k].cat.equals("BC") && bc > 0) {
+			if (stdarray[k].getcat().equals("BC") && bc > 0) {
 				array[i++] = k;
 				bc--;
 			}
 
-			else if (stdarray[k].cat.equals("SC") && sc > 0) {
+			else if (stdarray[k].getcat().equals("SC") && sc > 0) {
 				array[i++] = k;
 				sc--;
 			}
 
-			else if (stdarray[k].cat.equals("ST") && st > 0) {
+			else if (stdarray[k].getcat().equals("ST") && st > 0) {
 				array[i++] = k;
 				st--;
 			}
@@ -104,7 +104,7 @@ class Sorting {
 
 		if (bc > 0) {
 			for (int k = n; k < size; k++) {
-				if (stdarray[k].cat.equals("Open") && bc > 0) {
+				if (stdarray[k].getcat().equals("Open") && bc > 0) {
 					if (!contains(array, k)) {
 						array[i++] = k;
 						bc--;
@@ -115,7 +115,7 @@ class Sorting {
 
 		if (sc > 0) {
 			for (int k = n; k < size; k++) {
-				if (stdarray[k].cat.equals("Open") && sc > 0) {
+				if (stdarray[k].getcat().equals("Open") && sc > 0) {
 					if (!contains(array, k)) {
 						array[i++] = k;
 						sc--;
@@ -126,7 +126,7 @@ class Sorting {
 
 		if (st > 0) {
 			for (int k = n; k < size; k++) {
-				if (stdarray[k].cat.equals("Open") && st > 0) {
+				if (stdarray[k].getcat().equals("Open") && st > 0) {
 					if (!contains(array, k)) {
 						array[i++] = k;
 						st--;

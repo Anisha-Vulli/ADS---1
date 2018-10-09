@@ -1,13 +1,15 @@
 class Student implements Comparable<Student> {
-    String name;
-    String dob;
-    int marks1;
-    int marks2;
-    int marks3;
-    int total;
-    String cat;
+    private String name;
+    private String dob;
+    private int marks1;
+    private int marks2;
+    private int marks3;
+    private int total;
+    private String cat;
 
-    Student(String name1, String dob1, int marks11, int marks22, int marks33, int total1, String cat1)  {
+    Student(final String name1, final String dob1, final int marks11,
+        final int marks22, final int marks33, final int total1,
+        final String cat1)  {
         this.name = name1;
         this.dob = dob1;
         this.marks1 = marks11;
@@ -19,6 +21,34 @@ class Student implements Comparable<Student> {
 
     public String toString() {
         return name + "," + total +"," + cat;
+    }
+
+    public String getname() {
+        return name;
+    }
+
+    public String getdob() {
+        return dob;
+    }
+
+    public int getmarks1() {
+        return marks1;
+    }
+
+    public int getmarks2() {
+        return marks2;
+    }
+
+    public int getmarks3() {
+        return marks3;
+    }
+
+    public int gettotal() {
+        return total;
+    }
+
+    public String getcat() {
+        return cat;
     }
 
     public int compareTo(Student that) {
