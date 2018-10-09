@@ -1,24 +1,7 @@
 Starting audit...
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 14\14.2 student reservation system\Student.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 14\14.2 student reservation system\Student.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 14\14.2 student reservation system\Student.java:2:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 14\14.2 student reservation system\Student.java:3:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 14\14.2 student reservation system\Student.java:4:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 14\14.2 student reservation system\Student.java:5:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 14\14.2 student reservation system\Student.java:6:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 14\14.2 student reservation system\Student.java:7:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 14\14.2 student reservation system\Student.java:8:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 14\14.2 student reservation system\Student.java:10:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 14\14.2 student reservation system\Student.java:22:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 14\14.2 student reservation system\Student.java:23:36: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 14\14.2 student reservation system\Student.java:26:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 14\14.2 student reservation system\Student.java:30:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 14\14.2 student reservation system\Student.java:34:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 14\14.2 student reservation system\Student.java:38:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 14\14.2 student reservation system\Student.java:42:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 14\14.2 student reservation system\Student.java:46:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 14\14.2 student reservation system\Student.java:50:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 14\14.2 student reservation system\Student.java:54:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 14\14.2 student reservation system\Student.java:54:26: Parameter that should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 14\14.2 student reservation system\Student.java:64:36: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 14\14.2 student reservation system\Student.java:143: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 14\14.2 student reservation system\Student.java:152:26: Parameter that should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 21 errors.
+Checkstyle ends with 4 errors.
