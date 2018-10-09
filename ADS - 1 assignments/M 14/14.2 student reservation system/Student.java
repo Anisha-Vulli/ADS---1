@@ -61,7 +61,7 @@ class Student implements Comparable<Student> {
      * @return     String representation of the object.
      */
     public String toString() {
-        return name + "," + total +"," + cat;
+        return name + "," + total + "," + cat;
     }
 
     /**
@@ -140,7 +140,7 @@ class Student implements Comparable<Student> {
      * compared and later marks 2 are compared. If
      * they are also equal then the person who is younger
      * is gievn the first priority.
-     * 
+     *
      * Date is a string in the constructor that I have taken
      * I have converted it it into String and then it is compared.
      * Accordingly.b
@@ -149,7 +149,7 @@ class Student implements Comparable<Student> {
      *
      * @return     { description_of_the_return_value }
      */
-    public int compareTo(Student that) {
+    public int compareTo(final Student that) {
         if (this.total > that.total) {
             return 1;
         }
@@ -204,3 +204,4 @@ class Student implements Comparable<Student> {
         return 0;
     }
 }
+

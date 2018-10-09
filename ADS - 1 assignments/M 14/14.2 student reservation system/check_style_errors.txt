@@ -1,7 +1,2 @@
 Starting audit...
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 14\14.2 student reservation system\Student.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 14\14.2 student reservation system\Student.java:64:36: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 14\14.2 student reservation system\Student.java:143: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 14\14.2 student reservation system\Student.java:152:26: Parameter that should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 4 errors.

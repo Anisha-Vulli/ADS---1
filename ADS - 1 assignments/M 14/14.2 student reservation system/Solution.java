@@ -1,6 +1,15 @@
 import java.util.Scanner;
-class Solution {
-	/**
+/**
+ * Class for solution.
+ */
+final class Solution {
+    /**
+     * Constructs the object.
+     */
+    Solution() {
+        //Empty constructor.
+    }
+    /**
      * Creates a stu.
      *
      * @param      studentdet  The studentdet
@@ -18,16 +27,21 @@ class Solution {
         return new Student(name, dob, marks1, marks2, marks3, total, cate);
     }
 
-	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
-		Sorting s = new Sorting();
-		int qualified = Integer.parseInt(scan.nextLine());
-		int vacant = Integer.parseInt(scan.nextLine());
-		int open = Integer.parseInt(scan.nextLine());
-		int bc = Integer.parseInt(scan.nextLine());
-		int sc = Integer.parseInt(scan.nextLine());
-		int st = Integer.parseInt(scan.nextLine());
-		while(scan.hasNextLine()) {
+    /**
+     * Main function.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        Scanner scan = new Scanner(System.in);
+        Sorting s = new Sorting();
+        int qualified = Integer.parseInt(scan.nextLine());
+        int vacant = Integer.parseInt(scan.nextLine());
+        int open = Integer.parseInt(scan.nextLine());
+        int bc = Integer.parseInt(scan.nextLine());
+        int sc = Integer.parseInt(scan.nextLine());
+        int st = Integer.parseInt(scan.nextLine());
+        while(scan.hasNextLine()) {
             String[] input = scan.nextLine().split(",");
             s.addStudent(createStu(input));
         }
@@ -35,5 +49,5 @@ class Solution {
         System.out.println(s);
         s.vacancyprint(open);
         s.vacancy(open, bc, sc, st);
-	}
+    }
 }
