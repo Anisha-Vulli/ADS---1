@@ -9,7 +9,7 @@ class Solution {
     /**
      * Constructs the object.
      */
-	Solution() {
+    private Solution() {
         //Empty constructor.
     }
     /**
@@ -17,14 +17,14 @@ class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
-    	Scanner sc = new Scanner(System.in);
+    public static void main(final String[] args) {
+        Scanner sc = new Scanner(System.in);
         MinPQ<Float> minheap = new MinPQ<Float>();
         MaxPQ<Float> maxheap = new MaxPQ<Float>();
         Float median = 0.0f;
-    	int lines = sc.nextInt();
+        int lines = sc.nextInt();
         for (int i = 0; i < lines; i++) {
-        	Float val = sc.nextFloat();
+            Float val = sc.nextFloat();
             if (val > median) {
                 minheap.insert(val);
             } else {
@@ -48,7 +48,7 @@ class Solution {
                 median = maxheap.max();
                 System.out.println(median);
             }
-        	
+
             if (minheap.size() > maxheap.size()) {
                 median = minheap.min();
                 System.out.println(median);
@@ -56,3 +56,6 @@ class Solution {
         }
     }
 }
+
+
+
