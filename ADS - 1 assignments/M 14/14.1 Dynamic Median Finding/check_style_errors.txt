@@ -1,4 +1,2 @@
 Starting audit...
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 14\14.1 Dynamic Median Finding\Solution.java:8: Class Solution should be declared as final. [FinalClass]
 Audit done.
-Checkstyle ends with 1 errors.
