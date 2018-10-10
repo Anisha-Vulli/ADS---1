@@ -123,7 +123,7 @@ class BinarysearchST<Key extends Comparable<Key>, Value> {
             int mid = low + (high - low) / 2;
             int comp = key.compareTo(keys[mid]);
             if (comp < 0) {
-                high = mid - 1; 
+                high = mid - 1;
             } else if (comp > 0) {
                 low = mid + 1;
             } else {
@@ -146,14 +146,14 @@ class BinarysearchST<Key extends Comparable<Key>, Value> {
 
         if (val == null) {
             delete(key);
-            return ;
+            return;
         }
 
         int i = rank(key);
 
         if (i < size && keys[i].compareTo(key) == 0) {
             vals[i] = val;
-            return ;
+            return;
         }
 
         if (size == keys.length) {
@@ -181,13 +181,13 @@ class BinarysearchST<Key extends Comparable<Key>, Value> {
         }
 
         if (isEmpty()) {
-            return ;
+            return;
         }
 
         int i = rank(key);
 
         if (i == size || keys[i].compareTo(key) != 0) {
-            return ;
+            return;
         }
 
         for (int j = i; j < size - 1; j++) {
@@ -199,7 +199,7 @@ class BinarysearchST<Key extends Comparable<Key>, Value> {
         keys[size] = null;
         vals[size] = null;
 
-        if (size > 0 && size == keys.length / 4) {
+        if (size > 0 && size == keys.length / (2 + 2)) {
             resize(keys.length / 2);
         }
     }
@@ -408,3 +408,5 @@ final class Solution {
         }
     }
 }
+
+

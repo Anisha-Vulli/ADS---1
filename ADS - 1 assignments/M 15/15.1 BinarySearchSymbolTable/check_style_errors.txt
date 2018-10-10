@@ -1,10 +1,2 @@
 Starting audit...
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 15\15.1 BinarySearchSymbolTable\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 15\15.1 BinarySearchSymbolTable\Solution.java:126: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 15\15.1 BinarySearchSymbolTable\Solution.java:149:19: ';' is preceded with whitespace. [NoWhitespaceBefore]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 15\15.1 BinarySearchSymbolTable\Solution.java:156:19: ';' is preceded with whitespace. [NoWhitespaceBefore]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 15\15.1 BinarySearchSymbolTable\Solution.java:184:19: ';' is preceded with whitespace. [NoWhitespaceBefore]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 15\15.1 BinarySearchSymbolTable\Solution.java:190:19: ';' is preceded with whitespace. [NoWhitespaceBefore]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 15\15.1 BinarySearchSymbolTable\Solution.java:202:47: '4' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 7 errors.
