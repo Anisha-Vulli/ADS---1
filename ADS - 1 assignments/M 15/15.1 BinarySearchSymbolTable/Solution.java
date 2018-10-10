@@ -1,17 +1,50 @@
+/**
+ * Scanner import.
+ */
 import java.util.Scanner;
+/**
+ * ArrayList import.
+ */
 import java.util.ArrayList;
+/**
+ * Class for binarysearch st.
+ *
+ * @param      <Key>    The key
+ * @param      <Value>  The value
+ */
 class BinarysearchST<Key extends Comparable<Key>, Value> {
+    /**
+     * Keys array.
+     */
     private Key[] keys;
+    /**
+     * Values array.
+     */
     private Value[] vals;
+    /**
+     * Size of the array.
+     */
     private int size;
+    /**
+     * Constructs the object.
+     */
     BinarysearchST() {
         //Empty constructor.
     }
+    /**
+     * Constructs the object.
+     *
+     * @param      capacity  The capacity
+     */
     BinarysearchST(int capacity) {
         keys = (Key[]) new Comparable[capacity];
         vals = (Value[]) new Object[capacity];
     }
-
+    /**
+     * Resize function resizes the array.
+     *
+     * @param      capacity  The capacity
+     */
     public void resize(int capacity) {
         Key[] tempkey = (Key[]) new Comparable[capacity];
         Value[] tempval = (Value[]) new Object[capacity];
@@ -23,19 +56,39 @@ class BinarysearchST<Key extends Comparable<Key>, Value> {
         vals = tempval;
         keys = tempkey;
     }
-
+    /**
+     * Returns size.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int size() {
         return size;
     }
-
+    /**
+     * Determines if empty.
+     *
+     * @return     True if empty, False otherwise.
+     */
     public boolean isEmpty() {
         return size() == 0;
     }
-
+    /**
+     * Checks if the key is present or not.
+     *
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
     public boolean contains(Key key) {
         return get(key) != null;
     }
-
+    /**
+     * Get function gets the value of the key.
+     *
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Value get(Key key) {
         if (key == null) {
             throw new IllegalArgumentException("Key is null");
@@ -51,7 +104,15 @@ class BinarysearchST<Key extends Comparable<Key>, Value> {
         }
         return null;
     }
-
+    /**
+     * Rank function is used to give the rank of given key
+     * based on the binary search.
+     * Complexity is log N.
+     *
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int rank(Key key) {
         if (key == null) {
             throw new IllegalArgumentException("argument to rank() is null");
@@ -71,7 +132,13 @@ class BinarysearchST<Key extends Comparable<Key>, Value> {
         }
         return low;
     }
-
+    /**
+     * Put function keeps the value and key in their arrays.
+     * Complexity is N.
+     *
+     * @param      key   The key
+     * @param      val   The value
+     */
     public void put(Key key, Value val) {
         if (key == null) {
             throw new IllegalArgumentException("Null key");
@@ -103,6 +170,11 @@ class BinarysearchST<Key extends Comparable<Key>, Value> {
         size++;
     }
 
+    /**
+     * Deletes the defined key.
+     *
+     * @param      key   The key
+     */
     public void delete(Key key) {
         if (key == null) {
             throw new IllegalArgumentException("argument to delete() is null");
@@ -131,7 +203,15 @@ class BinarysearchST<Key extends Comparable<Key>, Value> {
             resize(keys.length / 2);
         }
     }
-
+    /**
+     * Select function gives the particular key value
+     * of the defined index.
+     * Complexity is 1.
+     *
+     * @param      k     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Key select(int k) {
         if (k < 0 || k >= size()) {
             throw new IllegalArgumentException("Invalid argument");
@@ -139,7 +219,14 @@ class BinarysearchST<Key extends Comparable<Key>, Value> {
 
         return keys[k];
     }
-
+    /**
+     * Gives the base value of the given key.
+     * Complexity is log N.
+     *
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Key floor(Key key) {
         if (key == null) {
             throw new IllegalArgumentException("argument to floor() is null");
@@ -154,7 +241,14 @@ class BinarysearchST<Key extends Comparable<Key>, Value> {
             return keys[i - 1];
         }
     }
-
+    /**
+     * Celeing function the before or nearby value of the key.
+     * Complexity is 1.
+     *
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Key ceiling(Key key) {
         if (key == null) {
             throw new IllegalArgumentException("argument to ceiling() is null");
@@ -166,11 +260,19 @@ class BinarysearchST<Key extends Comparable<Key>, Value> {
             return keys[i];
         }
     }
-
+    /**
+     * Keys function gives list of keys and values.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public ArrayList<String> keys() {
         return keys(min(), max());
     }
-
+    /**
+     * Min of the keys array.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Key min() {
         // if (isEmpty()) {
         //     throw new Exception("There is no element");
@@ -178,7 +280,11 @@ class BinarysearchST<Key extends Comparable<Key>, Value> {
 
         return keys[0];
     }
-
+    /**
+     * Maximum of the given key array.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Key max() {
         // if (isEmpty()) {
         //     throw new Exception("There is no element");
@@ -186,11 +292,21 @@ class BinarysearchST<Key extends Comparable<Key>, Value> {
 
         return keys[size - 1];
     }
-
+    /**
+     * Deletes the minimum value.
+     */
     public void deleteMin() {
         delete(min());
     }
-
+    /**
+     * List of keys from a particular limit.
+     * Complexity is N.
+     *
+     * @param      low   The low
+     * @param      high  The high
+     *
+     * @return     { description_of_the_return_value }
+     */
     public ArrayList<String> keys(Key low, Key high) {
         if (low == null) {
             throw new IllegalArgumentException("first argument to keys() is null"); 
@@ -221,11 +337,24 @@ class BinarysearchST<Key extends Comparable<Key>, Value> {
     // }
 }
 
-class Solution {
+/**
+ * Class for solution.
+ */
+final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        //Empty constructor.
+    }
+    /**
+     * Main function.
+     *
+     * @param      args  The arguments
+     */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         BinarysearchST<String, Integer> bst = new BinarysearchST<String, Integer>();
-
         String[] input = sc.nextLine().split(" ");
         bst = new BinarysearchST<String, Integer>(input.length);
         for (int i = 0; i < input.length; i++) {
