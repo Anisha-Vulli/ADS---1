@@ -309,11 +309,13 @@ class BinarysearchST<Key extends Comparable<Key>, Value> {
      */
     public ArrayList<String> keys(Key low, Key high) {
         if (low == null) {
-            throw new IllegalArgumentException("first argument to keys() is null"); 
+            throw new
+            IllegalArgumentException("first argument to keys() is null"); 
         }
 
         if (high == null) {
-            throw new IllegalArgumentException("last argument to keys() is null"); 
+            throw new 
+            IllegalArgumentException("last argument to keys() is null"); 
         }
 
         ArrayList<String> limit = new ArrayList<>();
@@ -322,11 +324,11 @@ class BinarysearchST<Key extends Comparable<Key>, Value> {
         }
 
         for (int i = rank(low); i < rank(high); i++) {
-            limit.add((String)keys[i]);
+            limit.add((String) keys[i]);
         }
 
         if (contains(high)) {
-            limit.add((String)keys[rank(high)]);
+            limit.add((String) keys[rank(high)]);
         }
 
         return limit;
@@ -352,7 +354,7 @@ final class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         BinarysearchST<String, Integer> bst = new
         BinarysearchST<String, Integer>();

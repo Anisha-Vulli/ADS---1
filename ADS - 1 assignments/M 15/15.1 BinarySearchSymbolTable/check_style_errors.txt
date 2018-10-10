@@ -19,12 +19,8 @@ Starting audit...
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 15\15.1 BinarySearchSymbolTable\Solution.java:252:24: Parameter key should be final. [FinalParameters]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 15\15.1 BinarySearchSymbolTable\Solution.java:310:35: Parameter low should be final. [FinalParameters]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 15\15.1 BinarySearchSymbolTable\Solution.java:310:44: Parameter high should be final. [FinalParameters]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 15\15.1 BinarySearchSymbolTable\Solution.java:312: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 15\15.1 BinarySearchSymbolTable\Solution.java:312: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 15\15.1 BinarySearchSymbolTable\Solution.java:316: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 15\15.1 BinarySearchSymbolTable\Solution.java:316: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 15\15.1 BinarySearchSymbolTable\Solution.java:325:31: 'typecast' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 15\15.1 BinarySearchSymbolTable\Solution.java:329:31: 'typecast' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 15\15.1 BinarySearchSymbolTable\Solution.java:355:29: Parameter args should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 15\15.1 BinarySearchSymbolTable\Solution.java:313: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 15\15.1 BinarySearchSymbolTable\Solution.java:317: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 15\15.1 BinarySearchSymbolTable\Solution.java:318: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 27 errors.
+Checkstyle ends with 23 errors.
