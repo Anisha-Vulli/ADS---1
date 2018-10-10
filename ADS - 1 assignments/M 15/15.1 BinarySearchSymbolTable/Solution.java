@@ -354,13 +354,14 @@ final class Solution {
      */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        BinarysearchST<String, Integer> bst = new BinarysearchST<String, Integer>();
+        BinarysearchST<String, Integer> bst = new
+        BinarysearchST<String, Integer>();
         String[] input = sc.nextLine().split(" ");
         bst = new BinarysearchST<String, Integer>(input.length);
         for (int i = 0; i < input.length; i++) {
             bst.put(input[i], i);
         }
-        while(sc.hasNextLine()) {
+        while (sc.hasNextLine()) {
             String[] tokens = sc.nextLine().split(" ");
             switch (tokens[0]) {
                 case "contains":
@@ -372,7 +373,6 @@ final class Solution {
                 case "max":
                 System.out.println(bst.max());
                 // try {
-                    
                 // } catch (Exception e) {
                 //     System.out.println("No such element");
                 // }
@@ -380,7 +380,6 @@ final class Solution {
                 case "min":
                 System.out.println(bst.min());
                 // try {
-                    
                 // } catch (Exception e) {
                 //     System.out.println("No such element");
                 // }
@@ -397,7 +396,8 @@ final class Solution {
                 case "keys":
                 ArrayList<String> limit = bst.keys();
                 for (int i = 0; i < limit.size(); i++) {
-                    System.out.println(limit.get(i) + " " + bst.get(limit.get(i)));
+                    System.out.println(limit.get(i) + " "
+                        + bst.get(limit.get(i)));
                 }
                 break;
                 default:
