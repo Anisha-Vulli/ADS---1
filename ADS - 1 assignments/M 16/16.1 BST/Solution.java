@@ -86,19 +86,19 @@ class BinarySearchTree {
         /**
          * Book type key.
          */
-        Book key;
+        private Book key;
         /**
          * Value.
          */
-        String value;
+        private String value;
         /**
          * Left node.
          */
-        Node left;
+        private Node left;
         /**
          * Right node.
          */
-        Node right;
+        private Node right;
         /**
          * Constructs the object.
          *
