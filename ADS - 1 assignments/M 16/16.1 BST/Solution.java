@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * Class for book.
  */
-class Book implements Comparable<Book>{
+class Book implements Comparable<Book> {
     /**
      * Name string.
      */
@@ -35,7 +35,7 @@ class Book implements Comparable<Book>{
      *
      * @return     The name.
      */
-    String getName(){
+    String getName() {
         return name;
     }
     /**
@@ -43,7 +43,7 @@ class Book implements Comparable<Book>{
      *
      * @return     The author.
      */
-    String getAuthor(){
+    String getAuthor() {
         return author;
     }
     /**
@@ -51,7 +51,7 @@ class Book implements Comparable<Book>{
      *
      * @return     The price.
      */
-    String getPrice(){
+    String getPrice() {
         return price;
     }
     /**

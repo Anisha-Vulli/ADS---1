@@ -1,6 +1,4 @@
 Starting audit...
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:8:39: '>' is followed by an illegal character. [GenericWhitespace]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:8:39: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:12:12: Variable 'name' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:16:12: Variable 'author' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:20:12: Variable 'price' must be private and have accessor methods. [VisibilityModifier]
@@ -10,9 +8,6 @@ Starting audit...
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:28:30: 'author' hides a field. [HiddenField]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:28:38: Parameter price should be final. [FinalParameters]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:28:45: 'price' hides a field. [HiddenField]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:38:21: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:46:23: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:54:22: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:64:26: Parameter that should be final. [FinalParameters]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:81:9: Variable 'size' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:86:9: Missing a Javadoc comment. [JavadocVariable]
@@ -40,4 +35,4 @@ Starting audit...
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:191:33: '4' is a magic number. [MagicNumber]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:194:55: '3' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 40 errors.
+Checkstyle ends with 35 errors.
