@@ -21,9 +21,9 @@ class Book implements Comparable<Book> {
     /**
      * Constructs the object.
      *
-     * @param      name    The name
-     * @param      author  The author
-     * @param      price   The price
+     * @param      name1    The name 1
+     * @param      author1  The author 1
+     * @param      price1   The price 1
      */
     Book(final String name1, final String author1, final String price1) {
         this.name = name1;
