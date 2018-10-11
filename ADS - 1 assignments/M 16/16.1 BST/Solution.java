@@ -1,54 +1,124 @@
-import java.util.*;
+/**
+ * Scanner import.
+ */
+import java.util.Scanner;
+/**
+ * Class for book.
+ */
 class Book implements Comparable<Book>{
+    /**
+     * Name string.
+     */
     String name;
+    /**
+     * Author of book.
+     */
     String author;
+    /**
+     * Price of the book.
+     */
     String price;
+    /**
+     * Constructs the object.
+     *
+     * @param      name    The name
+     * @param      author  The author
+     * @param      price   The price
+     */
     Book(String name, String author, String price) {
         this.name = name;
         this.author = author;
         this.price = price;
     }
-
+    /**
+     * Gets the name.
+     *
+     * @return     The name.
+     */
     String getName() {
         return name;
     }
-
+    /**
+     * Gets the author.
+     *
+     * @return     The author.
+     */
     String getAuthor() {
         return author;
     }
-
+    /**
+     * Gets the price.
+     *
+     * @return     The price.
+     */
     String getPrice() {
         return price;
     }
-
+    /**
+     * Compares the name of the books.
+     *
+     * @param      that  The that
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int compareTo(Book that) {
         return this.name.compareTo(that.name);
     }
 }
 
-class BinarySearchTree {
-    private Node root;
-    int size;
+/**
+ * Class for binary search tree.
+ */
 
+class BinarySearchTree {
+    /**
+     * Node named root.
+     */
+    private Node root;
+    /**
+     * Size integer.
+     */
+    int size;
+    /**
+     * Class for node.
+     */
     private class Node {
         Book key;
         String value;
         Node left;
         Node right;
-        Node(Book key, String value) {
+        Node(final Book key, final String value) {
             this.key = key;
             this.value =value;
         }
     }
+    /**
+     * Constructs the object.
+     */
     BinarySearchTree() {
         root = null;
     }
-
-    public void put(Book key, String value) {
+    /**
+     * Put method for putting value.
+     *
+     * @param      key    The key
+     * @param      value  The value
+     */
+    public void put(final Book key, final String value) {
         root = put(root, key, value);
     }
 
-    public Node put(Node x, Book key, String value) {
+    /**
+     * Put the value into the search tree.
+     * Complexity is log N.
+     *
+     * @param      x      { parameter_description }
+     * @param      key    The key
+     * @param      value  The value
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public Node put(final Node x, final Book key, final String value) {
         if (x == null) {
             return new Node(key, value);
         }
@@ -68,6 +138,14 @@ class BinarySearchTree {
         return x;
     }
 
+    /**
+     * Get method gets the particular key from the search tree.
+     * Complexity is log N.
+     *
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
     public String get(Book key) {
         Node x = root;
 
@@ -87,9 +165,22 @@ class BinarySearchTree {
         return null;
     }
 }
-
-class Solution {
-    public static void main(String[] args) {
+/**
+ * Class for solution.
+ */
+final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        //Empty constructor.
+    }
+    /**
+     * Main function.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         BinarySearchTree bst = new BinarySearchTree();
         while(sc.hasNextLine()) {
@@ -109,3 +200,4 @@ class Solution {
         }
     }
 }
+
