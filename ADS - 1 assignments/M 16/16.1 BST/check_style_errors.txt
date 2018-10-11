@@ -1,7 +1,4 @@
 Starting audit...
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:12:12: Variable 'name' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:16:12: Variable 'author' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:20:12: Variable 'price' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:28:10: Parameter name should be final. [FinalParameters]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:28:17: 'name' hides a field. [HiddenField]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:28:23: Parameter author should be final. [FinalParameters]
@@ -35,4 +32,4 @@ Starting audit...
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:191:33: '4' is a magic number. [MagicNumber]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:194:55: '3' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 35 errors.
+Checkstyle ends with 32 errors.

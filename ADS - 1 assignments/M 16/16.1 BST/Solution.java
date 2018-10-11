@@ -9,15 +9,15 @@ class Book implements Comparable<Book> {
     /**
      * Name string.
      */
-    String name;
+    private String name;
     /**
      * Author of book.
      */
-    String author;
+    private String author;
     /**
      * Price of the book.
      */
-    String price;
+    private String price;
     /**
      * Constructs the object.
      *
