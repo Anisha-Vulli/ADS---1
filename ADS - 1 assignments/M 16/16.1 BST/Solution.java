@@ -61,7 +61,7 @@ class Book implements Comparable<Book> {
      *
      * @return     { description_of_the_return_value }
      */
-    public int compareTo(Book that) {
+    public int compareTo(final Book that) {
         return this.name.compareTo(that.name);
     }
 }
@@ -78,18 +78,36 @@ class BinarySearchTree {
     /**
      * Size integer.
      */
-    int size;
+    private int size;
     /**
      * Class for node.
      */
     private class Node {
+        /**
+         * Book type key.
+         */
         Book key;
+        /**
+         * Value.
+         */
         String value;
+        /**
+         * Left node.
+         */
         Node left;
+        /**
+         * Right node.
+         */
         Node right;
-        Node(final Book key, final String value) {
-            this.key = key;
-            this.value =value;
+        /**
+         * Constructs the object.
+         *
+         * @param      key1    The key
+         * @param      value1  The value
+         */
+        Node(final Book key1, final String value1) {
+            this.key = key1;
+            this.value =value1;
         }
     }
     /**
@@ -127,12 +145,9 @@ class BinarySearchTree {
         //System.out.println(cmp);
         if (cmp < 0) {
             x.left = put(x.left, key, value);
-        }
-
-        else if (cmp > 0) {
+        } else if (cmp > 0) {
             x.right = put(x.right, key, value);
-        }
-       else if (cmp == 0) {
+        } else if (cmp == 0) {
             x.value = value;
         }
         return x;
@@ -154,11 +169,9 @@ class BinarySearchTree {
             //System.out.println(x.key.getName());
             if (cmp < 0) {
                 x = x.left;
-            } 
-            else if (cmp > 0) {
+            } else if (cmp > 0) {
                 x = x.right;
-            } 
-            else if (cmp == 0) {
+            } else if (cmp == 0) {
                 return x.value;
             }
         }
