@@ -107,7 +107,7 @@ class BinarySearchTree {
          */
         Node(final Book key1, final String value1) {
             this.key = key1;
-            this.value =value1;
+            this.value = value1;
         }
     }
     /**
@@ -161,7 +161,7 @@ class BinarySearchTree {
      *
      * @return     { description_of_the_return_value }
      */
-    public String get(Book key) {
+    public String get(final Book key) {
         Node x = root;
 
         while (x != null) {
@@ -196,15 +196,15 @@ final class Solution {
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         BinarySearchTree bst = new BinarySearchTree();
-        while(sc.hasNextLine()) {
+        while (sc.hasNextLine()) {
             String[] input = sc.nextLine().split(",");
-            switch(input[0]) {
+            switch (input[0]) {
             case "put":
-            Book book = new Book(input[1], input[2], input[3]);
-            bst.put(book, input[4]);
+            Book book = new Book(input[1], input[2], input[2 + 1]);
+            bst.put(book, input[2 + 2]);
             break;
             case "get":
-            book = new Book(input[1], input[2], input[3]);
+            book = new Book(input[1], input[2], input[2 + 1]);
             System.out.println(bst.get(book));
             break;
             default:

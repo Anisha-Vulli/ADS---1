@@ -1,10 +1,2 @@
 Starting audit...
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:110:25: '=' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:164:23: Parameter key should be final. [FinalParameters]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:199:14: 'while' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:201:19: 'switch' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:203:60: '3' is a magic number. [MagicNumber]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:204:33: '4' is a magic number. [MagicNumber]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:207:55: '3' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 7 errors.
