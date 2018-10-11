@@ -1,7 +1,10 @@
 Starting audit...
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:28:23: 'name' hides a field. [HiddenField]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:28:42: 'author' hides a field. [HiddenField]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:28:63: 'price' hides a field. [HiddenField]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:24:8: Unused @param tag for 'name'. [JavadocMethod]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:25:8: Unused @param tag for 'author'. [JavadocMethod]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:26:8: Unused @param tag for 'price'. [JavadocMethod]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:28:23: Expected @param tag for 'name1'. [JavadocMethod]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:28:43: Expected @param tag for 'author1'. [JavadocMethod]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:28:65: Expected @param tag for 'price1'. [JavadocMethod]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:64:26: Parameter that should be final. [FinalParameters]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:81:9: Variable 'size' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:86:9: Missing a Javadoc comment. [JavadocVariable]
@@ -29,4 +32,4 @@ Starting audit...
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:191:33: '4' is a magic number. [MagicNumber]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 16\16.1 BST\Solution.java:194:55: '3' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 29 errors.
+Checkstyle ends with 32 errors.
