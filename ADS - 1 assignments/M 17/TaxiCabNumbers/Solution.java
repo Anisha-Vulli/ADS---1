@@ -72,9 +72,9 @@ class Solution {
     Scanner sc = new Scanner(System.in);
     while(sc.hasNextLine()) {
         String[] input = sc.nextLine().split(" ");
-        int N = Integer.parseInt(input[0]);
-        int M = Integer.parseInt(input[1]);
-        int n = 1000;
+        int num = Integer.parseInt(input[0]);
+        int m = Integer.parseInt(input[1]);
+        final int n = 1000;
         MinPQ<Taxicab> pq = new MinPQ<Taxicab>();
         for (int i = 1; i <= n; i++) {
             pq.insert(new Taxicab(i, i));
@@ -86,11 +86,11 @@ class Solution {
             Taxicab current = pq.delMin();
             if (previous.sum == current.sum) {
                 pair++;
-                if (pair == M) {
+                if (pair == m) {
                     count++;   
                 }
 
-                if (count == N) {
+                if (count == num) {
                     System.out.println(previous.sum);
                     break;
                 }
