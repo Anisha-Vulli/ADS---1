@@ -100,7 +100,7 @@ class Solution {
 
             previous = current;
             if (current.j < n) {
-                pq.insert(new Taxicab(current.j, current.j + 1));
+                pq.insert(new Taxicab(current.i, current.i + 1));
             }
         }
     }
