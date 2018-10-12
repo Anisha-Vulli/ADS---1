@@ -9,21 +9,45 @@ class Taxicab implements Comparable<Taxicab> {
   /**
    * Two integers for  cubing numbers.
    */
-  int i,j;
+  private int i,j;
   /**
    * Sum of cubes.
    */
-  long sum;
+  private long sum;
+  /**
+   * Gets i.
+   *
+   * @return     I.
+   */
+  public int getI() {
+    return i;
+  }
+  /**
+   * Gets the j.
+   *
+   * @return     The j.
+   */
+  public int getJ() {
+    return j;
+  }
+  /**
+   * Gets the sum.
+   *
+   * @return     The sum.
+   */
+  public long getSum() {
+    return sum;
+  }
   /**
    * Constructs the object.
    *
    * @param      i     { parameter_description }
    * @param      j     { parameter_description }
    */
-  public Taxicab(int i, int j) {
-        this.sum = (long) i*i*i + (long) j*j*j;
-        this.i = i;
-        this.j = j;
+  public Taxicab(int i1, int j1) {
+        this.sum = (long) i1 * i1 * i1 + (long) j1 * j1 * j1;
+        this.i = i1;
+        this.j = j1;
     }
     /**
      * Compares the taxicab number to the min number.
@@ -38,7 +62,7 @@ class Taxicab implements Comparable<Taxicab> {
         if (this.sum < that.sum) {
           return -1;
         } else if (this.sum > that.sum) {
-          return +1;
+          return 1;
         } 
         return  0;
     }
@@ -70,7 +94,7 @@ class Solution {
    */
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
-    while(sc.hasNextLine()) {
+    while (sc.hasNextLine()) {
         String[] input = sc.nextLine().split(" ");
         int num = Integer.parseInt(input[0]);
         int m = Integer.parseInt(input[1]);
@@ -84,14 +108,14 @@ class Solution {
         int count = 0;
         while (!pq.isEmpty()) {
             Taxicab current = pq.delMin();
-            if (previous.sum == current.sum) {
+            if (previous.getSum() == current.getSum()) {
                 pair++;
                 if (pair == m) {
-                    count++;   
+                    count++;
                 }
 
                 if (count == num) {
-                    System.out.println(previous.sum);
+                    System.out.println(previous.getSum());
                     break;
                 }
             } else {
@@ -99,8 +123,8 @@ class Solution {
             }
 
             previous = current;
-            if (current.j < n) {
-                pq.insert(new Taxicab(current.i, current.j + 1));
+            if (current.getJ() < n) {
+                pq.insert(new Taxicab(current.getI(), current.getJ() + 1));
             }
         }
     }
