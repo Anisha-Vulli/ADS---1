@@ -41,10 +41,10 @@ class Taxicab implements Comparable<Taxicab> {
   /**
    * Constructs the object.
    *
-   * @param      i     { parameter_description }
-   * @param      j     { parameter_description }
+   * @param      i1     { parameter_description }
+   * @param      j1     { parameter_description }
    */
-  public Taxicab(int i1, int j1) {
+  public Taxicab(final int i1, final int j1) {
         this.sum = (long) i1 * i1 * i1 + (long) j1 * j1 * j1;
         this.i = i1;
         this.j = j1;
@@ -58,7 +58,7 @@ class Taxicab implements Comparable<Taxicab> {
      *
      * @return     { description_of_the_return_value }
      */
-    public int compareTo(Taxicab that) {
+    public int compareTo(final Taxicab that) {
         if (this.sum < that.sum) {
           return -1;
         } else if (this.sum > that.sum) {
@@ -80,7 +80,7 @@ class Taxicab implements Comparable<Taxicab> {
 /**
  * Class for solution.
  */
-class Solution {
+final class Solution {
   /**
    * Constructs the object.
    */
@@ -92,7 +92,7 @@ class Solution {
    *
    * @param      args  The arguments
    */
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
     Scanner sc = new Scanner(System.in);
     while (sc.hasNextLine()) {
         String[] input = sc.nextLine().split(" ");
