@@ -32,25 +32,25 @@ class Solution {
               pq.insert(new Taxicab(i, i));
           }
         int pair = 1;
-        Taxicab prev = new Taxicab(0, 0);
-        int pairCount = 0;
+        Taxicab previous = new Taxicab(0, 0);
+        int count = 0;
         while (!pq.isEmpty()) {
-            Taxicab curr = pq.delMin();
-            if (prev.sum == curr.sum) {
+            Taxicab current = pq.delMin();
+            if (previous.sum == current.sum) {
                 pair++;
                 if (pair == M){
-                  pairCount = pairCount+1;
+                  count = count+1;
                 }
-                if(pairCount == N){
-                System.out.println(prev.sum);
+                if(count == N){
+                System.out.println(previous.sum);
                 break;
               }
             }
             else {
                 pair = 1;
             }
-            prev = curr;
-            if (curr.j < n) pq.insert(new Taxicab(curr.i, curr.j + 1));
+            previous = current;
+            if (current.j < n) pq.insert(new Taxicab(current.i, current.j + 1));
         }
     }
   }

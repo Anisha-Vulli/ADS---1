@@ -38,10 +38,10 @@ Starting audit...
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 17\TaxiCabNumbers\Solution.java:28:11: Name 'M' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 17\TaxiCabNumbers\Solution.java:29:15: '1000' is a magic number. [MagicNumber]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 17\TaxiCabNumbers\Solution.java:41:31: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 17\TaxiCabNumbers\Solution.java:42:40: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 17\TaxiCabNumbers\Solution.java:42:41: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 17\TaxiCabNumbers\Solution.java:42:32: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 17\TaxiCabNumbers\Solution.java:42:33: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 17\TaxiCabNumbers\Solution.java:44:19: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 17\TaxiCabNumbers\Solution.java:44:35: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 17\TaxiCabNumbers\Solution.java:44:31: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 17\TaxiCabNumbers\Solution.java:48:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 17\TaxiCabNumbers\Solution.java:53: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
