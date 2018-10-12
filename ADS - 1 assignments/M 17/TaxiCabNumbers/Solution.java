@@ -9,7 +9,7 @@ class Taxicab implements Comparable<Taxicab> {
   /**
    * Two integers for  cubing numbers.
    */
-  private int i,j;
+  private int i, j;
   /**
    * Sum of cubes.
    */
@@ -44,7 +44,7 @@ class Taxicab implements Comparable<Taxicab> {
    * @param      i1     { parameter_description }
    * @param      j1     { parameter_description }
    */
-  public Taxicab(final int i1, final int j1) {
+  Taxicab(final int i1, final int j1) {
         this.sum = (long) i1 * i1 * i1 + (long) j1 * j1 * j1;
         this.i = i1;
         this.j = j1;
