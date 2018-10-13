@@ -110,13 +110,13 @@ public final class Solution {
             for (int j = 0; j < 5; j++) {
                 Stock maxbest = max.delMax();
                 System.out.println(maxbest);
-                best.put(maxbest.getStockName(), maxbest.getChange());
+                //best.put(maxbest.getStockName(), maxbest.getChange());
             }
             System.out.println();
             for(int k = 0; k < 5; k++) {
                 Stock minworst = min.delMin();
                 System.out.println(minworst);
-                worst.put(minworst.getStockName(), minworst.getChange());
+                //worst.put(minworst.getStockName(), minworst.getChange());
             }
             System.out.println();
         }
