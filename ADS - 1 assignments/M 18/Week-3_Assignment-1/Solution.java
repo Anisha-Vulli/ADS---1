@@ -89,6 +89,7 @@ public final class Solution {
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = Integer.parseInt(scan.nextLine());
+        BinarySearchST<String, Integer> best = new  BinarySearchST<>();
         for (int i = 0; i < 6; i++) {
             int count = 0;
             MinPQ<Stock> min = new MinPQ<>();
@@ -100,13 +101,13 @@ public final class Solution {
                 max.insert(stocks);
                 count++;
             }
-            BinarySearchST<Stock, Integer> best = new  BinarySearchST<>();
+            BinarySearchST<Stock, Integer> bestln = new  BinarySearchST<>();
             BinarySearchST<String, Double> worst = new BinarySearchST<>();
             for (int j = 0; j < 5; j++) {
                 Stock maxbest = max.delMax();
                 System.out.println(maxbest);
                 int a = 1;
-                best.put(maxbest, a);
+                bestln.put(maxbest, a);
             }
             System.out.println();
             for(int k = 0; k < 5; k++) {
@@ -115,6 +116,13 @@ public final class Solution {
                 worst.put(minworst.getStockName(), minworst.getChange());
             }
             System.out.println();
+        }
+        int query = Integer.parseInt(scan.nextLine());
+        String[] tokens = scan.nextLine().split(",");
+        switch (tokens[0]) {
+            case "get":
+            System.out.println(best.get(tokens[2]));
+            break;
         }
     }
 }
