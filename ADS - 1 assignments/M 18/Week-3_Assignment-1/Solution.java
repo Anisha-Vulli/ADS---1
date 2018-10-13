@@ -124,8 +124,11 @@ public final class Solution {
             String[] tokens = scan.nextLine().split(",");
             switch (tokens[0]) {
                 case "get":
-                //System.out.println(best.rank(tokens[2]));
-                System.out.println(best.get(tokens[2]));
+                if (tokens[1].equals("maxST")) {
+                    System.out.println(best.get(tokens[2]));   
+                } else {
+                    System.out.println(worst.get(tokens[2]));
+                }
                 break;
             }   
         }
