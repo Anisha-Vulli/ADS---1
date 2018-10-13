@@ -91,7 +91,8 @@ public final class Solution {
         int n = Integer.parseInt(scan.nextLine());
         BinarySearchST<String, Integer> best = new  BinarySearchST<>();
         BinarySearchST<String, Integer> worst = new BinarySearchST<>();
-        for (int i = 0; i < 6; i++) {
+        final int six = 6;
+        for (int i = 0; i < six; i++) {
             int count = 0;
             MinPQ<Stock> min = new MinPQ<>();
             MaxPQ<Stock> max = new MaxPQ<>();
@@ -137,3 +138,5 @@ public final class Solution {
         }
     }
 }
+
+
