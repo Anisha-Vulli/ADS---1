@@ -118,11 +118,14 @@ public final class Solution {
             System.out.println();
         }
         int query = Integer.parseInt(scan.nextLine());
-        String[] tokens = scan.nextLine().split(",");
-        switch (tokens[0]) {
-            case "get":
-            System.out.println(best.get(tokens[2]));
-            break;
+        if (query != 0) {
+            System.out.println(query);
+            String[] tokens = scan.nextLine().split(",");
+            switch (tokens[0]) {
+                case "get":
+                System.out.println(best.get(tokens[2]));
+                break;
+            }   
         }
     }
 }
