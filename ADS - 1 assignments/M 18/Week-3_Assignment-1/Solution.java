@@ -123,7 +123,7 @@ public final class Solution {
         }
         int query = Integer.parseInt(scan.nextLine());
         if (query != 0) {
-            System.out.println(query);
+            //System.out.println(query);
             String[] tokens = scan.nextLine().split(",");
             switch (tokens[0]) {
                 case "get":
