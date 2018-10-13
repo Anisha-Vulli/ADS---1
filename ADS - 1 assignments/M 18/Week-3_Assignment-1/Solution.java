@@ -82,7 +82,7 @@ public final class Solution {
         //empty constructor.
     }
     /**
-     * Client program.
+     * Main program.
      *
      * @param      args  The arguments
      */
@@ -105,13 +105,14 @@ public final class Solution {
             BinarySearchST<Stock, Integer> bestln = new  BinarySearchST<>();
             BinarySearchST<Stock, Integer> worstln = new BinarySearchST<>();
             int a = 1;
-            for (int j = 0; j < 5; j++) {
+            final int five = 5;
+            for (int j = 0; j < five; j++) {
                 Stock maxbest = max.delMax();
                 System.out.println(maxbest);
                 bestln.put(maxbest, j);
             }
             System.out.println();
-            for(int k = 0; k < 5; k++) {
+            for(int k = 0; k < five; k++) {
                 Stock minworst = min.delMin();
                 System.out.println(minworst);
                 worstln.put(minworst, k);
@@ -129,6 +130,8 @@ public final class Solution {
                 } else {
                     System.out.println(worst.get(tokens[2]));
                 }
+                break;
+                default:
                 break;
             }   
         }
