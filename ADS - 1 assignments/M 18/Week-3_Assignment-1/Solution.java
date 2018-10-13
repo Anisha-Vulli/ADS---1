@@ -98,7 +98,8 @@ public final class Solution {
             MaxPQ<Stock> max = new MaxPQ<>();
             while (count < n) {
                 String[] input = scan.nextLine().split(",");
-                Stock stocks = new Stock(input[0], Double.parseDouble(input[1]));
+                Stock stocks = new Stock(input[0],
+                    Double.parseDouble(input[1]));
                 min.insert(stocks);
                 max.insert(stocks);
                 count++;
@@ -113,7 +114,7 @@ public final class Solution {
                 bestln.put(maxbest, j);
             }
             System.out.println();
-            for(int k = 0; k < five; k++) {
+            for (int k = 0; k < five; k++) {
                 Stock minworst = min.delMin();
                 System.out.println(minworst);
                 worstln.put(minworst, k);
@@ -127,14 +128,14 @@ public final class Solution {
             switch (tokens[0]) {
                 case "get":
                 if (tokens[1].equals("maxST")) {
-                    System.out.println(best.get(tokens[2]));   
+                    System.out.println(best.get(tokens[2]));
                 } else {
                     System.out.println(worst.get(tokens[2]));
                 }
                 break;
                 default:
                 break;
-            }   
+            }
         }
     }
 }
