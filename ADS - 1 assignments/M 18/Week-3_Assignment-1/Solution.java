@@ -112,6 +112,7 @@ public final class Solution {
                 Stock maxbest = max.delMax();
                 System.out.println(maxbest);
                 bestln.put(maxbest, j);
+                System.out.println(bestln.get(maxbest));
             }
             System.out.println();
             for (int k = 0; k < five; k++) {
