@@ -96,31 +96,22 @@ public final class Solution {
             while (count < n) {
                 String[] input = scan.nextLine().split(",");
                 Stock stocks = new Stock(input[0], Double.parseDouble(input[1]));
-                if (Double.parseDouble(input[1]) > 0) {
-                    max.insert(stocks);    
-                }
-
-                if (Double.parseDouble(input[1]) < 0) {
-                    min.insert(stocks);   
-                }
+                min.insert(stocks);
+                max.insert(stocks);
                 count++;
             }
             BinarySearchST<String, Double> best = new  BinarySearchST<>();
             BinarySearchST<String, Double> worst = new BinarySearchST<>();
-            min = new MinPQ<>();
-            max = new MaxPQ<>();
             for (int j = 0; j < 5; j++) {
                 Stock maxbest = max.delMax();
                 System.out.println(maxbest);
-                max.insert(maxbest);    
-                //best.put(maxbest.getStockName(), maxbest.getChange());
+                best.put(maxbest.getStockName(), maxbest.getChange());
             }
             System.out.println();
             for(int k = 0; k < 5; k++) {
                 Stock minworst = min.delMin();
                 System.out.println(minworst);
-                min.insert(minworst);
-                //worst.put(minworst.getStockName(), minworst.getChange());
+                worst.put(minworst.getStockName(), minworst.getChange());
             }
             System.out.println();
         }
