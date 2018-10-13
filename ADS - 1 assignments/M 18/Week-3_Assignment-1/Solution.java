@@ -107,15 +107,19 @@ public final class Solution {
             }
             BinarySearchST<String, Double> best = new  BinarySearchST<>();
             BinarySearchST<String, Double> worst = new BinarySearchST<>();
+            min = new MinPQ<>();
+            max = new MaxPQ<>();
             for (int j = 0; j < 5; j++) {
                 Stock maxbest = max.delMax();
                 System.out.println(maxbest);
+                max.insert(maxbest);    
                 //best.put(maxbest.getStockName(), maxbest.getChange());
             }
             System.out.println();
             for(int k = 0; k < 5; k++) {
                 Stock minworst = min.delMin();
                 System.out.println(minworst);
+                min.insert(minworst);
                 //worst.put(minworst.getStockName(), minworst.getChange());
             }
             System.out.println();
