@@ -122,7 +122,7 @@ public final class Solution {
             System.out.println();
         }
         int query = Integer.parseInt(scan.nextLine());
-        if (query != 0) {
+        while (scan.hasNextLine()) {
             //System.out.println(query);
             String[] tokens = scan.nextLine().split(",");
             switch (tokens[0]) {
@@ -138,6 +138,7 @@ public final class Solution {
                 default:
                 break;
             }
+            //query--;
         }
     }
 }
