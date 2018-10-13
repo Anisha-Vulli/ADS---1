@@ -17,8 +17,8 @@ class Stock implements Comparable<Stock> {
     /**
      * Constructs the object.
      *
-     * @param      stocknamee  The stocknamee
-     * @param      changee     The changee
+     * @param      name1    The name 1
+     * @param      change1  The change 1
      */
     Stock(final String name1, final Double change1) {
         this.name = name1;
@@ -96,8 +96,13 @@ public final class Solution {
             while (count < n) {
                 String[] input = scan.nextLine().split(",");
                 Stock stocks = new Stock(input[0], Double.parseDouble(input[1]));
-                min.insert(stocks);
-                max.insert(stocks);
+                if (Double.parseDouble(input[1]) > 0) {
+                    max.insert(stocks);    
+                }
+
+                if (Double.parseDouble(input[1]) < 0) {
+                    min.insert(stocks);   
+                }
                 count++;
             }
             BinarySearchST<String, Double> best = new  BinarySearchST<>();
