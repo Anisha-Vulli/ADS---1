@@ -3,7 +3,7 @@ Starting audit...
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 18\Week-3_Assignment-1\Solution.java:92:29: '6' is a magic number. [MagicNumber]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 18\Week-3_Assignment-1\Solution.java:98: Line is longer than 80 characters (found 81). [LineLength]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 18\Week-3_Assignment-1\Solution.java:105:33: '5' is a magic number. [MagicNumber]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 18\Week-3_Assignment-1\Solution.java:111:16: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 18\Week-3_Assignment-1\Solution.java:111:32: '5' is a magic number. [MagicNumber]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 18\Week-3_Assignment-1\Solution.java:112:16: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 18\Week-3_Assignment-1\Solution.java:112:32: '5' is a magic number. [MagicNumber]
 Audit done.
 Checkstyle ends with 6 errors.

@@ -100,12 +100,13 @@ public final class Solution {
                 max.insert(stocks);
                 count++;
             }
-            BinarySearchST<String, Double> best = new  BinarySearchST<>();
+            BinarySearchST<Stock, Integer> best = new  BinarySearchST<>();
             BinarySearchST<String, Double> worst = new BinarySearchST<>();
             for (int j = 0; j < 5; j++) {
                 Stock maxbest = max.delMax();
                 System.out.println(maxbest);
-                best.put(maxbest.getStockName(), maxbest.getChange());
+                int a = 1;
+                best.put(maxbest, a);
             }
             System.out.println();
             for(int k = 0; k < 5; k++) {
