@@ -128,8 +128,10 @@ public final class Solution {
             switch (tokens[0]) {
                 case "get":
                 if (tokens[1].equals("maxST")) {
+                    System.out.println(best.rank(tokens[2]));
                     System.out.println(best.get(tokens[2]));
                 } else {
+                    System.out.println(worst.rank(tokens[2]));
                     System.out.println(worst.get(tokens[2]));
                 }
                 break;

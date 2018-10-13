@@ -442,6 +442,7 @@ Tasty Bite Eat 0.23
 WABCO India 0.33
 
 4
+0
 null
 ----------------------------------------
 ########## Testcase 3: Failed ##########
@@ -596,6 +597,7 @@ Vinati Organics 1.03
 Chola Inv Fin 1.47
 
 4
+0
 null
 ----------------------------------------
 ########## Testcase 4: Failed ##########
@@ -765,5 +767,6 @@ Tasty Bite Eat 0.23
 WABCO India 0.33
 
 9
+0
 null
 ----------------------------------------
