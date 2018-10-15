@@ -441,10 +441,10 @@ Sanofi India 0.21
 Tasty Bite Eat 0.23
 WABCO India 0.33
 
-0
-0
-0
-0
+5
+2
+2
+null
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -597,9 +597,9 @@ Fine Organic Industries Ltd. 0.29
 Vinati Organics 1.03
 Chola Inv Fin 1.47
 
+4
 0
-0
-0
+4
 0
 ----------------------------------------
 ########## Testcase 4: Failed ##########
@@ -768,12 +768,12 @@ Sanofi India 0.21
 Tasty Bite Eat 0.23
 WABCO India 0.33
 
+null
+5
 0
+2
 0
-0
-0
-0
-0
-0
-0
+4
+1
+1
 ----------------------------------------

@@ -13,14 +13,14 @@ class Stock implements Comparable<Stock> {
     /**
      * change in stock value.
      */
-    private Double value;
+    private Float value;
     /**
      * Constructs the object.
      *
      * @param      name1    The name 1
      * @param      change1  The change 1
      */
-    Stock(final String name1, final Double change1) {
+    Stock(final String name1, final Float change1) {
         this.name = name1;
         this.value = change1;
     }
@@ -37,7 +37,7 @@ class Stock implements Comparable<Stock> {
      *
      * @return     The change.
      */
-    public Double getChange() {
+    public Float getChange() {
         return this.value;
     }
     /**
@@ -89,8 +89,8 @@ public final class Solution {
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = Integer.parseInt(scan.nextLine());
-        BinarySearchST<String, Integer> best = new  BinarySearchST<>();
-        BinarySearchST<String, Integer> worst = new BinarySearchST<>();
+        BinarySearchST<String, Integer> best = new  BinarySearchST<>(n);
+        BinarySearchST<String, Integer> worst = new BinarySearchST<>(n);
         final int six = 6;
         for (int i = 0; i < six; i++) {
             int count = 0;
@@ -99,26 +99,34 @@ public final class Solution {
             while (count < n) {
                 String[] input = scan.nextLine().split(",");
                 Stock stocks = new Stock(input[0],
-                    Double.parseDouble(input[1]));
+                    Float.parseFloat(input[1]));
                 min.insert(stocks);
                 max.insert(stocks);
                 count++;
             }
-            BinarySearchST<Stock, Integer> bestln = new  BinarySearchST<>();
-            BinarySearchST<Stock, Integer> worstln = new BinarySearchST<>();
-            int a = 1;
+            //int a = 1;
             final int five = 5;
             for (int j = 0; j < five; j++) {
                 Stock maxbest = max.delMax();
+                if (best.contains(maxbest.getStockName())) { 
+                    int p = best.get(maxbest.getStockName());
+                    best.put(maxbest.getStockName(), ++p);
+                } else {
+                    best.put(maxbest.getStockName(), 1);
+                }
                 System.out.println(maxbest);
-                bestln.put(maxbest, j);
                 //System.out.println(bestln.get(maxbest));
             }
             System.out.println();
             for (int k = 0; k < five; k++) {
                 Stock minworst = min.delMin();
+                if (worst.contains(minworst.getStockName())) {
+                    int a = worst.get(minworst.getStockName());
+                    worst.put(minworst.getStockName(), ++a);
+                } else {
+                    worst.put(minworst.getStockName(), 1);
+                }
                 System.out.println(minworst);
-                worstln.put(minworst, k);
             }
             System.out.println();
         }
@@ -129,13 +137,22 @@ public final class Solution {
             switch (tokens[0]) {
                 case "get":
                 if (tokens[1].equals("maxST")) {
-                    System.out.println(best.rank(tokens[2]));
-                    //System.out.println(best.get(tokens[2]));
+                    if (!best.contains(tokens[2])) {
+                        System.out.println("0");
+                    } else {
+                        System.out.println(best.get(tokens[2]));
+                    }
                 } else if (tokens[1].equals("minST")) {
-                    System.out.println(worst.rank(tokens[2]));
-                    //System.out.println(worst.get(tokens[2]));
+                    if (!worst.contains(tokens[2])) {
+                        System.out.println("0");
+                    } else {
+                        System.out.println(best.get(tokens[2]));
+                    }
                 }
                 break;
+                // case "intersection":
+
+                // break;
                 default:
                 break;
             }
