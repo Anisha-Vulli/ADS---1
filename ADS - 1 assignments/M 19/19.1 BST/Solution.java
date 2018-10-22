@@ -58,7 +58,11 @@ class Book implements Comparable<Book> {
     public int compareTo(final Book that) {
         return this.name.compareTo(that.name);
     }
-
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         return getName() + ", " + getAuthor() + ", " + getPrice();
     }
@@ -177,15 +181,29 @@ class BinarySearchTree {
      */
     BinarySearchTree() {
     }
-
+    /**
+     * Determines if empty.
+     *
+     * @return     True if empty, False otherwise.
+     */
     public boolean isEmpty() {
         return count() == 0;
     }
-
+    /**
+     * Count of the value of the key.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int count() {
         return count(root);
     }
-
+    /**
+     * Count of the number of nodes under a particular node.
+     *
+     * @param      n     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int count(final Node n) {
         if (n == null) {
             return 0;
@@ -193,16 +211,36 @@ class BinarySearchTree {
             return n.getCount();
         }
     }
-
+    /**
+     * Checks if the given node is present or not.
+     *
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
     public boolean contains(final Book key) {
         return get(key) != null;
     }
-
+    /**
+     * Puts the value according to specific order.
+     *
+     * @param      key   The key
+     * @param      val   The value
+     */
     public void put(final Book key, final String val) {
         root = put(root, key, val);
     }
-
-    public Node put(Node x, Book key, String val) {
+    /**
+     * Puts the node in its place.
+     * The complexity is N.
+     *
+     * @param      x     { parameter_description }
+     * @param      key   The key
+     * @param      val   The value
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public Node put(final Node x, final Book key, final String val) {
         if (x == null) {
             return new Node(key, val, 1);
         }
@@ -223,7 +261,14 @@ class BinarySearchTree {
         x.setCount(1 + count(x.getLeft()) + count(x.getRight()));
         return x;
     }
-
+    /**
+     * Gets the rank of the particular node.
+     * Complexity is N.
+     *
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
     public String get(final Book key) {
         Node x = root;
         while (x != null) {
@@ -243,32 +288,62 @@ class BinarySearchTree {
 
         return null;
     }
-
+    /**
+     * Returns the minimum value.
+     * Complexity is 1.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Book min() {
         return min(root).getKey();
     }
-
-    public Node min(Node x) {
+    /**
+     * Returns the min value.
+     * Complexity is 1.
+     *
+     * @param      x     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public Node min(final Node x) {
         if (x.getLeft() == null) {
             return x;
         } else {
             return min(x.getLeft());
         }
     }
-
+    /**
+     * Returns the max value.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Book max() {
         return max(root).getKey();
     }
-
-    public Node max(Node x) {
+    /**
+     * Returns the maximium value.
+     * Complexity is N.
+     *
+     * @param      x     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public Node max(final Node x) {
         if (x.getRight() == null) {
             return x;
         } else {
             return max(x.getRight());
         }
     }
-
-    public Book floor(Book key) {
+    /**
+     * Returns the least nearest value of the given node.
+     * Complexity is N.
+     *
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public Book floor(final Book key) {
         Node x = floor(root, key);
         if (x == null) {
             return null;
@@ -276,8 +351,16 @@ class BinarySearchTree {
             return x.getKey();
         }
     }
-
-    public Node floor(Node x, Book key) {
+    /**
+     * Returns the least nearest value of the given node.
+     * Complexity is log N.
+     *
+     * @param      x     { parameter_description }
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public Node floor(final Node x, final Book key) {
         if (x == null) {
             return null;
         }
@@ -298,8 +381,15 @@ class BinarySearchTree {
             return x;
         }
     }
-
-    public Book ceiling(Book key) {
+    /**
+     * Returns the nearest highest value of the given node.
+     * Complexity is log N.
+     *
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public Book ceiling(final Book key) {
         Node x = ceiling(root, key);
         if (x == null) {
             return null;
@@ -307,8 +397,16 @@ class BinarySearchTree {
             return x.getKey();
         }
     }
-
-    public Node ceiling(Node x, Book key) {
+    /**
+     * Returns the nearest highest value of the given node.
+     * Complexity is log N.
+     *
+     * @param      x     { parameter_description }
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public Node ceiling(final Node x, final Book key) {
         if (x == null) {
             return null;
         }
@@ -327,13 +425,29 @@ class BinarySearchTree {
         }
         return ceiling(x.getRight(), key);
     }
-
-    public Book select(int k) {
+    /**
+     * Select gives the key n the particlar index.
+     * Complexity is N.
+     *
+     * @param      k     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public Book select(final int k) {
         Node x = select(root, k);
         return x.getKey();
     }
-
-    private Node select(Node x, int k) {
+    /**
+     * Select gives the key n the particlar index.
+     * Complexity is N.
+     *
+     *
+     * @param      x     { parameter_description }
+     * @param      k     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    private Node select(final Node x, final int k) {
         if (x == null) return null;
         //System.out.println(x.toString());
         int t = count(x.getLeft());
