@@ -108,7 +108,7 @@ public final class Solution {
             final int five = 5;
             for (int j = 0; j < five; j++) {
                 Stock maxbest = max.delMax();
-                if (best.contains(maxbest.getStockName())) { 
+                if (best.contains(maxbest.getStockName())) {
                     int p = best.get(maxbest.getStockName());
                     best.put(maxbest.getStockName(), ++p);
                 } else {
@@ -142,7 +142,7 @@ public final class Solution {
                     } else {
                         System.out.println(best.get(tokens[2]));
                     }
-                } else if(tokens[1].equals("minST")) {
+                } else if (tokens[1].equals("minST")) {
                     if (!worst.contains(tokens[2])) {
                         System.out.println("0");
                     } else {
@@ -152,9 +152,9 @@ public final class Solution {
                 break;
                 case "intersection":
                 for (String key : best.keys()) {
-                	if (worst.contains(key)) {
-                		System.out.println(key);
-                	}
+                    if (worst.contains(key)) {
+                        System.out.println(key);
+                    }
                 }
                 break;
                 default:
