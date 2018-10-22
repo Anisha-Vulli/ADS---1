@@ -45,8 +45,8 @@ class Book implements Comparable<Book> {
      *
      * @return     The price.
      */
-    String getPrice() {
-        return price;
+    Double getPrice() {
+        return Double.parseDouble(price);
     }
     /**
      * Compares the name of the books.
