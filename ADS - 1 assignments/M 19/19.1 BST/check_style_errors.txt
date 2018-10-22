@@ -1,6 +1,2 @@
 Starting audit...
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 19\19.1 BST\Solution.java:467: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 19\19.1 BST\Solution.java:469: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 19\19.1 BST\Solution.java:475: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 3 errors.

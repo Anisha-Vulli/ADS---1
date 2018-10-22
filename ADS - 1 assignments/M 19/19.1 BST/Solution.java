@@ -464,15 +464,15 @@ class BinarySearchTree {
         int t = count(x.getLeft());
         if (t > k) {
             return select(x.getLeft(),  k);
-        } 
+        }
         if (t < k) {
-            return select(x.getRight(), k - t - 1); 
+            return select(x.getRight(), k - t - 1);
         }
         if (t == k) {
             return x;
         }
         return x;
-    }    
+    }
 }
 
 /**
