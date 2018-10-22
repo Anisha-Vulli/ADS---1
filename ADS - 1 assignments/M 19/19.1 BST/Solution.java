@@ -1,4 +1,10 @@
+/**
+ * Scanner import.
+ */
 import java.util.Scanner;
+/**
+ * Class for book.
+ */
 class Book implements Comparable<Book> {
     /**
      * Name string.
@@ -115,7 +121,11 @@ class Node {
     public String getValue() {
         return value;
     }
-
+    /**
+     * Gets the count.
+     *
+     * @return     The count.
+     */
     public int getCount() {
         return count;
     }
@@ -448,18 +458,19 @@ class BinarySearchTree {
      * @return     { description_of_the_return_value }
      */
     private Node select(final Node x, final int k) {
-        if (x == null) return null;
-        //System.out.println(x.toString());
+        if (x == null) {
+            return null;
+        }
         int t = count(x.getLeft());
-        //System.out.println(t);
         if (t > k) {
             return select(x.getLeft(),  k);
         } 
         if (t < k) {
             return select(x.getRight(), k - t - 1); 
         }
-        if(t==k)
+        if (t == k) {
             return x;
+        }
         return x;
     }    
 }
@@ -516,3 +527,4 @@ final class Solution {
         }
     }
 }
+
