@@ -1,6 +1,6 @@
 Starting audit...
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 18\Week-3_Assignment-1\Solution.java:111: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 18\Week-3_Assignment-1\Solution.java:145:26: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 18\Week-3_Assignment-1\Solution.java:154: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 18\Week-3_Assignment-1\Solution.java:155:17: File contains tab characters (this is the first instance). [FileTabCharacter]
 Audit done.
 Checkstyle ends with 3 errors.

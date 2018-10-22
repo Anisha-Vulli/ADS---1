@@ -151,7 +151,11 @@ public final class Solution {
                 }
                 break;
                 case "intersection":
-                
+                for (String key : best.keys()) {
+                	if (worst.contains(key)) {
+                		System.out.println(key);
+                	}
+                }
                 break;
                 default:
                 break;
