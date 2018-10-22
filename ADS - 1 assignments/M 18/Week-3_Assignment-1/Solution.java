@@ -150,9 +150,9 @@ public final class Solution {
                     }
                 }
                 break;
-                // case "intersection":
-
-                // break;
+                case "intersection":
+                
+                break;
                 default:
                 break;
             }
