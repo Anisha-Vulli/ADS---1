@@ -142,7 +142,7 @@ public final class Solution {
                     } else {
                         System.out.println(best.get(tokens[2]));
                     }
-                } else if (tokens[1].equals("minST")) {
+                } else {
                     if (!worst.contains(tokens[2])) {
                         System.out.println("0");
                     } else {
