@@ -522,7 +522,7 @@ class BinarySearchTree {
      *
      * @param      key   The key
      */
-    public void delete(Book key) {
+    public void delete(final Book key) {
         root = delete(root, key);
     }
     /**
@@ -534,7 +534,7 @@ class BinarySearchTree {
      *
      * @return     { description_of_the_return_value }
      */
-    private Node delete(Node x, Book key) {
+    private Node delete(final Node x, final Book key) {
         Node node = x;
         if (node == null) {
             return null;
