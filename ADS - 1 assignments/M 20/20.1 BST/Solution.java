@@ -542,11 +542,9 @@ class BinarySearchTree {
         int cmp = key.compareTo(x.getKey());
         if (cmp < 0) {
             x.setLeft(delete(x.getLeft(),  key));
-        }
-        else if (cmp > 0) {
+        } else if (cmp > 0) {
             x.setRight(delete(x.getRight(), key));
-        }
-        else { 
+        } else {
             if (x.getRight() == null) {
                 return x.getLeft();
             }
@@ -560,7 +558,7 @@ class BinarySearchTree {
         }
         x.setCount(count(x.getLeft()) + count(x.getRight()) + 1);
         return node;
-    } 
+    }
 
 }
 
