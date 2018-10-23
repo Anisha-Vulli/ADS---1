@@ -363,7 +363,7 @@ class BinarySearchTree {
     }
     /**
      * Returns the least nearest value of the given node.
-     * Complexity is log N.
+     * Complexity is N.
      *
      * @param      x     { parameter_description }
      * @param      key   The key
@@ -393,7 +393,7 @@ class BinarySearchTree {
     }
     /**
      * Returns the nearest highest value of the given node.
-     * Complexity is log N.
+     * Complexity is N.
      *
      * @param      key   The key
      *
@@ -409,7 +409,7 @@ class BinarySearchTree {
     }
     /**
      * Returns the nearest highest value of the given node.
-     * Complexity is log N.
+     * Complexity is N.
      *
      * @param      x     { parameter_description }
      * @param      key   The key
@@ -481,12 +481,13 @@ class BinarySearchTree {
     }
     /**
      * Delete min value.
+     * Complexity of deletion is N.
      *
      * @param      x     { parameter_description }
      *
      * @return     { description_of_the_return_value }
      */
-    public Node deleteMin(Node x) {
+    public Node deleteMin(final Node x) {
         if (x.getLeft() == null) {
             return x.getRight();
         }
@@ -494,12 +495,21 @@ class BinarySearchTree {
         x.setCount(count(x.getLeft()) + count(x.getRight()) + 1);
         return x;
     }
-
+    /**
+     * Deletion of max.
+     */
     public void deleteMax() {
         root = deleteMax(root);
     }
-
-    public Node deleteMax(Node x) {
+    /**
+     * Deletion of max.
+     * Complexity is N in worst case condition.
+     *
+     * @param      x     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public Node deleteMax(final Node x) {
         if (x.getRight() == null) {
             return x.getLeft();
         }
@@ -507,13 +517,26 @@ class BinarySearchTree {
         x.setCount(count(x.getLeft()) + count(x.getRight()) + 1);
         return x;
     }
-
+    /**
+     * Deletion of a particular key.
+     *
+     * @param      key   The key
+     */
     public void delete(Book key) {
         root = delete(root, key);
     }
-
+    /**
+     * Deletion of a particular key.
+     * Complexity is N.
+     *
+     * @param      x     { parameter_description }
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
     private Node delete(Node x, Book key) {
-        if (x == null) {
+        Node node = x;
+        if (node == null) {
             return null;
         }
         int cmp = key.compareTo(x.getKey());
@@ -531,12 +554,12 @@ class BinarySearchTree {
                 return x.getRight();
             }
             Node t = x;
-            x = min(t.getRight());
+            node = min(t.getRight());
             x.setRight(deleteMin(t.getRight()));
             x.setLeft(t.getLeft());
         }
         x.setCount(count(x.getLeft()) + count(x.getRight()) + 1);
-        return x;
+        return node;
     } 
 
 }
