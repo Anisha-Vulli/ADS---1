@@ -10,10 +10,18 @@ class SeparateChainingHashST {
      * Capacity of the symbol table.
      */
     private static final int INIT_CAPACITY = 4;
-    private int n;    // number of key-value pairs
-    private int m;    // hash table size
+    /**
+     * // number of key-value pairs
+     */
+    private int n;
+    /**
+     * // hash table size
+     */
+    private int m;
+    /**
+     * // array of linked-list symbol tables
+     */
     private SequentialSearchST<String, Integer>[] st;
-    // array of linked-list symbol tables
     /**
      * Initializes an empty symbol table.
      */
