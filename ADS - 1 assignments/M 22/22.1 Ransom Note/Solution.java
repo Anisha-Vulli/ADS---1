@@ -68,7 +68,8 @@ class SeparateChainingHashST {
      * @return     { Generated hash value }
      */
     private int hash(final String key) {
-        return (key.hashCode() & 0x7fffffff) % m;
+        int data = 0x7fffffff;
+        return (key.hashCode() & data) % m;
     }
 
     /**
