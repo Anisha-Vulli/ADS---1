@@ -45,7 +45,8 @@ class SeparateChainingHashST {
     // resize the hash table to have the given number of chains,
     // // rehashing all of the keys
     // private void resize(int chains) {
-    //     SeparateChainingHashST<Key, Value> temp = new SeparateChainingHashST<Key, Value>(chains);
+    //     SeparateChainingHashST<Key, Value> temp 
+    //     = new SeparateChainingHashST<Key, Value>(chains);
     //     for (int i = 0; i < m; i++) {
     //         for (Key key : st[i].keys()) {
     //             temp.put(key, st[i].get(key));
@@ -78,7 +79,7 @@ class SeparateChainingHashST {
      */
     public int size() {
         return n;
-    } 
+    }
 
     /**
      * Returns true if this symbol table is empty.
