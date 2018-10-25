@@ -40,7 +40,7 @@ class SeparateChainingHashST {
         for (int i = 0; i < m1; i++) {
             st[i] = new SequentialSearchST<String, Integer>();
         }
-    } 
+    }
 
     // resize the hash table to have the given number of chains,
     // // rehashing all of the keys
@@ -57,7 +57,6 @@ class SeparateChainingHashST {
     // }
 
     // hash value between 0 and m-1
-    
 
     /**
      * Function to generate hash value to given key.
@@ -69,7 +68,7 @@ class SeparateChainingHashST {
      */
     private int hash(final String key) {
         return (key.hashCode() & 0x7fffffff) % m;
-    } 
+    }
 
     /**
      * Returns the number of key-value pairs in this symbol table.
@@ -104,7 +103,7 @@ class SeparateChainingHashST {
     public boolean contains(final String key) {
         //if (key == null) throw new IllegalArgumentException("argument to contains() is null");
         return get(key) != null;
-    } 
+    }
 
     /**
      * Returns the value associated with the specified key in this symbol table.
@@ -119,7 +118,7 @@ class SeparateChainingHashST {
         //if (key == null) throw new IllegalArgumentException("argument to get() is null");
         int i = hash(key);
         return st[i].get(key);
-    } 
+    }
 
     /**
      * Inserts the specified key-value pair into the symbol table, overwriting the old 
@@ -164,7 +163,7 @@ class SeparateChainingHashST {
             n--;
         }
         st[i].delete(key);
-    } 
+    }
 }
 /**
  * Class for solution.
