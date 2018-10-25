@@ -32,7 +32,7 @@ class SeparateChainingHashST {
     /**
      * Constructs the object.
      *
-     * @param      m     { parameter_description }
+     * @param      m1    The m 1
      */
     SeparateChainingHashST(final int m1) {
         this.m = m1;
