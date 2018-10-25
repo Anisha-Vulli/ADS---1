@@ -1,9 +1,7 @@
 Starting audit...
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 22\22.1 Ransom Note\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 22\22.1 Ransom Note\Solution.java:28:5: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 22\22.1 Ransom Note\Solution.java:30: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 22\22.1 Ransom Note\Solution.java:37:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 22\22.1 Ransom Note\Solution.java:37:45: 'm' hides a field. [HiddenField]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 22\22.1 Ransom Note\Solution.java:37:38: 'm' hides a field. [HiddenField]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 22\22.1 Ransom Note\Solution.java:43: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 22\22.1 Ransom Note\Solution.java:48: Line is longer than 80 characters (found 100). [LineLength]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 22\22.1 Ransom Note\Solution.java:60: Line has trailing spaces. [RegexpSingleline]
@@ -26,4 +24,4 @@ Starting audit...
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 22\22.1 Ransom Note\Solution.java:160: Line is longer than 80 characters (found 94). [LineLength]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 22\22.1 Ransom Note\Solution.java:167: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 26 errors.
+Checkstyle ends with 24 errors.

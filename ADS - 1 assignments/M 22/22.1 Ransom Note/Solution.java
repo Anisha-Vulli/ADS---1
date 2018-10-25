@@ -25,7 +25,7 @@ class SeparateChainingHashST {
     /**
      * Initializes an empty symbol table.
      */
-    public SeparateChainingHashST() {
+    SeparateChainingHashST() {
         this(INIT_CAPACITY);
     } 
 
@@ -34,7 +34,7 @@ class SeparateChainingHashST {
      *
      * @param      m     { parameter_description }
      */
-    public SeparateChainingHashST(final int m) {
+    SeparateChainingHashST(final int m) {
         this.m = m;
         st = (SequentialSearchST<String, Integer>[]) new SequentialSearchST[m];
         for (int i = 0; i < m; i++) {
