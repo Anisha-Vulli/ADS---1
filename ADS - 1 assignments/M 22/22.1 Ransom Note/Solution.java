@@ -102,7 +102,7 @@ class SeparateChainingHashST {
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public boolean contains(final String key) {
-        //if (key == null) 
+        //if (key == null)
         //throw new IllegalArgumentException("argument to contains() is null");
         return get(key) != null;
     }
