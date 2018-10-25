@@ -1,12 +1,9 @@
 Starting audit...
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 22\22.1 Ransom Note\Solution.java:71:34: '0x7fffffff' is a magic number. [MagicNumber]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 22\22.1 Ransom Note\Solution.java:127: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 22\22.1 Ransom Note\Solution.java:127: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 22\22.1 Ransom Note\Solution.java:128: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 22\22.1 Ransom Note\Solution.java:129: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 22\22.1 Ransom Note\Solution.java:153: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 22\22.1 Ransom Note\Solution.java:128: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 22\22.1 Ransom Note\Solution.java:156: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 22\22.1 Ransom Note\Solution.java:156: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 22\22.1 Ransom Note\Solution.java:157: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 22\22.1 Ransom Note\Solution.java:159: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 22\22.1 Ransom Note\Solution.java:159: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 22\22.1 Ransom Note\Solution.java:160: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 6 errors.
