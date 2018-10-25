@@ -102,7 +102,8 @@ class SeparateChainingHashST {
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public boolean contains(final String key) {
-        //if (key == null) throw new IllegalArgumentException("argument to contains() is null");
+        //if (key == null) 
+        //throw new IllegalArgumentException("argument to contains() is null");
         return get(key) != null;
     }
 
@@ -116,7 +117,8 @@ class SeparateChainingHashST {
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public Integer get(final String key) {
-        //if (key == null) throw new IllegalArgumentException("argument to get() is null");
+        //if (key == null)
+        //throw new IllegalArgumentException("argument to get() is null");
         int i = hash(key);
         return st[i].get(key);
     }
@@ -133,7 +135,8 @@ class SeparateChainingHashST {
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public void put(final String key, final Integer val) {
-        // if (key == null) throw new IllegalArgumentException("first argument to put() is null");
+        // if (key == null)
+        //throw new IllegalArgumentException("first argument to put() is null");
         if (val == null) {
             delete(key);
             return;
@@ -157,7 +160,8 @@ class SeparateChainingHashST {
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public void delete(final String key) {
-        //if (key == null) throw new IllegalArgumentException("argument to delete() is null");
+        //if (key == null)
+        //throw new IllegalArgumentException("argument to delete() is null");
 
         int i = hash(key);
         if (st[i].contains(key)) {
