@@ -27,7 +27,7 @@ class SeparateChainingHashST {
      */
     SeparateChainingHashST() {
         this(INIT_CAPACITY);
-    } 
+    }
 
     /**
      * Constructs the object.
