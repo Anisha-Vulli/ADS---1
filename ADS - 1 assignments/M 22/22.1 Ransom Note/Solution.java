@@ -11,15 +11,15 @@ class SeparateChainingHashST {
      */
     private static final int INIT_CAPACITY = 4;
     /**
-     * // number of key-value pairs
+     * // number of key-value pairs.
      */
     private int n;
     /**
-     * // hash table size
+     * // hash table size.
      */
     private int m;
     /**
-     * // array of linked-list symbol tables
+     * // array of linked-list symbol tables.
      */
     private SequentialSearchST<String, Integer>[] st;
     /**
