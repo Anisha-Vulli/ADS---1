@@ -34,10 +34,10 @@ class SeparateChainingHashST {
      *
      * @param      m     { parameter_description }
      */
-    SeparateChainingHashST(final int m) {
-        this.m = m;
-        st = (SequentialSearchST<String, Integer>[]) new SequentialSearchST[m];
-        for (int i = 0; i < m; i++) {
+    SeparateChainingHashST(final int m1) {
+        this.m = m1;
+        st = (SequentialSearchST<String, Integer>[]) new SequentialSearchST[m1];
+        for (int i = 0; i < m1; i++) {
             st[i] = new SequentialSearchST<String, Integer>();
         }
     } 
