@@ -45,7 +45,7 @@ class SeparateChainingHashST {
     // resize the hash table to have the given number of chains,
     // // rehashing all of the keys
     // private void resize(int chains) {
-    //     SeparateChainingHashST<Key, Value> temp 
+    //     SeparateChainingHashST<Key, Value> temp
     //     = new SeparateChainingHashST<Key, Value>(chains);
     //     for (int i = 0; i < m; i++) {
     //         for (Key key : st[i].keys()) {
