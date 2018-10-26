@@ -1,19 +1,44 @@
+/**
+ * Scanner import.
+ */
 import java.util.Scanner;
+/**
+ * Arraylist import.
+ */
 import java.util.ArrayList;
-
+/**
+ * Class for linear probing hash st.
+ *
+ * @param      <Key>    The key
+ * @param      <Value>  The value
+ */
 class LinearProbingHashST<Key, Value> {
+    /**
+     * Capacity value.
+     */
     private static final int INIT_CAPACITY = 4;
-
-    private int n;           // number of key-value pairs in the symbol table
-    private int m;           // size of linear probing table
-    private Key[] keys;      // the keys
-    private Value[] vals;    // the values
+    /**
+     * number of key-value pairs in the symbol table.
+     */
+    private int n;
+    /**
+     * size of linear probing table.
+     */
+    private int m;
+    /**
+     * the keys.
+     */
+    private Key[] keys;
+    /**
+     * the values.
+     */
+    private Value[] vals;
 
 
     /**
      * Initializes an empty symbol table.
      */
-    public LinearProbingHashST() {
+    LinearProbingHashST() {
         this(INIT_CAPACITY);
     }
 
@@ -22,7 +47,7 @@ class LinearProbingHashST<Key, Value> {
      *
      * @param capacity the initial capacity
      */
-    public LinearProbingHashST(int capacity) {
+    LinearProbingHashST(int capacity) {
         m = capacity;
         n = 0;
         keys = (Key[])   new Object[m];
@@ -40,6 +65,7 @@ class LinearProbingHashST<Key, Value> {
 
     /**
      * Returns true if this symbol table is empty.
+     * Complexity is 1.
      *
      * @return {@code true} if this symbol table is empty;
      *         {@code false} otherwise
@@ -49,19 +75,31 @@ class LinearProbingHashST<Key, Value> {
     }
 
     /**
-     * Returns true if this symbol table contains the specified key.
+     * Returns true if this symbol table.
+     * contains the specified key.
+     * Complexity is N.
      *
      * @param  key the key
-     * @return {@code true} if this symbol table contains {@code key};
+     * @return {@code true} if this symbol
+     * table contains {@code key};
      *         {@code false} otherwise
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public boolean contains(Key key) {
-        if (key == null) throw new IllegalArgumentException("argument to contains() is null");
+        if (key == null) {
+            throw new IllegalArgumentException(
+                "argument to contains() is null");
+        }
         return get(key) != null;
     }
-
-    // hash function for keys - returns value between 0 and M-1
+    
+    /**
+     * hash function for keys - returns value between 0 and M-1. 
+     *
+     * @param      key   The key
+     *
+     * @return     { hash value }
+     */
     private int hash(Key key) {
         return (11 * key.hashCode()) % m;
     }
