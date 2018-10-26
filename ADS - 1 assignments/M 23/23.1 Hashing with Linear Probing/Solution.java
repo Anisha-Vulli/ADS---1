@@ -223,11 +223,17 @@ class LinearProbingHashST<Key, Value> {
 
     // integrity check - don't check after each put() because
     // integrity not maintained during a delete()
+    
+
+    /**
+     * Checks if the key is resent or not.
+     *
+     * @return     { description_of_the_return_value }
+     */
     private boolean check() {
 
         // check that hash table is at most 50% full
         if (m < 2*n) {
-            System.err.println("Hash table size m = " + m + "; array size n = " + n);
             return false;
         }
 
@@ -235,13 +241,31 @@ class LinearProbingHashST<Key, Value> {
         for (int i = 0; i < m; i++) {
             if (keys[i] == null) continue;
             else if (get(keys[i]) != vals[i]) {
-                System.err.println("get[" + keys[i] + "] = " + get(keys[i]) + "; vals[i] = " + vals[i]);
                 return false;
             }
         }
         return true;
     }
 
+    public boolean check(Key key) {
+        if (key == null) {
+            return false;
+        }
+
+        for (int i = 0; i < m; i++) {
+            if (keys[i] != null) {
+                if (key.equals(keys[i])) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+    /**
+     * Display the values in a String.
+     *
+     * @return     { String of all values.}
+     */
     public String display() {
         if (size() == 0) {
             return "{}";

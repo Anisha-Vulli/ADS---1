@@ -42,12 +42,11 @@ Starting audit...
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 23\23.1 Hashing with Linear Probing\Solution.java:205:41: '/' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 23\23.1 Hashing with Linear Probing\Solution.java:219: 'for' construct must use '{}'s. [NeedBraces]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 23\23.1 Hashing with Linear Probing\Solution.java:220: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 23\23.1 Hashing with Linear Probing\Solution.java:226:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 23\23.1 Hashing with Linear Probing\Solution.java:229:18: '*' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 23\23.1 Hashing with Linear Probing\Solution.java:229:19: '*' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 23\23.1 Hashing with Linear Probing\Solution.java:230: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 23\23.1 Hashing with Linear Probing\Solution.java:236: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 23\23.1 Hashing with Linear Probing\Solution.java:238: Line is longer than 80 characters (found 104). [LineLength]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 23\23.1 Hashing with Linear Probing\Solution.java:245:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 23\23.1 Hashing with Linear Probing\Solution.java:226: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 23\23.1 Hashing with Linear Probing\Solution.java:236:18: '*' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 23\23.1 Hashing with Linear Probing\Solution.java:236:19: '*' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 23\23.1 Hashing with Linear Probing\Solution.java:242: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 23\23.1 Hashing with Linear Probing\Solution.java:250:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 23\23.1 Hashing with Linear Probing\Solution.java:250:26: Parameter key should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 50 errors.
+Checkstyle ends with 49 errors.
