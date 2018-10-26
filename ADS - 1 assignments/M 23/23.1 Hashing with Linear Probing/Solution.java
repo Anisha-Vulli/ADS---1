@@ -47,7 +47,7 @@ class LinearProbingHashST<Key, Value> {
      *
      * @param capacity the initial capacity
      */
-    LinearProbingHashST(int capacity) {
+    LinearProbingHashST(final int capacity) {
         m = capacity;
         n = 0;
         keys = (Key[])   new Object[m];
@@ -85,7 +85,7 @@ class LinearProbingHashST<Key, Value> {
      *         {@code false} otherwise
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
-    public boolean contains(Key key) {
+    public boolean contains(final Key key) {
         if (key == null) {
             throw new IllegalArgumentException(
                 "argument to contains() is null");
@@ -100,13 +100,14 @@ class LinearProbingHashST<Key, Value> {
      *
      * @return     { hash value }
      */
-    private int hash(Key key) {
+    private int hash(final Key key) {
         return (11 * key.hashCode()) % m;
     }
 
     // resizes the hash table to the given capacity by re-hashing all of the keys
-    private void resize(int capacity) {
-        LinearProbingHashST<Key, Value> temp = new LinearProbingHashST<Key, Value>(capacity);
+    private void resize(final int capacity) {
+        LinearProbingHashST<Key, Value> temp
+        = new LinearProbingHashST<Key, Value>(capacity);
         for (int i = 0; i < m; i++) {
             if (keys[i] != null) {
                 temp.put(keys[i], vals[i]);
@@ -127,7 +128,7 @@ class LinearProbingHashST<Key, Value> {
      * @param  val the value
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
-    public void put(Key key, Value val) {
+    public void put(final Key key, final Value val) {
         if (key == null) throw new IllegalArgumentException("first argument to put() is null");
 
         if (val == null) {
@@ -157,11 +158,17 @@ class LinearProbingHashST<Key, Value> {
      *         {@code null} if no such value
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
-    public Value get(Key key) {
-        if (key == null) throw new IllegalArgumentException("argument to get() is null");
-        for (int i = hash(key); keys[i] != null; i = (i + 1) % m)
-            if (keys[i].equals(key))
+    public Value get(final Key key) {
+        if (key == null) {
+            throw new IllegalArgumentException
+            ("argument to get() is null");
+        }
+        for (int i = hash(key); keys[i] != null;
+            i = (i + 1) % m) {
+            if (keys[i].equals(key)) {
                 return vals[i];
+            }
+        }
         return null;
     }
 
@@ -172,9 +179,14 @@ class LinearProbingHashST<Key, Value> {
      * @param  key the key
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
-    public void delete(Key key) {
-        if (key == null) throw new IllegalArgumentException("argument to delete() is null");
-        if (!contains(key)) return;
+    public void delete(final Key key) {
+        if (key == null) {
+            throw new IllegalArgumentException
+            ("argument to delete() is null");
+        }
+        if (!contains(key)) {
+            return;
+        }
 
         // find position i of key
         int i = hash(key);
@@ -190,7 +202,7 @@ class LinearProbingHashST<Key, Value> {
         i = (i + 1) % m;
         while (keys[i] != null) {
             // delete keys[i] an vals[i] and reinsert
-            Key   keyToRehash = keys[i];
+            Key keyToRehash = keys[i];
             Value valToRehash = vals[i];
             keys[i] = null;
             vals[i] = null;
@@ -203,21 +215,26 @@ class LinearProbingHashST<Key, Value> {
 
         // halves size of array if it's 12.5% full or less
         if (n > 0 && n <= m/8) resize(m/2);
-
         assert check();
     }
 
     /**
-     * Returns all keys in this symbol table as an {@code Iterable}.
-     * To iterate over all of the keys in the symbol table named {@code st},
-     * use the foreach notation: {@code for (Key key : st.keys())}.
+     * Returns all keys in this symbol
+     * table as an {@code Iterable}.
+     * To iterate over all of the keys
+     * in the symbol table named {@code st},
+     * use the foreach notation: {@code for
+     * (Key key : st.keys())}.
      *
      * @return all keys in this symbol table
      */
     public ArrayList<Key> keys() {
         ArrayList<Key> keyslist = new ArrayList<Key>();
-        for (int i = 0; i < m; i++)
-            if (keys[i] != null) keyslist.add(keys[i]);
+        for (int i = 0; i < m; i++) {
+            if (keys[i] != null) {
+                keyslist.add(keys[i]);
+            }
+        }
         return keyslist;
     }
 
@@ -239,7 +256,9 @@ class LinearProbingHashST<Key, Value> {
 
         // check that each key in table can be found by get()
         for (int i = 0; i < m; i++) {
-            if (keys[i] == null) continue;
+            if (keys[i] == null) {
+                continue;
+            }
             else if (get(keys[i]) != vals[i]) {
                 return false;
             }
@@ -247,7 +266,7 @@ class LinearProbingHashST<Key, Value> {
         return true;
     }
 
-    public boolean check(Key key) {
+    public boolean check(final Key key) {
         if (key == null) {
             return false;
         }
@@ -273,7 +292,8 @@ class LinearProbingHashST<Key, Value> {
         String str = "{";
         for (int i = 0; i < m; i++) {
             if (keys[i] != null) {
-                str = str + keys[i] + ":" + get(keys[i]) + ", ";
+                str = str + keys[i] + ":" +
+                get(keys[i]) + ", ";
             }
         }
         return str.substring(0, str.length() - 2) + "}";
