@@ -105,7 +105,14 @@ class LinearProbingHashST<Key, Value> {
         return (eleven * key.hashCode()) % m;
     }
 
-    // resizes the hash table to the given capacity by re-hashing all of the keys
+    
+    /**
+     * resizes the hash table to the given.
+     * capacity by re-hashing all of the keys.
+     * 
+     *
+     * @param      capacity  The capacity
+     */
     private void resize(final int capacity) {
         LinearProbingHashST<Key, Value> temp
         = new LinearProbingHashST<Key, Value>(capacity);
