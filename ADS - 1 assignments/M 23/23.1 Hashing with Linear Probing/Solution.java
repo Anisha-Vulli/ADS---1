@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 import java.util.ArrayList;
 
 class LinearProbingHashST<Key, Value> {
@@ -176,12 +176,12 @@ class LinearProbingHashST<Key, Value> {
      *
      * @return all keys in this symbol table
      */
-    // public ArrayList<Keys> keys() {
-    //     ArrayList<Keys> keyslist = new ArrayList<>();
-    //     for (int i = 0; i < m; i++)
-    //         if (keys[i] != null) keyslist.add(keys[i]);
-    //     return keyslist;
-    // }
+    public ArrayList<Key> keys() {
+        ArrayList<Key> keyslist = new ArrayList<Key>();
+        for (int i = 0; i < m; i++)
+            if (keys[i] != null) keyslist.add(keys[i]);
+        return keyslist;
+    }
 
     // integrity check - don't check after each put() because
     // integrity not maintained during a delete()
