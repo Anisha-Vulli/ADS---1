@@ -262,7 +262,7 @@ final class Solution {
     /**
      * Constructs the object.
      */
-    Solution() {
+    private Solution() {
         //Empty constructor.
     }
     /**

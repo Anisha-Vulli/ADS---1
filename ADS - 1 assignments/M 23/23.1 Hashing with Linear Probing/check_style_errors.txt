@@ -49,6 +49,5 @@ Starting audit...
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 23\23.1 Hashing with Linear Probing\Solution.java:236: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 23\23.1 Hashing with Linear Probing\Solution.java:238: Line is longer than 80 characters (found 104). [LineLength]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 23\23.1 Hashing with Linear Probing\Solution.java:245:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 23\23.1 Hashing with Linear Probing\Solution.java:261:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 Audit done.
-Checkstyle ends with 51 errors.
+Checkstyle ends with 50 errors.
