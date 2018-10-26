@@ -151,10 +151,13 @@ class LinearProbingHashST<Key, Value> {
         }
 
         // double table size if 50% full
-        if (n >= m/2) resize(2*m);
+        if (n >= m / 2) {
+            resize(2*m);
+        }
 
         int i;
-        for (i = hash(key); keys[i] != null; i = (i + 1) % m) {
+        for (i = hash(key); keys[i] != null;
+            i = (i + 1) % m) {
             if (keys[i].equals(key)) {
                 vals[i] = val;
                 return;
