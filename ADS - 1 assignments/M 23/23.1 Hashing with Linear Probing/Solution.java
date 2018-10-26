@@ -228,11 +228,10 @@ class LinearProbingHashST<Key, Value> {
             put(keyToRehash, valToRehash);
             i = (i + 1) % m;
         }
-
         n--;
-
         // halves size of array if it's 12.5% full or less
-        if (n > 0 && n <= m / 8) {
+        final int eight = 8;
+        if (n > 0 && n <= m / eight) {
             resize(m / 2);
         }
         assert check();
