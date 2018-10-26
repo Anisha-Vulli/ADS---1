@@ -1,4 +1,2 @@
 Starting audit...
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 23\23.1 Hashing with Linear Probing\Solution.java:319:43: '+' should be on a new line. [OperatorWrap]
 Audit done.
-Checkstyle ends with 1 errors.
