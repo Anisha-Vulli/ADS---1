@@ -141,7 +141,7 @@ class LinearProbingHashST<Key, Value> {
      */
     public void put(final Key key, final Value val) {
         if (key == null) {
-            throw new IllegalArgumentException (
+            throw new IllegalArgumentException(
                 "first argument to put() is null");
         }
 

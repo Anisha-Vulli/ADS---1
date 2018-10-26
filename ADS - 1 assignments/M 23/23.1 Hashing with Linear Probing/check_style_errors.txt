@@ -1,5 +1,4 @@
 Starting audit...
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 23\23.1 Hashing with Linear Probing\Solution.java:144:48: '(' is preceded with whitespace. [MethodParamPad]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 23\23.1 Hashing with Linear Probing\Solution.java:154: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 23\23.1 Hashing with Linear Probing\Solution.java:154:19: '/' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 23\23.1 Hashing with Linear Probing\Solution.java:154:20: '/' is not followed by whitespace. [WhitespaceAround]
@@ -23,4 +22,4 @@ Starting audit...
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 23\23.1 Hashing with Linear Probing\Solution.java:283:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 23\23.1 Hashing with Linear Probing\Solution.java:309:43: '+' should be on a new line. [OperatorWrap]
 Audit done.
-Checkstyle ends with 23 errors.
+Checkstyle ends with 22 errors.
