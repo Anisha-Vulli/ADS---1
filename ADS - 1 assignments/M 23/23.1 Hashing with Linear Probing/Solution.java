@@ -177,8 +177,8 @@ class LinearProbingHashST<Key, Value> {
      */
     public Value get(final Key key) {
         if (key == null) {
-            throw new IllegalArgumentException
-            ("argument to get() is null");
+            throw new IllegalArgumentException(
+                "argument to get() is null");
         }
         for (int i = hash(key); keys[i] != null;
             i = (i + 1) % m) {
