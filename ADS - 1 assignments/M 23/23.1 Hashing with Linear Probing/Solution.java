@@ -255,11 +255,25 @@ class LinearProbingHashST<Key, Value> {
         return str.substring(0, str.length() - 2) + "}";
     }
 }
-
-class Solution {
-    public static void main(String[] args) {
+/**
+ * Class for solution.
+ */
+final class Solution {
+    /**
+     * Constructs the object.
+     */
+    Solution() {
+        //Empty constructor.
+    }
+    /**
+     * Main function.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
-        LinearProbingHashST<String, Integer> lpht = new LinearProbingHashST<String, Integer>();
+        LinearProbingHashST<String, Integer> lpht
+        = new LinearProbingHashST<String, Integer>();
         int n = sc.nextInt();
         sc.nextLine();
         while (sc.hasNextLine()) {
