@@ -105,11 +105,11 @@ class LinearProbingHashST<Key, Value> {
         return (eleven * key.hashCode()) % m;
     }
 
-    
+
     /**
      * resizes the hash table to the given.
      * capacity by re-hashing all of the keys.
-     * 
+     *
      *
      * @param      capacity  The capacity
      */
@@ -127,9 +127,12 @@ class LinearProbingHashST<Key, Value> {
     }
 
     /**
-     * Inserts the specified key-value pair into the symbol table, overwriting the old 
-     * value with the new value if the symbol table already contains the specified key.
-     * Deletes the specified key (and its associated value) from this symbol table
+     * Inserts the specified key-value pair into
+     * the symbol table, overwriting the old
+     * value with the new value if the symbol
+     * table already contains the specified key.
+     * Deletes the specified key (and its
+     * associated value) from this symbol table
      * if the specified value is {@code null}.
      *
      * @param  key the key
@@ -137,7 +140,10 @@ class LinearProbingHashST<Key, Value> {
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public void put(final Key key, final Value val) {
-        if (key == null) throw new IllegalArgumentException("first argument to put() is null");
+        if (key == null) {
+            throw new IllegalArgumentException
+            ("first argument to put() is null");
+        }
 
         if (val == null) {
             delete(key);
