@@ -95,6 +95,7 @@ class LinearProbingHashST<Key, Value> {
 
     /**
      * hash function for keys - returns value between 0 and M-1.
+     * Complexity is 1.
      *
      * @param      key   The key
      *
@@ -109,6 +110,7 @@ class LinearProbingHashST<Key, Value> {
     /**
      * resizes the hash table to the given.
      * capacity by re-hashing all of the keys.
+     * Complexity is N.
      *
      *
      * @param      capacity  The capacity
@@ -134,6 +136,7 @@ class LinearProbingHashST<Key, Value> {
      * Deletes the specified key (and its
      * associated value) from this symbol table
      * if the specified value is {@code null}.
+     * Complexity is N.
      *
      * @param  key the key
      * @param  val the value
@@ -170,6 +173,7 @@ class LinearProbingHashST<Key, Value> {
 
     /**
      * Returns the value associated with the specified key.
+     * Complexity is N.
      * @param key the key
      * @return the value associated with {@code key};
      *         {@code null} if no such value
@@ -193,6 +197,7 @@ class LinearProbingHashST<Key, Value> {
      * Removes the specified key and its associated
      * value from this symbol table
      * (if the key is in this symbol table).
+     * Complexity is N.
      *
      * @param  key the key
      * @throws IllegalArgumentException if {@code key} is {@code null}
