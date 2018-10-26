@@ -190,16 +190,17 @@ class LinearProbingHashST<Key, Value> {
     }
 
     /**
-     * Removes the specified key and its associated value from this symbol table     
-     * (if the key is in this symbol table).    
+     * Removes the specified key and its associated
+     * value from this symbol table
+     * (if the key is in this symbol table).
      *
      * @param  key the key
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public void delete(final Key key) {
         if (key == null) {
-            throw new IllegalArgumentException
-            ("argument to delete() is null");
+            throw new IllegalArgumentException(
+                "argument to delete() is null");
         }
         if (!contains(key)) {
             return;
@@ -231,7 +232,9 @@ class LinearProbingHashST<Key, Value> {
         n--;
 
         // halves size of array if it's 12.5% full or less
-        if (n > 0 && n <= m/8) resize(m/2);
+        if (n > 0 && n <= m / 8) {
+            resize(m / 2);
+        }
         assert check();
     }
 
