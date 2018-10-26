@@ -259,7 +259,7 @@ class LinearProbingHashST<Key, Value> {
 
     // integrity check - don't check after each put() because
     // integrity not maintained during a delete()
-    
+
 
     /**
      * Checks if the key is resent or not.
@@ -269,7 +269,7 @@ class LinearProbingHashST<Key, Value> {
     private boolean check() {
 
         // check that hash table is at most 50% full
-        if (m < 2*n) {
+        if (m < 2 * n) {
             return false;
         }
 
@@ -277,14 +277,19 @@ class LinearProbingHashST<Key, Value> {
         for (int i = 0; i < m; i++) {
             if (keys[i] == null) {
                 continue;
-            }
-            else if (get(keys[i]) != vals[i]) {
+            } else if (get(keys[i]) != vals[i]) {
                 return false;
             }
         }
         return true;
     }
-
+    /**
+     * Checks if the given element is present or not.
+     *
+     * @param      key   The key
+     *
+     * @return     { description_of_the_return_value }
+     */
     public boolean check(final Key key) {
         if (key == null) {
             return false;
