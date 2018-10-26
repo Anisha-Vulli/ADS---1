@@ -205,6 +205,9 @@ class LinearProbingHashST<Key, Value> {
     }
 
     public String display() {
+        if (size() == 0) {
+            return "{}";
+        }
         String str = "{";
         for (int i = 0; i < m; i++) {
             if (keys[i] != null) {
