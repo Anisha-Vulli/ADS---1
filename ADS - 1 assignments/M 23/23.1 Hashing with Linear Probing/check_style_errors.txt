@@ -1,5 +1,4 @@
 Starting audit...
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 23\23.1 Hashing with Linear Probing\Solution.java:95: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 23\23.1 Hashing with Linear Probing\Solution.java:97: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 23\23.1 Hashing with Linear Probing\Solution.java:104:17: '11' is a magic number. [MagicNumber]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 23\23.1 Hashing with Linear Probing\Solution.java:107: Line is longer than 80 characters (found 81). [LineLength]
@@ -33,4 +32,4 @@ Starting audit...
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 23\23.1 Hashing with Linear Probing\Solution.java:269:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 23\23.1 Hashing with Linear Probing\Solution.java:295:43: '+' should be on a new line. [OperatorWrap]
 Audit done.
-Checkstyle ends with 33 errors.
+Checkstyle ends with 32 errors.
