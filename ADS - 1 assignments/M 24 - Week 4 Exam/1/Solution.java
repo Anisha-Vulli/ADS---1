@@ -253,8 +253,7 @@ final class Solution {
                 } else {
                     System.out.println("Student doesn't exists...");
                 }
-            }
-            else if (tokens[2].equals("2")) {
+            } else if (tokens[2].equals("2")) {
                 if (st.get(Integer.parseInt(tokens[1])) != null) {
                      System.out.println(
                         st.get(Integer.parseInt(tokens[1])).getmarks());
