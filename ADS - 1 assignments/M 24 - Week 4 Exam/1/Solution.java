@@ -248,16 +248,16 @@ final class Solution {
             String[] tokens = sc.nextLine().split(" ");
             if (tokens[2].equals("1")) {
                  if (st.get(Integer.parseInt(tokens[1])) != null) {
-                    System.out.println
-                    (st.get(Integer.parseInt(tokens[1])).getName());
+                    System.out.println(
+                        st.get(Integer.parseInt(tokens[1])).getName());
                 } else {
                     System.out.println("Student doesn't exists...");
                 }
             }
             else if (tokens[2].equals("2")) {
                 if (st.get(Integer.parseInt(tokens[1])) != null) {
-                     System.out.println
-                     (st.get(Integer.parseInt(tokens[1])).getmarks());   
+                     System.out.println(
+                        st.get(Integer.parseInt(tokens[1])).getmarks());
                 } else {
                     System.out.println("Student doesn't exists...");
                 }
