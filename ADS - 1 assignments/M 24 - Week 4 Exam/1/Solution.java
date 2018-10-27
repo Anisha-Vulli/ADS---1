@@ -25,7 +25,8 @@ class Student {
      * @param      name1    The name 1
      * @param      marks1   The marks 1
      */
-    Student(int rollno1, String name1, Double marks1) {
+    Student(final int rollno1, 
+        final String name1, final Double marks1) {
         this.name = name1;
         this.marks = marks1;
         this.rollno = rollno1;

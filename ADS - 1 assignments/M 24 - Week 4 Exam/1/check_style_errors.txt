@@ -1,13 +1,11 @@
 Starting audit...
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\1\Solution.java:28:13: Parameter rollno1 should be final. [FinalParameters]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\1\Solution.java:28:26: Parameter name1 should be final. [FinalParameters]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\1\Solution.java:28:40: Parameter marks1 should be final. [FinalParameters]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\1\Solution.java:93: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\1\Solution.java:240: Line is longer than 80 characters (found 106). [LineLength]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\1\Solution.java:248: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\1\Solution.java:252:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\1\Solution.java:255: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\1\Solution.java:255: Line is longer than 80 characters (found 91). [LineLength]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\1\Solution.java:28: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\1\Solution.java:94: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\1\Solution.java:241: Line is longer than 80 characters (found 106). [LineLength]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\1\Solution.java:249: Line is longer than 80 characters (found 86). [LineLength]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\1\Solution.java:253:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\1\Solution.java:256: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\1\Solution.java:256: Line is longer than 80 characters (found 91). [LineLength]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 8 errors.
