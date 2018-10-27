@@ -17,8 +17,9 @@ Starting audit...
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\1\Solution.java:199:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\1\Solution.java:200:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\1\Solution.java:206: Line is longer than 80 characters (found 106). [LineLength]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\1\Solution.java:213: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\1\Solution.java:214:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\1\Solution.java:216: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\1\Solution.java:214: Line is longer than 80 characters (found 86). [LineLength]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\1\Solution.java:218:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\1\Solution.java:221: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\1\Solution.java:221: Line is longer than 80 characters (found 91). [LineLength]
 Audit done.
-Checkstyle ends with 21 errors.
+Checkstyle ends with 22 errors.

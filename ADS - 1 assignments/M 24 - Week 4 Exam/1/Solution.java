@@ -210,10 +210,18 @@ final class Solution {
         for (int j = 0; j < num; j++) {
             String[] tokens = sc.nextLine().split(" ");
             if (tokens[2].equals("1")) {
-                System.out.println(st.get(Integer.parseInt(tokens[1])).getName());
+                 if (st.get(Integer.parseInt(tokens[1])) != null) {
+                    System.out.println(st.get(Integer.parseInt(tokens[1])).getName());
+                } else {
+                    System.out.println("Student doesn't exists...");
+                }
             }
             else if (tokens[2].equals("2")) {
-                System.out.println(st.get(Integer.parseInt(tokens[1])).getmarks());
+                if (st.get(Integer.parseInt(tokens[1])) != null) {
+                     System.out.println(st.get(Integer.parseInt(tokens[1])).getmarks());   
+                } else {
+                    System.out.println("Student doesn't exists...");
+                }
             }
         }
     }
