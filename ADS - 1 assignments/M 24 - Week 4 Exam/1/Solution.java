@@ -1,22 +1,56 @@
-import java.util.*;
+/**
+ * Scanner import.
+ */
+import java.util.Scanner;
+/**
+ * Class for student.
+ */
 class Student {
+    /**
+     * Student name.
+     */
     private String name;
+    /**
+     * Student rollno.
+     */
     private int rollno;
+    /**
+     * Student marks.
+     */
     private Double marks;
+    /**
+     * Constructs the object.
+     *
+     * @param      rollno1  The rollno 1
+     * @param      name1    The name 1
+     * @param      marks1   The marks 1
+     */
     Student(int rollno1, String name1, Double marks1) {
         this.name = name1;
         this.marks = marks1;
         this.rollno = rollno1;
     }
-
+    /**
+     * Gets the name.
+     *
+     * @return     The name.
+     */
     public String getName() {
         return this.name;
     }
-
+    /**
+     * Gets rollnumber.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int getnum() {
      return this.rollno;
     }
-
+    /**
+     * Gets marks.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Double getmarks() {
         return this.marks;
     }
@@ -61,21 +95,6 @@ class SeparateChainingHashST {
             st[i] = new SequentialSearchST<Integer, Student>();
         }
     }
-
-    // resize the hash table to have the given number of chains,
-    // // rehashing all of the keys
-    // private void resize(int chains) {
-    //     SeparateChainingHashST<Key, Value> temp
-    //     = new SeparateChainingHashST<Key, Value>(chains);
-    //     for (int i = 0; i < m; i++) {
-    //         for (Key key : st[i].keys()) {
-    //             temp.put(key, st[i].get(key));
-    //         }
-    //     }
-    //     this.m  = temp.m;
-    //     this.n  = temp.n;
-    //     this.st = temp.st;
-    // }
 
     // hash value between 0 and m-1
 
@@ -179,6 +198,7 @@ class SeparateChainingHashST {
     /**
      * Removes the specified key and its
      * associated value from this symbol table
+     * Complexity is 1.
      * (if the key is in this symbol table).
      *
      * @param  key the key
@@ -196,7 +216,21 @@ class SeparateChainingHashST {
     }
 }
 
+/**
+ * class for solution.
+ */
 final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        //Empty constructor.
+    }
+    /**
+     * Main function.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         int noinputs = Integer.parseInt(sc.nextLine());
