@@ -606,7 +606,7 @@ final class Solution {
         int noinputs = Integer.parseInt(sc.nextLine());
         RedBlackBST<Student, Integer> bst = new RedBlackBST<Student, Integer>();
         Student stu = null;
-        for (int i = 0; i < noinputs; i++) {
+        for (int i = 0; i <= noinputs; i++) {
             String[] input = sc.nextLine().split(",");
             stu = new Student(Integer.parseInt(input[0]),
                 input[1], Double.parseDouble(input[2]));
