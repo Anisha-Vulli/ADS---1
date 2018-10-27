@@ -212,6 +212,9 @@ final class Solution {
             if (tokens[2].equals("1")) {
                 System.out.println(st.get(Integer.parseInt(tokens[1])).getName());
             }
+            else if (tokens[1].equals("2")) {
+                System.out.println(st.get(Integer.parseInt(tokens[1])).getmarks());
+            }
         }
     }
 }
