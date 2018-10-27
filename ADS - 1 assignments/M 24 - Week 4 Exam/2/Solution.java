@@ -604,7 +604,7 @@ final class Solution {
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         int noinputs = Integer.parseInt(sc.nextLine());
-        BST<Student, Integer> bst = new BST<Student, Integer>();
+        RedBlackBST<Student, Integer> bst = new RedBlackBST<Student, Integer>();
         Student stu = null;
         for (int i = 0; i < noinputs; i++) {
             String[] input = sc.nextLine().split(",");
