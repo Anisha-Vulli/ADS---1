@@ -99,7 +99,7 @@ final class Solution {
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         int noinputs = Integer.parseInt(sc.nextLine());
-        RedBlackBST<Student, Integer> bst 
+        RedBlackBST<Student, Integer> bst
         = new RedBlackBST<Student, Integer>();
         Student stu = null;
         for (int i = 0; i < noinputs; i++) {
@@ -113,7 +113,7 @@ final class Solution {
             String[] tokens = sc.nextLine().split(" ");
             if (tokens[0].equals("BE")) {
                 double less = Double.parseDouble(tokens[1]);
-                double greater = Double.parseDouble(tokens[2]); 
+                double greater = Double.parseDouble(tokens[2]);
                 for (Student each : bst.keys()) {
                     //System.out.println(each.getName());
                     if (each.getmarks() >= less && each.getmarks() <= greater) {
