@@ -1,7 +1,6 @@
 Starting audit...
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\2\Solution.java:4: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\2\Solution.java:571: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\2\Solution.java:620: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\2\Solution.java:589: Line is longer than 80 characters (found 86). [LineLength]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\2\Solution.java:638: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 3 errors.

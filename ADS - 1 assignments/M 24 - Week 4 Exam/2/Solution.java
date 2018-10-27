@@ -58,14 +58,32 @@ class Student implements Comparable<Student> {
     }
 
     /**
-     * Compares the marks of students.
+     * compare To.
      *
      * @param      that  The that
      *
      * @return     { description_of_the_return_value }
      */
     public int compareTo(final Student that) {
-        return this.marks.compareTo(that.marks);
+        if (this.marks > that.marks) {
+            return 1;
+        }
+        if (this.marks < that.marks) {
+            return -1;
+        }
+        // if (this.name.compareTo(that.name) > 0) {
+        //     return 1;
+        // }
+        // if (this.name.compareTo(that.name) < 0) {
+        //     return -1;
+        // }
+        if (this.rollno > that.rollno) {
+            return 1;
+        }
+        if (this.rollno < that.rollno) {
+            return -1;
+        }
+        return 0;
     }
 }
 
@@ -606,7 +624,7 @@ final class Solution {
         int noinputs = Integer.parseInt(sc.nextLine());
         RedBlackBST<Student, Integer> bst = new RedBlackBST<Student, Integer>();
         Student stu = null;
-        for (int i = 0; i <= noinputs; i++) {
+        for (int i = 0; i < noinputs; i++) {
             String[] input = sc.nextLine().split(",");
             stu = new Student(Integer.parseInt(input[0]),
                 input[1], Double.parseDouble(input[2]));
@@ -619,11 +637,12 @@ final class Solution {
                 double less = Double.parseDouble(tokens[1]);
                 double greater = Double.parseDouble(tokens[2]); 
                 for (Student each : bst.keys()) {
+                    //System.out.println(each.getName());
                     if (each.getmarks() >= less && each.getmarks() <= greater) {
                         System.out.println(each.getName());
                     }
                 }
-            } else if (tokens[0].equals("LE")) {
+             } else if (tokens[0].equals("LE")) {
                 double value = Double.parseDouble(tokens[1]);
                 for (Student each : bst.keys()) {
                     if (each.getmarks() <= value) {
@@ -641,3 +660,4 @@ final class Solution {
         }
     }
 }
+
