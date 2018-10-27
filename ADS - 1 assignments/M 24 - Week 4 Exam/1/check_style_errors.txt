@@ -1,11 +1,7 @@
 Starting audit...
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\1\Solution.java:28: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\1\Solution.java:94: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\1\Solution.java:241: Line is longer than 80 characters (found 106). [LineLength]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\1\Solution.java:249: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\1\Solution.java:253:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\1\Solution.java:256: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\1\Solution.java:256: Line is longer than 80 characters (found 91). [LineLength]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\1\Solution.java:252:21: '(' should be on the previous line. [MethodParamPad]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\1\Solution.java:256:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\1\Solution.java:260: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 24 - Week 4 Exam\1\Solution.java:260:22: '(' should be on the previous line. [MethodParamPad]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 4 errors.

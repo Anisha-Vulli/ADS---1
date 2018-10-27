@@ -25,7 +25,7 @@ class Student {
      * @param      name1    The name 1
      * @param      marks1   The marks 1
      */
-    Student(final int rollno1, 
+    Student(final int rollno1,
         final String name1, final Double marks1) {
         this.name = name1;
         this.marks = marks1;
@@ -91,7 +91,8 @@ class SeparateChainingHashST {
      */
     SeparateChainingHashST(final int m1) {
         this.m = m1;
-        st = (SequentialSearchST<Integer, Student>[]) new SequentialSearchST[m1];
+        st = (SequentialSearchST<Integer, Student>[])
+        new SequentialSearchST[m1];
         for (int i = 0; i < m1; i++) {
             st[i] = new SequentialSearchST<Integer, Student>();
         }
@@ -238,7 +239,8 @@ final class Solution {
         SeparateChainingHashST st = new SeparateChainingHashST();
         for (int i = 0; i < noinputs; i++) {
             String[] input = sc.nextLine().split(",");
-            Student stu = new Student(Integer.parseInt(input[0]), input[1], Double.parseDouble(input[2]));
+            Student stu = new Student(Integer.parseInt(input[0]),
+                input[1], Double.parseDouble(input[2]));
             st.put(Integer.parseInt(input[0]), stu);
         }
         int num = Integer.parseInt(sc.nextLine());
@@ -246,14 +248,16 @@ final class Solution {
             String[] tokens = sc.nextLine().split(" ");
             if (tokens[2].equals("1")) {
                  if (st.get(Integer.parseInt(tokens[1])) != null) {
-                    System.out.println(st.get(Integer.parseInt(tokens[1])).getName());
+                    System.out.println
+                    (st.get(Integer.parseInt(tokens[1])).getName());
                 } else {
                     System.out.println("Student doesn't exists...");
                 }
             }
             else if (tokens[2].equals("2")) {
                 if (st.get(Integer.parseInt(tokens[1])) != null) {
-                     System.out.println(st.get(Integer.parseInt(tokens[1])).getmarks());   
+                     System.out.println
+                     (st.get(Integer.parseInt(tokens[1])).getmarks());   
                 } else {
                     System.out.println("Student doesn't exists...");
                 }
@@ -261,3 +265,4 @@ final class Solution {
         }
     }
 }
+
