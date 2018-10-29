@@ -1,4 +1,33 @@
 Starting audit...
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 6 - Week 1 Exam\Assignment-1\LinkedList.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 6 - Week 1 Exam\Assignment-1\LinkedList.java:1:8: Unused import - java.util.Arrays. [UnusedImports]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 6 - Week 1 Exam\Assignment-1\LinkedList.java:2: Missing a Javadoc comment. [JavadocType]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 6 - Week 1 Exam\Assignment-1\LinkedList.java:3:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 6 - Week 1 Exam\Assignment-1\LinkedList.java:3:10: Variable 'head' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 6 - Week 1 Exam\Assignment-1\LinkedList.java:4:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 6 - Week 1 Exam\Assignment-1\LinkedList.java:4:10: Variable 'tail' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 6 - Week 1 Exam\Assignment-1\LinkedList.java:5:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 6 - Week 1 Exam\Assignment-1\LinkedList.java:5:9: Variable 'size' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 6 - Week 1 Exam\Assignment-1\LinkedList.java:7: Missing a Javadoc comment. [JavadocType]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 6 - Week 1 Exam\Assignment-1\LinkedList.java:8:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 6 - Week 1 Exam\Assignment-1\LinkedList.java:8:16: Variable 'item' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 6 - Week 1 Exam\Assignment-1\LinkedList.java:9:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 6 - Week 1 Exam\Assignment-1\LinkedList.java:9:14: Variable 'next' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 6 - Week 1 Exam\Assignment-1\LinkedList.java:10:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 6 - Week 1 Exam\Assignment-1\LinkedList.java:10:14: Parameter item should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 6 - Week 1 Exam\Assignment-1\LinkedList.java:10:21: 'item' hides a field. [HiddenField]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 6 - Week 1 Exam\Assignment-1\LinkedList.java:15:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 6 - Week 1 Exam\Assignment-1\LinkedList.java:18: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 6 - Week 1 Exam\Assignment-1\LinkedList.java:19:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 6 - Week 1 Exam\Assignment-1\LinkedList.java:19:22: Parameter str should be final. [FinalParameters]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 6 - Week 1 Exam\Assignment-1\LinkedList.java:34: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 6 - Week 1 Exam\Assignment-1\LinkedList.java:35:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 6 - Week 1 Exam\Assignment-1\LinkedList.java:45:5: Missing a Javadoc comment. [JavadocMethod]
+Audit done.
+Checkstyle ends with 24 errors.
+Starting audit...
+Audit done.
+Starting audit...
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 6 - Week 1 Exam\Assignment-1\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 6 - Week 1 Exam\Assignment-1\Stack.java:1: Missing a Javadoc comment. [JavadocType]
 [ERROR] D:\MSIT\IT\ADS---1\ADS - 1 assignments\M 6 - Week 1 Exam\Assignment-1\Stack.java:2:5: Missing a Javadoc comment. [JavadocVariable]
